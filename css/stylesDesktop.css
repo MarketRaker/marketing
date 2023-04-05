@@ -173,6 +173,14 @@ html {
   align-items: center;
 }
 
+.column-centered-2 {
+  flex:2;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .what-block {
   display: flex;
   flex-direction: column;
@@ -233,8 +241,8 @@ html {
   opacity: 100%;
   text-align: center;
   align-items: center;
-  margin-bottom: 100px;
-  margin-top: 10px;
+  /* margin-bottom: 50px; */
+  /* margin-top: 10px; */
 }
 
 .body-heading-when {
@@ -265,10 +273,7 @@ html {
 
 }
 
-.align-left {
-  text-align: left;
 
-}
 
 .carousel {
   position: relative;
@@ -474,20 +479,52 @@ html {
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  align-items: center;
   /* background-color: blue; */
-  padding: 5rem 15%;
+  padding: 2.5rem 5%;
 
   border-style: solid;
   border: 0px solid white;
   border-bottom-width: 10px;
 
   text-align: center;
+ 
 }
 
 .how-bullet-list {
-  padding: 0 7rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: center;
+  list-style: none;
 
 }
+
+.icon-line{
+  width:90%;
+
+ 
+  
+}
+
+.how-list-item{
+  display:flex;
+   
+  margin:0 50px;
+  width: 300px;
+  /* font-weight: bold; */
+  
+ 
+  
+}
+
+/* .bold-how-text{
+font-weight: bold;
+
+} */
+
 
 .when-block {
   display: flex;
