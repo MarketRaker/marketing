@@ -705,8 +705,17 @@ small {
   width:45px;
 }
 
+.middle{
+  display: flex;
+  flex-direction: row;
+}
 
 .second-half{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+
   
   
   padding:50px;
