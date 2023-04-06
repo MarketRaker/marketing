@@ -749,9 +749,47 @@ small {
 }
 .user-icon{
   display: flex;
+  width:120px;
+  justify-content: space-around;
+  padding-right: 25px;
+  padding-left:25px
+}
+.user-iconB{
+  display: flex;
   width:100px;
   justify-content: space-around;
   padding-right: 25px;
   padding-left:25px
+}
+
+.user-details{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.user-textA{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom:10px;
+  
+
+}
+.user-textB{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+ 
+  letter-spacing: 1px;
+  font-size: 12x;
+ 
+  text-align: center;
+
 }
 
