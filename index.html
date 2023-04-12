@@ -353,13 +353,88 @@
           </div>
 
           <div class="column-centered">
-            <button class="notify-me">
-              <img class="bell" src="Media/bell.png">
-              <div class="notify-me-text">Notify me for early access !</div>
-            </button>
+            
+              <button class="notify-me">
+                <img class="bell" src="Media/bell.png">
+                <div class="notify-me-text">Notify me for early access!</div>
+              </button>
+            
           </div>
 
-        </div>
+          <div class="modal-backdrop" id="email-modal">
+            <div class="modal-content">
+              <img class="modal-close-btn" src="/Media/icons8-xbox-x-100.png">
+                
+              
+              <div class="modal-content-top">
+                <h2 class="modal-heading">Enter your e-mail address</h2>
+
+              </div>
+
+              <div class="modal-content-bottom">
+                <form action="/" method="GET" class="modal-form" id="form">
+                  <h5 class="modal-text">We will notify you as soon as early
+                    access becomes available. Don't miss out on this opportunity
+                    to get a sneak peek before anyone else.
+                  </h5>
+                  <div class="form-validation">
+                    <input type="text" class="modal-input" id="email" placeholder="Enter your e-mail">
+                    <p>Error Message</p>
+                  </div>
+
+                  <button type="button" class="modal-subscribe-btn" id="subscribe-btn" >Subscribe</button>
+
+
+
+
+
+                </form>
+                
+
+              </div>
+              
+            </div>
+          </div>
+
+            <div class="modal-backdrop" id="thanks-modal">
+              <div class="modal-thanks-content">
+                <img class="modal-close-btn" src="/Media/icons8-xbox-x-100.png">
+                  
+                
+                <div class="thanks-modal-content-top">
+                  <img class="mail-image" src="/Media/mail arrow.svg">
+                  
+  
+                </div>
+  
+                <div class="thanks-modal-content-bottom">
+                  <form action="/" method="GET" class="modal-form" id="form">
+
+                    <h2 class="thanks-modal-heading">Thanks for signing up for early access!</h2>
+                    <h5 class="thanks-modal-text">We're excited to have you on board and can't wait to
+                       provide you with an exclusive experience. Stay tuned!
+                    </h5>
+                    
+  
+                    <input type="button" class="modal-subscribe-btn" id="thanks-modal-close-btn" value="Close">
+  
+  
+  
+  
+  
+                  </form>
+                  
+  
+                </div>
+  
+              </div>
+          </div>
+
+
+
+
+
+
 
 
 
@@ -509,7 +584,10 @@
   <script src="js/carousel.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/graph.js"></script>
-  <script src="js/scroll.js"></script>
+  <!-- <script src="js/scroll.js"></script> -->
+  <script src="js/notifyME.js"></script>
+  
+  
 </body>
 
 </html>
