@@ -479,7 +479,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  align-self: stretch;
+  flex:1;
   align-items: center;
   /* background-color: blue; */
   padding: 2.5rem 5%;
@@ -822,7 +823,7 @@ small {
   flex-direction:column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #439775;
 }
 
