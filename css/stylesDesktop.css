@@ -483,7 +483,7 @@ html {
   flex:1;
   align-items: center;
   /* background-color: blue; */
-  padding: 2.5rem 5%;
+  padding: 3rem 5%;
 
   border-style: solid;
   border: 0px solid white;
@@ -504,18 +504,19 @@ html {
 
 }
 
-.icon-line{
-  width:90%;
 
- 
-  
+.icon-line-container{
+  display: flex;
+  justify-content:center ;
+  width: 100%;
+
 }
 
 .how-list-item{
   display:flex;
    
   margin:0 50px;
-  width: 300px;
+  width: 210px;
   /* font-weight: bold; */
   
  
@@ -832,6 +833,14 @@ small {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 75px;
+}
+
+.top-half-headings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:60px;
+
 }
 
 .logo-footer {
