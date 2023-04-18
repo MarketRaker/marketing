@@ -112,9 +112,8 @@ html {
 .banner-icon {
   padding-top: 20px;
   padding-bottom: 15px;
-  /* margin-left: 105px; */
 
-  width: 150px;
+  max-width: 150px;
 
 }
 
@@ -129,7 +128,6 @@ html {
 
 .page-graph {
   display: flex;
-  /* padding: 52vh 0; */
   height: calc(100vh - 70px);
   background-color: #efefef;
   position: relative;
@@ -274,7 +272,9 @@ html {
 
 }
 
-
+.align-left {
+  text-align: left;
+}
 
 .carousel {
   position: relative;
@@ -504,7 +504,6 @@ html {
 
 }
 
-
 .icon-line-container{
   display: flex;
   justify-content:center ;
@@ -514,20 +513,10 @@ html {
 
 .how-list-item{
   display:flex;
-   
   margin:0 50px;
-  width: 210px;
+  width: 25%;
   /* font-weight: bold; */
-  
- 
-  
 }
-
-/* .bold-how-text{
-font-weight: bold;
-
-} */
-
 
 .when-block {
   display: flex;
@@ -844,8 +833,6 @@ small {
 }
 
 .logo-footer {
-  
-
   width: 400px;
 }
 
@@ -996,7 +983,7 @@ small {
   font-family: 'Montserrat', sans-serif;
  
   letter-spacing: 1px;
-  font-size: 12x;
+  font-size: 12px;
  
   text-align: center;
 
