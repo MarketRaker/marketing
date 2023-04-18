@@ -1,6 +1,3 @@
-/* Tablet views */
-
-
 @media (max-width: 1026px) {
 
 
@@ -114,7 +111,7 @@
     align-items: center;
     min-width: 210px;
     position: relative;
-  }  
+  }
 
   .banner-icon {
     padding-top: 20px;
@@ -152,7 +149,7 @@
   .page {
     display: flex;
     /* padding: 52vh 0; */
-    height: 100vh;
+    height: max(100vh, 900px);
 
     background-color: #192828c2;
     position: relative;
@@ -456,7 +453,6 @@
     background-image: url(../Media/coins.webp);
     background-size: 1200px;
     width: 1200px;
-    height: 1200px;
 
   }
 
@@ -464,7 +460,6 @@
     background-image: url(../Media/Tree.webp);
     background-size: 2000px;
     width: 1050px;
-    height: 1050px;
   }
 
   .white-line {
@@ -524,7 +519,7 @@
   .how-list-item {
     display: flex;
 
-    margin: 40px 0;
+    margin: 1rem 0;
     width: 500px;
     /* font-weight: bold; */
 
@@ -591,18 +586,18 @@
 
   }
 
-  @media (min-width: 900px){
+  @media (min-width: 900px) {
     .countdown {
       display: flex;
       transform: scale(1);
       justify-content: center;
-  
-    } 
- 
 
-    
+    }
+
+
+
   }
-  
+
 
 
   .notify-me {
@@ -760,7 +755,7 @@
 
     padding: 7px;
     outline-color: #2A4747;
-    font-size:15px;
+    font-size: 15px;
 
 
   }
@@ -856,35 +851,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:0 50px ;
+    margin: 0 50px;
     align-items: flex-start;
   }
 
-  
 
-  .top-half-headings{
+
+  .top-half-headings {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
   }
-  .footer-logo-top{
+
+  .footer-logo-top {
     display: flex;
     justify-content: flex-start;
-    padding-top:50px;
-    
-    
+    padding-top: 50px;
+
+
 
   }
 
   .logo-footer {
-    
-    
-   
+
+
+
     width: 200px;
   }
 
- 
+
 
   .footer-heading-text {
 
@@ -918,7 +914,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
 
   }
 
@@ -953,96 +949,97 @@
     width: 35px;
   }
 
-  @media (min-width: 800px){
+  @media (min-width: 800px) {
 
     .bg-graph {
 
-      
+
       background-position: -250px 85px;
-     
-    }
-  
-    .bg-graph-mask {
-      
-      background-position: -250px 85px;
-     
+
     }
 
-    .top-half{
+    .bg-graph-mask {
+
+      background-position: -250px 85px;
+
+    }
+
+    .top-half {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding-top: 30px;
-      gap:50px;
+      gap: 50px;
     }
-    
-    .top-half-headings{
+
+    .top-half-headings {
       display: flex;
-     
+
       flex-direction: row;
       justify-content: space-around;
-      gap:50px;
-    
+      gap: 50px;
+
     }
 
 
 
     .logo-footer {
-    
+
       width: 300px;
     }
 
     .cardano-logo {
       /* width:145px; */
       height: 25px;
-      
-  
+
+
     }
-  
+
     .matogen-logo {
       /* width:145px; */
       height: 25px;
-      
-  
+
+
     }
 
     .social-icon {
       width: 40px;
     }
+
     .social-icon-strip {
       padding-top: 10px;
-      
+
     }
 
     .cardano-logo {
-      
+
       padding-top: 10px;
-      
-  
+
+
     }
-  
+
     .matogen-logo {
-     
+
       padding-top: 10px;
-      
-  
+
+
     }
 
     .contact-icon {
-     
+
       padding-top: 10px;
     }
- 
 
-    
+
+
   }
 
-  
+
   .second-half {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:60px;
+    gap: 60px;
 
 
 
