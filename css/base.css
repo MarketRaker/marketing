@@ -636,6 +636,7 @@ small {
   right: 0;
   top: 0;
   position: absolute;
+  cursor: pointer;
 }
 
 .modal-content {
@@ -763,6 +764,7 @@ small {
   margin-bottom: 20px;
   background-color: white;
   border-width: 1px;
+  cursor: pointer;
 
 
 }
