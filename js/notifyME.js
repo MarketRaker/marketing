@@ -8,8 +8,8 @@ const notifyMeBtn = document.querySelector('.notify-me');
 const subscribeBtn = document.getElementById('subscribe-btn');
 
 const closeBtn = document.querySelector('.modal-close-btn');
-const thanksCloseBtn = document.getElementById('thanks-modal-close-btn');
-
+const thanksCloseBtns = document.getElementsByName('thanks-modal-close-btn');
+console.log(thanksCloseBtns)
 //Click Events
 subscribeBtn.addEventListener('click', () => {
     emailModalBackdrop.style.display = 'none'
@@ -17,9 +17,13 @@ subscribeBtn.addEventListener('click', () => {
 
 });
 
-thanksCloseBtn.addEventListener('click', () => {
-    thanksModalBackdrop.style.display = 'none';
-})
+thanksCloseBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        thanksModalBackdrop.style.display = 'none';
+    })
+    
+});
+
 
 //Click Events
 notifyMeBtn.addEventListener('click', () => {
