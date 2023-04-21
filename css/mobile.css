@@ -1,7 +1,441 @@
 /* Mobile views*/
-@media (max-width: 640px){
+@media (max-width: 640px) {
+
+    :root {
+        background-attachment: fixed;
+    }
+
+    .h2 {
+        font-size: small;
+    }
 
 
+
+    .rounded-button {
+        font-size: x-small;
+    }
+
+    .bg-graph {
+
+        display: none;
+
+    }
+
+
+    .bg-graph-mask {
+        display: none;
+    }
+
+    .logo-header {
+        margin-left: 10px;
+        width: 70px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0px
+    }
+
+    .banner-item {
+        min-width: unset;
+        width: 90%;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+    .banner-icon {
+        max-width: 80px;
+        margin-left: 7%;
+    }
+
+    .banner-text {
+        padding-bottom: 0;
+        font-size: medium;
+        text-align: center;
+        
+    }
+
+    .banner-label {
+        padding-bottom: 0;
+        font-size: medium;
+        text-align: left;
+        
+    }
+
+
+    .text-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: #ffffffcc;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: opacity 0.25s;
+        opacity: 0;
+        backdrop-filter: blur(5px);
+        text-align: center;
+    }
+
+    
+    .text-overlay:hover, .text-overlay:active {
+        opacity: 1;
+      }
+
+
+
+    .graph-logo {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .page {
+        height: max(100vh, 700px);
+    }
+
+    .page-mobile-100vh {
+        height: 100vh;
+    }
+
+    .what-block {
+
+        padding: 0 10%;
+
+    }
+
+    .body-heading-what {
+
+        font-size: 24px;
+        padding: 20px 0;
+        letter-spacing: 8px;
+        margin-left: 5px;
+    }
+
+    .white-line-what {
+
+        width: 100px;
+
+    }
+
+    .body-paragraph {
+
+        line-height: 1.75rem;
+        font-size: 15px;
+
+    }
+
+    .bold-paragraph-text {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .carousel {
+
+        height: 100%;
+
+    }
+
+
+    .carousel_heading.main {
+
+        top: 80px;
+        font-size: 20px;
+        letter-spacing: 8px;
+
+
+
+    }
+
+    .carousel-heading {
+
+        top: 60px;
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        margin-left: 10px
+    }
+
+
+
+    .carousel-button {
+
+        top: 80%;
+
+    }
+
+    .carousel_button--left {
+        left: -20px;
+    }
+
+    .carousel_button--right {
+        right: -20px;
+    }
+
+    .carousel-button img {
+        height: 35px;
+    }
+
+    .carousel__nav {
+        padding: 0px 0;
+
+    }
+
+    .carousel_track-container {
+        height: 98%;
+
+    }
+
+    .carousel-content {
+        width: 95%;
+
+    }
+
+
+
+    .body-heading-how {
+
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .how-bullet-list {
+
+        flex-direction: column;
+        padding: 50px 0;
+
+    }
+
+
+    .how-list-item {
+
+        margin: 10px auto;
+        width: 90%;
+        /* line-height: 1.5rem; */
+
+    }
+
+    .how-block {
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+
+    .when-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        width: 100%;
+
+
+        border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 10px;
+
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .body-heading-when {
+        /* margin:300px;   */
+        font-family: rift;
+        font-size: 20px;
+        letter-spacing: 8px;
+        margin-left: 10px;
+        opacity: 100%;
+        text-align: center;
+        align-items: center;
+
+        margin: 0 13px;
+
+
+
+    }
+
+    .time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        width: 145px;
+    }
+
+    .time,
+    small {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.5rem;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
+    .countdown {
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.75);
+        justify-content: center;
+        height: 370px;
+    }
+
+    .notify-me-text {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.5rem;
+        letter-spacing: 1px;
+        font-size: 10px;
+        font-weight: 600;
+
+        /* background-color: rgb(255, 0, 174); */
+        margin: 10px;
+
+
+    }
+
+    .notify-me {
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        background-color: #0000;
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+        margin: 50px 0;
+        transition: background-color 0.25s;
+    }
+
+    .column-centered {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .top-half {
+        flex-direction: column;
+        padding-top: 25px;
+
+    }
+
+
+    .footer-heading-text {
+        font-size: 20px;
+
+    }
+
+
+    .logo-footer {
+        width: 200px;
+        margin-left: 25px;
+        margin-top: 5px;
+
+    }
+
+
+    .top-half-headings {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+
+    }
+
+
+    .footer-heading-text {
+        font-size: 20px;
+        letter-spacing: 4px;
+
+    }
+
+
+    .cardano-logo {
+        height: 20px;
+        padding-top: 10px;
+
+    }
+
+
+    .matogen-logo {
+        height: 20px;
+        padding-top: 10px;
+
+    }
+
+
+    .social-icon {
+        width: 25px;
+    }
+
+
+    .social-icon-strip {
+        padding-top: 10px;
+
+    }
+
+
+    .contact-icon {
+        width: 100px;
+        padding-top: 10px;
+
+    }
+
+
+    .second-half {
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 5px;
+
+    }
+
+
+    .user-icon {
+        width: 60px;
+        gap: 20px;
+
+    }
+
+
+
+    .team {
+        padding-bottom: 10px;
+        font-size: 20px;
+        letter-spacing: 4px;
+
+    }
+
+
+    .team-info {
+        gap: 20px;
+        margin-left: 20px;
+
+    }
+
+
+    .user-textA {
+        font-size: 12px;
+        padding-bottom: 3px;
+
+    }
+
+
+    .user-textB {
+        font-size: 10px;
+
+    }
 
 
 }

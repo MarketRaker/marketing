@@ -1,4 +1,4 @@
-@media (max-width: 1026px) {
+@media (max-width: 1026px) and (min-width: 640px){
 
   /* HEADER */
 
@@ -100,20 +100,9 @@
 
 
   .bg {
-    background-size: 100%;
+    background-size: auto 100%;
   }
 
-  .bg--coin {
-    /* TODO */
-    background-size: 1200px;
-    width: 1200px;
-  }
-
-  .bg--tree {
-    /* TODO */
-    background-size: 2000px;
-    width: 1050px;
-  }
 
   .white-line-what {
     margin-top: 10%;

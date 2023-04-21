@@ -28,7 +28,7 @@ html {
 }
 
 .nav-container {
-  margin-right: 30px;
+  /* margin-right: 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,8 +45,7 @@ html {
 .rounded-button {
 
   text-align: center;
-  padding: 0px 20px;
-  height: 30px;
+  padding: 5px 1rem;
   background-color: #2A4747;
   border-color: white;
   border-radius: 30px;
@@ -57,7 +56,7 @@ html {
   cursor: pointer;
   letter-spacing: 3px;
   font-family: rift;
-
+  white-space: nowrap;
 }
 
 .solid-button {
@@ -117,7 +116,7 @@ html {
 
 }
 
-.banner-text {
+.banner-text, .banner-label {
   /* margin-left: 30px; */
   text-align: center;
   padding-bottom: 15px;
@@ -848,7 +847,7 @@ small {
 
 }
 .cardano-logo{
-  /* width:145px; */
+ 
   height:30px;
   padding-top:30px;
   margin-right: 10px;
@@ -856,7 +855,7 @@ small {
 }
 
 .matogen-logo{
-  /* width:145px; */
+  
   height:30px;
   padding-top:30px;
   margin-right: 10px;
@@ -950,13 +949,7 @@ small {
   padding-right: 25px;
   padding-left:25px
 }
-.user-iconB{
-  display: flex;
-  width:100px;
-  justify-content: space-around;
-  padding-right: 25px;
-  padding-left:25px
-}
+
 
 .user-details{
   display: flex;
