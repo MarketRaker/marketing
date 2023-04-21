@@ -824,7 +824,7 @@ small {
   justify-content: space-between;
   width: 100%;
   min-height: 100vh;
-  background-color: #439775;
+  background-image: linear-gradient(#439775, white);
 }
 
 .top-half {
@@ -937,7 +937,8 @@ small {
   font-size: 30px;
   letter-spacing: 10px;
   opacity: 100%;
-  color: white;
+  color: #439775;
+  font-weight: bold;
   text-align: center;
   align-items: center;
   padding-left: 30px;
@@ -972,7 +973,7 @@ small {
 }
 
 .user-textA {
-  color: white;
+  
   font-family: 'Montserrat', sans-serif;
 
   letter-spacing: 1px;
@@ -981,12 +982,15 @@ small {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
+  color: #439775;
+  font-weight: bold;
 
 
 }
 
 .user-textB {
-  color: white;
+  color: #439775;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 
   letter-spacing: 1px;
