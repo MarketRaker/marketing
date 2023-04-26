@@ -63,7 +63,7 @@ html {
   color: #2A4747;
 }
 
-.landing-mobile-container{
+.landing-mobile-container .rounded-buttonB{
 
   display:none;
 
@@ -123,6 +123,8 @@ html {
   max-width: 150px;
 
 }
+
+
 
 .banner-text,
 .banner-label {
@@ -632,6 +634,10 @@ small {
 
 }
 
+.form-validation{
+  color: black;
+}
+
 .modal-close-btn {
   right: 0;
   top: 0;
@@ -688,8 +694,27 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 
 
+
+}
+
+.modal-input-content{
+  padding: 10px 0;
+
+}
+
+.modal-checkbox-label{
+  color:#2A4747;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  
+
+}
+
+.modal-checkbox{
 
 }
 
@@ -765,6 +790,7 @@ small {
   background-color: white;
   border-width: 1px;
   cursor: pointer;
+  margin: 10px 0 20px 0;
 
 
 }
@@ -963,6 +989,14 @@ small {
   padding-right: 25px;
   padding-left: 25px
 }
+
+/* .user-iconB{
+  display: flex;
+  width: 90px;
+  justify-content: space-around;
+  padding-right: 25px;
+  padding-left: 25px
+} */
 
 
 .user-details {
