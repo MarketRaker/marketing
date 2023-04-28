@@ -727,9 +727,10 @@
 
     .user-textA {
         font-size: 12px;
-        padding-bottom: 3px;
         color: #439775;
         font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
     }
 
@@ -738,6 +739,7 @@
         font-size: 10px;
         color: #439775;
         font-weight: bold;
+        padding-bottom: 5px;
 
 
     }
