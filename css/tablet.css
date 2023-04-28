@@ -1,282 +1,99 @@
-@media (max-width: 1026px) and (min-width: 640px){
-
-  /* HEADER */
-
-  .header{
-    height:80px
-  }
+@media (max-width: 1026px) and (min-width: 640px) {
 
   .graph-logo {
-     
-    width: 70%;
-    position: unset;
-     
-
-  }
-  
-
-  .logo-header {
-    width: 110px;
+    height: 230px;
   }
 
-  .rounded-button {
-    padding: 0px 30px;
-    font-size: 17px;
-    height: 40px;
-  }
-
-
-  .banner-item {
-    min-width: 210px;
-  }
-
-  .banner-text {
-    font-size: 1.2em;
-  }
-
-  .page {
-    height: max(100vh, 900px);
-  }
-
-  .what-block {
-    padding: 5rem 15%;
-  }
-
-  .body-heading-what {
-    margin-bottom: 10%;
-  }
-
-  .body-heading-how {
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
-
-  .body-heading-when {
-    margin-bottom: 10px;
-    margin-top: 50px;
-    padding: 0 50px;
-  }
-
-  .align-left {
-    text-align: left;
-  }
-
-  .carousel-content {
-    width: 100%;
-  }
-
-  .carousel_heading.main {
-    top: 0px;
-  }
-
-  .carousel_button--left {
-    left: -35px;
-  }
-  
-  .carousel_button--right {
-    right: -35px;
-  }
-  
-
-  .carousel__nav {
-    /* background:pink; */
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-
-  }
 
   .bg-graph {
-    background-position: -400px 85px;
-    background-size: 480% 80%;
+
+    background-position: -100px 160px;
+    background-size: 350vh 75%;
+
   }
+
 
   .bg-graph-mask {
-    height: calc(100vh - 70px - 220px);
-    background-position: -400px 85px;
-    background-size: 480% 80%;
+
+    background-position: -100px 160px;
+    background-size: 350vh 75%;
+
   }
 
-  @media (min-width: 800px) {
-    .bg-graph {
-      background-position: -250px 85px;
-    }
+  .banner-item {
 
-    .bg-graph-mask {
-      background-position: -250px 85px;
-    }
+    min-width: 240px;
+
+  }
+
+  .banner-icon {
+
+    max-width: 130px;
+
   }
 
 
-  .bg {
-    background-size: auto 100%;
-  }
 
 
-  .white-line-what {
-    margin-top: 10%;
-  }
-
-  .how-bullet-list {
-    flex-direction: column;
-  }
-
-  .how-list-item {
-    margin: 1rem 0;
-    width: 500px;
-  }
-
-  .countdown {
-    transform: scale(0.85);
-  }
-
-  @media (min-width: 900px) {
-    .countdown {
-      transform: scale(1);
-    }
-  }
-
-  .notify-me-text {
-    font-size: 20px;
-  }
-
-  .modal-content {
-    margin: 350px auto;
-    width: 550px;
-  }
-
-  .modal-content-top {
-    height: 70px;
-  }
-
-  .thanks-modal-content-top {
-    height: 180px;
-  }
-
-  .modal-input {
-    font-size: 15px;
-  }
-
-  .modal-subscribe-btn {
-    font-size: 15px;
-  }
-
-  .modal-text {
-    font-size: 15px;
-    margin: 25px 50px
-  }
-
-  .thanks-modal-text {
-    font-size: 15px;
-    margin: 30px;
-  }
-
-  .modal-thanks-content {
-    margin: 330px auto;
-    width: 550px;
-  }
-
-  .top-half {
-    margin: 0 50px;
-    align-items: flex-start;
-  }
-
-  .top-half-headings {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  @media (min-width: 800px) {
-
-    .top-half {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-top: 30px;
-      gap: 50px;
-    }
-
-    .top-half-headings {
-      display: flex;
-
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 50px;
-
-    }
-  }
 
   .footer-logo-top {
     display: flex;
-    justify-content: flex-start;
-    padding-top: 50px;
+    justify-content: center;
   }
 
-  .logo-footer {
-    width: 200px;
-  }
 
-  .cardano-logo {
-    /* width:145px; */
-    height: 20px;
-  }
-
-  .matogen-logo {
-    /* width:145px; */
-    height: 20px;
-  }
-
-  @media (min-width: 800px) {
-    .logo-footer {
-      width: 300px;
-    }
-
-    .cardano-logo {
-      padding-top: 10px;
-    }
-
-    .matogen-logo {
-      padding-top: 10px;
-    }
-
-    .contact-icon {
-      padding-top: 10px;
-    }
-  }
-
-  .partners {
+  .top-half {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    padding: 75px 50px;
+    gap: 30px;
   }
 
-  .social-icon {
-    width: 35px;
-  }
-
-  @media (min-width: 800px) {
-
-    .social-icon {
-      width: 40px;
-    }
-
-    .social-icon-strip {
-      padding-top: 10px;
-    }
-  }
+  .top-half-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 50px;
   
+  }
+
+
+
   .second-half {
+    display: flex;
     flex-direction: column;
-    padding: 50px 10px;
+    justify-content: space-between;
+    gap: 50px;
+  
+  
+  
+  
+    padding: 50px;
     padding-bottom: 60px;
+  
   }
 
-  .user-icon {
-    width: 100px;
+  .team-info {
+    gap: 20px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+
   }
 
-  .user-iconB {
-    width: 80px;
-  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
 }

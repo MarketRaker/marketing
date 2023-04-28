@@ -650,6 +650,45 @@ small {
 
 
 }
+.custom-checkbox {
+  display: flex;
+  justify-content: space-around;
+  
+
+ 
+  cursor: pointer;
+  
+  align-items: center;
+  margin: 15px 2rem;
+  
+}
+
+.custom-checkbox .checkmark{
+  min-width: 15px;
+  height: 15px;
+  border: 1px solid rgb(102, 102, 102);
+  display: inline-block;
+  border-radius: 3px;
+  background: #0b520e url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat;
+  /* transition: background-size 0.2s ease; */
+}
+
+.custom-checkbox .label {
+  font-size: 0.9em;
+  color:black;
+  margin: 0 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-size: 70%;
+  /* transition: background-size 0.25s cubic-bezier(0.7, 0, 0.18, 1.24); */
+}
+
+.custom-checkbox input {
+  display: none;
+}
 
 .form-validation {
   color: black;
@@ -722,16 +761,8 @@ small {
 
 }
 
-.modal-checkbox-label {
-  color: #2A4747;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: bold;
 
 
-}
-
-.modal-checkbox {}
 
 .thanks-modal-content-bottom {
   display: flex;
@@ -871,14 +902,14 @@ small {
 .top-half {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-top: 75px;
+  justify-content: space-between;
+  padding: 75px 10px;
 }
 
 .top-half-headings {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 60px;
 
 }
@@ -886,6 +917,11 @@ small {
 .logo-footer {
   width: 400px;
 }
+
+.logo-footer-top {
+  display:none;
+}
+
 
 .footer-heading-text {
 
@@ -992,6 +1028,8 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
 
 
 
