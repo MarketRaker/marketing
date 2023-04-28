@@ -120,7 +120,7 @@ html {
   padding-top: 20px;
   padding-bottom: 15px;
 
-  max-width: 150px;
+  max-width: 120px;
 
 }
 
@@ -205,12 +205,12 @@ html {
 }
 
 .why-block {
-  /* background-color: red; */
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  /* background-color: blue; */
+  
   width: 100%;
 
   border-style: solid;
@@ -218,7 +218,7 @@ html {
   border-bottom-width: 10px;
 
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .body-heading {
@@ -415,7 +415,7 @@ html {
   width: 100%;
   margin-top: 100px;
   height: calc(100vh - 70px - 220px - 100px);
-  background-position: -600px 85px;
+  background-position: -450px 85px;
   background-image: url(../Media/candle\ graph\ loop.svg);
   background-size: 300vh 70%;
   background-color: #efefef;
@@ -495,7 +495,7 @@ html {
   flex: 1;
   align-items: center;
   /* background-color: blue; */
-  padding: 3rem 5%;
+  padding: 2rem 5%;
 
   border-style: solid;
   border: 0px solid white;
@@ -519,7 +519,7 @@ html {
 .icon-line-container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 
 }
 
@@ -530,8 +530,8 @@ html {
 .how-list-item {
   display: flex;
   margin: 0 50px;
-  width: 25%;
-  /* font-weight: bold; */
+  width: 50%;
+
 }
 
 .body-paragraph-how {
@@ -1017,10 +1017,14 @@ small {
 .user-details {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  text-decoration:none ;
   
 
 }
+
+
 
 .user-textA {
 
@@ -1034,6 +1038,7 @@ small {
   padding-bottom: 10px;
   color: #439775;
   font-weight: bold;
+  text-decoration: none;
 
 
 }
@@ -1047,5 +1052,6 @@ small {
   font-size: 12px;
 
   text-align: center;
+  text-decoration: none;
 
 }

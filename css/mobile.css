@@ -322,6 +322,11 @@
         flex: 0.8;
 
     }
+    .icon-line-container {
+        
+        width: 100%;
+      
+      }
 
 
     .icon-line {
@@ -748,7 +753,7 @@
 
 
     .user-icon {
-        width: 45px;
+        width: 80px;
         gap: 20px;
         padding-top: 10px;
 
