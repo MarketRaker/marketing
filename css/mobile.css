@@ -1,9 +1,13 @@
 /* Mobile views*/
 @media (max-width: 640px) {
 
+    HTML {
+        font-size: calc((2vh+2vw))
+    }
+
     :root {
         background-attachment: fixed;
-        -webkit-text-size-adjust: none
+
     }
 
     .h2 {
@@ -20,7 +24,7 @@
     }
 
     .rounded-button {
-        font-size: x-small;
+        font-size:small;
         margin: 5px;
         border-width: 1.5px;
     }
@@ -78,7 +82,7 @@
 
 
     .rounded-buttonB {
-        font-size: x-small;
+        font-size: small;
         padding: 7px 1.2rem;
         border-radius: 30px;
         background-color: none;
@@ -105,7 +109,7 @@
         align-items: center;
         padding: 0;
         gap: 0px;
-        height: 55%;
+        height: 42%;
 
     }
 
@@ -118,8 +122,8 @@
     }
 
     .banner-icon {
-        max-width: 25%;
-        margin-left: 7%;
+        max-width: 20%;
+        margin-left: 0;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -136,7 +140,7 @@
 
         text-align: left;
         font-weight: 1em;
-        font-size: 0.85em;
+        font-size: 1.1em;
 
     }
 
@@ -182,10 +186,31 @@
 
     .body-heading-what {
 
-        font-size: 24px;
-        padding: 20px 0;
-        letter-spacing: 8px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
         margin-left: 5px;
+    }
+
+    .bold-paragraph-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+
+
+    }
+
+    .body-paragraph-how {
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: lighter;
+
+
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+
     }
 
     .white-line-what {
@@ -208,11 +233,7 @@
 
     }
 
-    .bold-paragraph-text {
-
-        font-size: 15px;
-
-    }
+  
 
 
 
@@ -225,11 +246,13 @@
 
     .carousel_heading.main {
 
-        top: 100px;
+        top: 80px;
         font-size: 1.7rem;
         font-weight: lighter;
         letter-spacing: 6px;
-       
+        margin-bottom: 20x;
+
+
 
 
 
@@ -237,11 +260,11 @@
 
     .carousel-heading {
 
-        top: 150px;
+        top: 130px;
         font-size: 1.5rem;
         font-weight: lighter;
         letter-spacing: 6px;
-       
+
         margin-bottom: 20px;
         margin-left: 10px
     }
@@ -277,8 +300,8 @@
     }
 
     .carousel-content {
-        width: 95%;
-        
+        width: 100%;
+
 
     }
 
@@ -296,7 +319,7 @@
     .body-heading-how.column-centered {
 
         flex: 0.8;
-       
+
     }
 
 
@@ -315,14 +338,7 @@
 
     }
 
-    .body-paragraph-how {
 
-        font-family: 'Montserrat', sans-serif;
-        line-height: 1.8rem;
-        letter-spacing: 0.5px;
-        font-size:1.1rem;
-
-    }
 
 
     .how-list-item {
@@ -359,7 +375,7 @@
         font-family: rift;
         font-size: 1.7rem;
         font-weight: lighter;
-        letter-spacing: 6px;        
+        letter-spacing: 6px;
         margin-left: 10px;
         opacity: 100%;
         text-align: center;
