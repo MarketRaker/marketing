@@ -3,6 +3,7 @@
 
     :root {
         background-attachment: fixed;
+        -webkit-text-size-adjust: none
     }
 
     .h2 {
@@ -42,11 +43,11 @@
     }
 
     .graph-logo {
-        
+
         width: 70%;
 
         position: unset;
-       
+
 
     }
 
@@ -56,7 +57,7 @@
         height: calc(100vh - 70px);
         background-color: #efefef;
         position: unset;
-      }
+    }
 
 
 
@@ -64,16 +65,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex:1;
-        margin-top:20px;
+        flex: 1;
+        margin-top: 20px;
     }
 
-    .landing-mobile-container .rounded-buttonB{
+    .landing-mobile-container .rounded-buttonB {
 
-        display:unset;
-      
-              
-      }
+        display: unset;
+
+
+    }
 
 
     .rounded-buttonB {
@@ -82,8 +83,8 @@
         border-radius: 30px;
         background-color: none;
         border-color: #2A4747;
-        border-style:solid;
-        border-width:1.5px;
+        border-style: solid;
+        border-width: 1.5px;
         margin: 4px;
         color: #2A4747;
         letter-spacing: 3px;
@@ -104,7 +105,7 @@
         align-items: center;
         padding: 0;
         gap: 0px;
-        height:55%;
+        height: 55%;
 
     }
 
@@ -280,17 +281,41 @@
 
     .body-heading-how {
 
-        font-size: 20px;
+        font-size: 1.6rem;
+        font-weight: lighter;
         letter-spacing: 8px;
         margin-left: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
+
+    .body-heading-how.column-centered {
+
+        flex: 0.8;
+       
+    }
+
+
+    .icon-line {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+
 
 
     .how-bullet-list {
 
         flex-direction: column;
-        padding: 20px 0;
+        padding: 0px 0;
+
+    }
+
+    .body-paragraph-how {
+
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.8rem;
+        letter-spacing: 0.5px;
+        font-size:1.1rem;
 
     }
 
@@ -298,14 +323,14 @@
     .how-list-item {
 
         margin: 10px auto;
-        width: 90%;
+        width: 100%;
         /* line-height: 1.5rem; */
 
     }
 
     .how-block {
         padding-bottom: 0px;
-        padding-top: 30px;
+        padding-top: 0px;
     }
 
     .when-block {
@@ -327,7 +352,8 @@
     .body-heading-when {
         /* margin:300px;   */
         font-family: rift;
-        font-size: 20px;
+        font-size: 28px;
+        font-weight: lighter;
         letter-spacing: 8px;
         margin-left: 10px;
         opacity: 100%;
@@ -369,7 +395,7 @@
         font-family: 'Montserrat', sans-serif;
         line-height: 2.5rem;
         letter-spacing: 1px;
-        font-size: 10px;
+
         font-weight: 600;
 
         /* background-color: rgb(255, 0, 174); */
@@ -627,15 +653,15 @@
 
     .logo-footer {
         width: 200px;
-        padding-top: 10px ;
-        
-        
+        padding-top: 10px;
+
+
 
     }
 
-    .footer-logo-top{
+    .footer-logo-top {
         display: flex;
-        justify-content:center;
+        justify-content: center;
     }
 
 
@@ -724,7 +750,7 @@
         gap: 10px;
         margin-left: 30px;
         flex-wrap: wrap;
-        
+
 
 
 
@@ -733,7 +759,7 @@
 
 
     .user-textA {
-        font-size: 12px;
+        font-size: 14px;
         color: #439775;
         font-weight: bold;
         padding-top: 5px;
@@ -743,7 +769,7 @@
 
 
     .user-textB {
-        font-size: 10px;
+        font-size: 12px;
         color: #439775;
         font-weight: bold;
         padding-bottom: 5px;

@@ -63,11 +63,11 @@ html {
   color: #2A4747;
 }
 
-.landing-mobile-container .rounded-buttonB{
+.landing-mobile-container .rounded-buttonB {
 
-  display:none;
+  display: none;
 
-        
+
 }
 
 
@@ -521,12 +521,27 @@ html {
 
 }
 
+.icon-line {
+  width: 100%;
+}
+
 .how-list-item {
   display: flex;
   margin: 0 50px;
   width: 25%;
   /* font-weight: bold; */
 }
+
+.body-paragraph-how {
+
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.5rem;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+
+}
+
+
 
 .when-block {
   display: flex;
@@ -634,7 +649,7 @@ small {
 
 }
 
-.form-validation{
+.form-validation {
   color: black;
 }
 
@@ -694,29 +709,27 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
 
 
 
 }
 
-.modal-input-content{
+.modal-input-content {
   padding: 10px 0;
 
 }
 
-.modal-checkbox-label{
-  color:#2A4747;
+.modal-checkbox-label {
+  color: #2A4747;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: bold;
-  
+
 
 }
 
-.modal-checkbox{
-
-}
+.modal-checkbox {}
 
 .thanks-modal-content-bottom {
   display: flex;
@@ -1007,7 +1020,7 @@ small {
 }
 
 .user-textA {
-  
+
   font-family: 'Montserrat', sans-serif;
 
   letter-spacing: 1px;
