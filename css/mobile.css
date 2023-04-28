@@ -226,8 +226,10 @@
     .carousel_heading.main {
 
         top: 50px;
-        font-size: 20px;
-        letter-spacing: 8px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
+       
 
 
 
@@ -236,8 +238,10 @@
     .carousel-heading {
 
         top: 70px;
-        font-size: 20px;
-        letter-spacing: 8px;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
+       
         margin-bottom: 20px;
         margin-left: 10px
     }
@@ -281,9 +285,9 @@
 
     .body-heading-how {
 
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: lighter;
-        letter-spacing: 8px;
+        letter-spacing: 6px;
         margin-left: 10px;
         margin-bottom: 0px;
     }
@@ -352,9 +356,9 @@
     .body-heading-when {
         /* margin:300px;   */
         font-family: rift;
-        font-size: 28px;
+        font-size: 1.7rem;
         font-weight: lighter;
-        letter-spacing: 8px;
+        letter-spacing: 6px;        
         margin-left: 10px;
         opacity: 100%;
         text-align: center;
