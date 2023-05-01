@@ -806,5 +806,12 @@
 
     }
 
+    .bottom-links-container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px 15px;
+      
+      }
+
 
 }
