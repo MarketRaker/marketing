@@ -17,8 +17,7 @@ subscribeBtn.addEventListener('click', (e) => {
 
 
     var formData = new FormData(document.querySelector('form'))
-    
-    submitDetails(formData.get('firstname'), formData.get('email'))
+    submitDetails(formData.get('firstname'), formData.get('email'), formData.get('marketing-consent') === 'checked');
 });
 
 thanksCloseBtns.forEach(btn => {
@@ -50,7 +49,7 @@ window.addEventListener('click', (e) => {
 })
 
 
-function submitDetails(name = "Test-Jeff", email="example@example.com"){
+function submitDetails(name = "Test-Jeff", email="example@example.com", consent=false){
     // Create the new request 
     var xhr = new XMLHttpRequest();
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/27224042/0707b889-c307-459f-940e-bad8c1d665a6'
@@ -80,9 +79,9 @@ function submitDetails(name = "Test-Jeff", email="example@example.com"){
           "text":"I agree to allow Example Company to store and process my personal data.",
           "communications":[
             {
-              "value":true,
+              "value":consent,
               "subscriptionTypeId":999,
-              "text":"I agree to receive marketing communications from Example Company."
+              "text":"I agree to receive other communications from MarketRaker."
             }
           ]
         }
