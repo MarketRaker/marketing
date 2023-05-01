@@ -1,5 +1,7 @@
 /* Mobile views*/
 @media (max-width: 640px) {
+     
+    
 
     HTML {
         font-size: calc((2vh+2vw))
@@ -100,7 +102,7 @@
     .solid-buttonB {
         background-color: #2A4747;
         color: white;
-       margin-top:30px;
+       margin-top:5px;
 
     }
 
@@ -110,7 +112,7 @@
         align-items: center;
         padding: 0;
         gap: 0px;
-        height: 38%;
+        height: 42%;
 
     }
 
@@ -131,7 +133,7 @@
 
     .banner-text {
         padding-bottom: 0;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
 
     }
