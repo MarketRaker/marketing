@@ -1,8 +1,15 @@
 /* Mobile views*/
 @media (max-width: 640px) {
+     
+    
+
+    HTML {
+        font-size: calc((2vh+2vw))
+    }
 
     :root {
         background-attachment: fixed;
+
     }
 
     .h2 {
@@ -14,12 +21,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: 8px;
+        padding-right:8px;
 
     }
 
     .rounded-button {
-        font-size: x-small;
+        font-size:small;
         margin: 5px;
         border-width: 1.5px;
     }
@@ -42,11 +49,11 @@
     }
 
     .graph-logo {
-        
+
         width: 70%;
 
         position: unset;
-       
+
 
     }
 
@@ -56,7 +63,7 @@
         height: calc(100vh - 70px);
         background-color: #efefef;
         position: unset;
-      }
+    }
 
 
 
@@ -64,27 +71,27 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex:1;
-        margin-top:20px;
+        flex: 1;
+        margin-top: 20px;
     }
 
-    .landing-mobile-container .rounded-buttonB{
+    .landing-mobile-container .rounded-buttonB {
 
-        display:unset;
-      
-              
-      }
+        display: unset;
+
+
+    }
 
 
     .rounded-buttonB {
-        font-size: x-small;
+        font-size: small;
         padding: 7px 1.2rem;
         border-radius: 30px;
         background-color: none;
         border-color: #2A4747;
-        border-style:solid;
-        border-width:1.5px;
-        margin: 4px;
+        border-style: solid;
+        border-width: 1.5px;
+        margin: 5px;
         color: #2A4747;
         letter-spacing: 3px;
         font-family: rift;
@@ -95,6 +102,7 @@
     .solid-buttonB {
         background-color: #2A4747;
         color: white;
+       margin-top:5px;
 
     }
 
@@ -104,7 +112,7 @@
         align-items: center;
         padding: 0;
         gap: 0px;
-        height:55%;
+        height: 42%;
 
     }
 
@@ -117,15 +125,15 @@
     }
 
     .banner-icon {
-        max-width: 25%;
-        margin-left: 7%;
+        max-width: 20%;
+        margin-left: 0;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     .banner-text {
         padding-bottom: 0;
-        font-size: medium;
+        font-size: 1rem;
         text-align: center;
 
     }
@@ -135,7 +143,7 @@
 
         text-align: left;
         font-weight: 1em;
-        font-size: 0.85em;
+        font-size: 1.1em;
 
     }
 
@@ -181,10 +189,31 @@
 
     .body-heading-what {
 
-        font-size: 24px;
-        padding: 20px 0;
-        letter-spacing: 8px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
         margin-left: 5px;
+    }
+
+    .bold-paragraph-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+
+
+    }
+
+    .body-paragraph-how {
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: lighter;
+
+
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+
     }
 
     .white-line-what {
@@ -207,11 +236,7 @@
 
     }
 
-    .bold-paragraph-text {
-
-        font-size: 15px;
-
-    }
+  
 
 
 
@@ -224,9 +249,13 @@
 
     .carousel_heading.main {
 
-        top: 50px;
-        font-size: 20px;
-        letter-spacing: 8px;
+        top: 80px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
+        margin-bottom: 20x;
+
+
 
 
 
@@ -234,9 +263,11 @@
 
     .carousel-heading {
 
-        top: 70px;
-        font-size: 20px;
-        letter-spacing: 8px;
+        top: 130px;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
+
         margin-bottom: 20px;
         margin-left: 10px
     }
@@ -272,7 +303,8 @@
     }
 
     .carousel-content {
-        width: 95%;
+        width: 100%;
+
 
     }
 
@@ -280,32 +312,54 @@
 
     .body-heading-how {
 
-        font-size: 20px;
-        letter-spacing: 8px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
         margin-left: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
+
+    .body-heading-how.column-centered {
+
+        flex: 0.8;
+
+    }
+    .icon-line-container {
+        
+        width: 100%;
+      
+      }
+
+
+    .icon-line {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+
 
 
     .how-bullet-list {
 
         flex-direction: column;
-        padding: 20px 0;
+        padding: 0px 0;
 
     }
+
+
 
 
     .how-list-item {
 
         margin: 10px auto;
-        width: 90%;
+        width: 100%;
         /* line-height: 1.5rem; */
 
     }
 
     .how-block {
         padding-bottom: 0px;
-        padding-top: 30px;
+        padding-top: 0px;
     }
 
     .when-block {
@@ -327,8 +381,9 @@
     .body-heading-when {
         /* margin:300px;   */
         font-family: rift;
-        font-size: 20px;
-        letter-spacing: 8px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        letter-spacing: 6px;
         margin-left: 10px;
         opacity: 100%;
         text-align: center;
@@ -369,7 +424,7 @@
         font-family: 'Montserrat', sans-serif;
         line-height: 2.5rem;
         letter-spacing: 1px;
-        font-size: 10px;
+
         font-weight: 600;
 
         /* background-color: rgb(255, 0, 174); */
@@ -425,7 +480,7 @@
 
     .modal-content {
         background-color: white;
-        margin: 50% auto;
+        margin: 30% auto;
         display: flex;
         width: 80%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -587,7 +642,7 @@
 
     .modal-thanks-content {
         background-color: white;
-        margin: 40% auto;
+        margin: 45% auto;
         display: flex;
         width: 80%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -604,7 +659,7 @@
 
     .top-half {
         flex-direction: column;
-        padding-top: 25px;
+        padding: 10px 10px;
 
 
     }
@@ -627,9 +682,15 @@
 
     .logo-footer {
         width: 200px;
-        margin-left: 25px;
-        margin-top: 5px;
+        padding-top: 10px;
 
+
+
+    }
+
+    .footer-logo-top {
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -694,8 +755,9 @@
 
 
     .user-icon {
-        width: 45px;
+        width: 50px;
         gap: 20px;
+        padding-top: 10px;
 
     }
 
@@ -715,7 +777,9 @@
 
     .team-info {
         gap: 10px;
-        margin-left: 10px;
+        margin-left: 30px;
+        flex-wrap: wrap;
+
 
 
 
@@ -724,18 +788,20 @@
 
 
     .user-textA {
-        font-size: 12px;
-        padding-bottom: 3px;
+        font-size: 0.7rem;
         color: #439775;
         font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
     }
 
 
     .user-textB {
-        font-size: 10px;
+        font-size: 0.6rem;
         color: #439775;
         font-weight: bold;
+        padding-bottom: 5px;
 
 
     }
