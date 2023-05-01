@@ -16,9 +16,9 @@ subscribeBtn.addEventListener('click', (e) => {
     thanksModalBackdrop.style.display = 'flex';
 
 
-    // var formData = new FormData(document.querySelector('form'))
+    var formData = new FormData(document.querySelector('form'))
     
-    // submitDetails(formData.get('firstname'), formData.get('email'))
+    submitDetails(formData.get('firstname'), formData.get('email'))
 });
 
 thanksCloseBtns.forEach(btn => {

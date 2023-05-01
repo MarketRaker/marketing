@@ -764,6 +764,27 @@ small {
 
 }
 
+.form-validation { 
+  color: orangered;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.modal-input.invalid{
+  border-bottom: solid 1px orangered;
+  color: orangered;
+  outline-color: orangered;
+  
+}
+
+.modal-subscribe-btn:disabled {
+  /* disabled styles here */
+}
+
+.invalid.modal-input::placeholder{
+  color: orangered;
+}
 
 .modal-input-btn {
   font-family: rift;
