@@ -657,7 +657,7 @@
 
     .top-half {
         flex-direction: column;
-        padding-top: 25px;
+        padding: 10px 10px;
 
 
     }
@@ -753,7 +753,7 @@
 
 
     .user-icon {
-        width: 80px;
+        width: 50px;
         gap: 20px;
         padding-top: 10px;
 
@@ -786,7 +786,7 @@
 
 
     .user-textA {
-        font-size: 14px;
+        font-size: 0.7rem;
         color: #439775;
         font-weight: bold;
         padding-top: 5px;
@@ -796,7 +796,7 @@
 
 
     .user-textB {
-        font-size: 12px;
+        font-size: 0.6rem;
         color: #439775;
         font-weight: bold;
         padding-bottom: 5px;
