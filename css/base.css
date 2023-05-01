@@ -134,7 +134,7 @@ html {
   padding-bottom: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 2em;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .page-graph {
@@ -271,13 +271,13 @@ html {
   font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: 1.5rem;
 
 }
 
 .bold-paragraph-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 21px;
+  font-size: 1.4rem;
   letter-spacing: 0.5px;
 
 
@@ -540,7 +540,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
   letter-spacing: 0.5px;
-  font-size: 20px;
+  font-size: 1.4rem;
 
 }
 
@@ -589,7 +589,7 @@ small {
   font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
   letter-spacing: 5px;
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .countdown {
@@ -624,7 +624,7 @@ small {
   font-family: 'Montserrat', sans-serif;
   line-height: 2.5rem;
   letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 1.2rem;
   font-weight: 600;
 
   /* background-color: rgb(255, 0, 174); */
@@ -925,7 +925,7 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 75px 10px;
+  padding: 75px 40px;
 }
 
 .top-half-headings {
@@ -933,6 +933,7 @@ small {
   flex-direction: row;
   justify-content: space-between;
   gap: 60px;
+  
 
 }
 
