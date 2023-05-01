@@ -662,14 +662,14 @@ small {
 
 .custom-checkbox {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
 
 
   cursor: pointer;
 
   align-items: center;
-  margin: 15px 2rem;
+  margin: 15px 4rem;
 
 }
 
@@ -713,7 +713,7 @@ small {
 
 .modal-content {
   background-color: white;
-  margin: 10% auto;
+  margin: 8% auto;
   display: flex;
   width: 30%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -767,7 +767,19 @@ small {
 }
 
 .modal-input-content {
-  padding: 10px 0;
+  padding: 0px 0 20px 0;
+  
+
+}
+
+.consent-text{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+ 
+  margin: 25px
 
 }
 
@@ -881,12 +893,13 @@ small {
 
 
 .modal-text {
-  color: rgb(59, 59, 59);
+  color: black;
   font-family: 'Montserrat', sans-serif;
-  line-height: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 1px;
-  font-size: 12px;
-  margin: 20px
+  font-size: 1rem;
+ 
+  margin: 25px
 }
 
 .thanks-modal-text {
@@ -894,7 +907,7 @@ small {
   font-family: 'Montserrat', sans-serif;
   line-height: 1rem;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 1rem;
   margin: 25px;
 
 }
