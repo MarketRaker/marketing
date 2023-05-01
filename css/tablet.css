@@ -241,7 +241,7 @@
     width: 30px;
     padding-top: 10px;
     padding-right: 15px;
-  
+
   }
 
   .modal-text {
@@ -260,7 +260,7 @@
     letter-spacing: 1px;
     font-size: 1rem;
     margin: 25px;
-  
+
   }
 
   .modal-input {
@@ -386,7 +386,7 @@
   .user-textA {
 
     font-family: 'Montserrat', sans-serif;
-  
+
     letter-spacing: 1px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -396,21 +396,21 @@
     color: #439775;
     font-weight: bold;
     text-decoration: none;
-  
-  
+
+
   }
-  
+
   .user-textB {
     color: #439775;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-  
+
     letter-spacing: 1px;
     font-size: 1rem;
-  
+
     text-align: center;
     text-decoration: none;
-  
+
   }
 
 
