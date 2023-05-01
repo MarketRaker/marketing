@@ -12,9 +12,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
- 
-  
+  overflow: hidden;
+}
+
+.main-container {
+  max-height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+    
+  scroll-behavior: smooth;  
 }
 
 body{
@@ -31,7 +37,7 @@ body{
   width: 100%;
   height: 70px;
   justify-content: space-between;
-
+  scroll-snap-align: start;
 }
 
 .nav-container {
@@ -150,6 +156,7 @@ body{
   height: calc(100vh - 70px);
   background-color: #efefef;
   position: relative;
+  /* scroll-snap-align: center; */
 }
 
 .graph-logo {
@@ -166,6 +173,8 @@ body{
 
   background-color: #19282885;
   position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 
@@ -713,7 +722,7 @@ small {
 
 .modal-content {
   background-color: white;
-  margin: 8% auto;
+  margin: 6% auto;
   display: flex;
   width: 30%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -760,10 +769,6 @@ small {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-
-
-
 }
 
 .modal-input-content {
@@ -917,7 +922,7 @@ small {
 
 .modal-thanks-content {
   background-color: white;
-  margin: 10% auto;
+  margin: 11% auto;
   display: flex;
   width: 30%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
@@ -941,6 +946,7 @@ small {
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(#439775, white);
+  scroll-snap-align: start;
 }
 
 .top-half {
