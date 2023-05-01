@@ -156,7 +156,7 @@ html {
   /* padding: 52vh 0; */
   height: 100vh;
 
-  background-color: #192828c2;
+  background-color: #19282885;
   position: relative;
 }
 
@@ -165,7 +165,7 @@ html {
   position: absolute;
   inset: 0;
   display: flex;
-  background-color: #192828c2;
+  background-color: #192828b9;
   width: 100%;
   color: white;
   flex-direction: column;
@@ -463,12 +463,12 @@ html {
 }
 
 .bg--coin {
-  background-image: url(../Media/coins.webp);
+  background-image: url(../Media/coins-plantsB\ .png);
 
 }
 
 .bg--tree {
-  background-image: url(../Media/Tree.webp);
+  background-image: url(../Media/coins-plants.png);
 
 }
 
@@ -1027,7 +1027,7 @@ small {
 
 
   padding: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 
 }
 
@@ -1122,6 +1122,11 @@ small {
   display: flex;
   justify-content: flex-end;
   padding: 30px 30px;
+  border-top: #fff;
+  border-width: 0.3rem 0 0 0;
+  border-style: solid;
+  
+  
 
 }
 
