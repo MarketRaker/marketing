@@ -1,14 +1,14 @@
 /* Mobile views*/
 @media (max-width: 640px) {
-     
-    
+
+
 
     HTML {
         font-size: calc((2vh+2vw))
     }
 
     .main-container {
-      scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
     }
 
     :root {
@@ -25,12 +25,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right:8px;
+        padding-right: 8px;
 
     }
 
     .rounded-button {
-        font-size:small;
+        font-size: small;
         margin: 5px;
         border-width: 1.5px;
     }
@@ -106,7 +106,7 @@
     .solid-buttonB {
         background-color: #2A4747;
         color: white;
-       margin-top:5px;
+        margin-top: 5px;
 
     }
 
@@ -240,7 +240,7 @@
 
     }
 
-  
+
 
 
 
@@ -328,11 +328,12 @@
         flex: 0.8;
 
     }
+
     .icon-line-container {
-        
+
         width: 100%;
-      
-      }
+
+    }
 
 
     .icon-line {
@@ -815,8 +816,30 @@
         display: flex;
         justify-content: flex-start;
         padding: 30px 15px;
-      
+
+    }
+
+    .terms-body {
+       
+        margin: 10px 20px;
+    }
+
+    .document-list{
+        padding: 0 20px;
+    }
+
+    .terms-heading {
+        display: flex;
+        justify-content: center;
+        background-color: #2A4747;
+        width: 100%;
+        height: 60px;
       }
+      
+
+
+
+
 
 
 }
