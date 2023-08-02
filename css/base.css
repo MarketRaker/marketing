@@ -770,11 +770,13 @@ small {
   display: flex;
   justify-content: center;
   background-color: #439775;
-  height: 140px;
+  min-height: 140px;
+  height: fit-content;
   align-items: center;
 }
 
 .mail-image {
+  margin: 5px;
   width: 50%;
 }
 
@@ -986,7 +988,7 @@ small {
 }
 
 .logo-footer {
-  width: 400px;
+  max-width: 400px;
 }
 
 .logo-footer-top {
@@ -1175,6 +1177,10 @@ small {
   
   
 
+}
+
+.footer-logo-top{
+  flex:1
 }
 
 .footer-link-text {
