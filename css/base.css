@@ -20,9 +20,6 @@
   width: 30px;
   height: 20px;
 }
-html {
-  overflow: hidden;
-}
 
 .main-container {
   max-height: 100vh;
