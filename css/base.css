@@ -72,9 +72,10 @@ body{
   background-color: #2A4747;
   border-color: white;
   border-radius: 30px;
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  
   margin: 8px;
  
   color: white;
@@ -85,8 +86,18 @@ body{
 }
 
 .solid-button {
-  background-color: white;
-  color: #2A4747;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border-color: white;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 1px;
+
+  &:hover{
+    background-color: rgb(255, 255, 255);
+    color:#2A4747;
+    
+  }
 }
 
 .landing-mobile-container .rounded-buttonB {
