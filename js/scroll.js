@@ -2,7 +2,12 @@ var sliderElement = document.querySelector('.main-container'),
     sliderSlides = sliderElement.querySelectorAll('.page, .page-graph, footer'),
     page = 0;
 
+    let player;
 
+    
+    function stopVideo() {
+        player.stopVideo();
+    }
 // find the page that is in view
 function findCurrentPage() {
     var i = 0;
@@ -53,7 +58,7 @@ sliderElement.addEventListener('mousewheel', function (e) {
             return;
         }
 
-        
+        console.log(page);
         sliderSlides[page].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest"});
         scrolling = true;
     } else {
@@ -63,6 +68,7 @@ sliderElement.addEventListener('mousewheel', function (e) {
             scrolling = false;
             return;
         }
+        console.log(page);
         sliderSlides[page].scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         scrolling = true;
 

@@ -75,7 +75,7 @@ nextButton.addEventListener('click', e => {
     moveToSlide(track, currentSlide, nextSlide);
     updateDots (currentDot,nextDot) ;
 
-             
+    
     // const amountToMove = nextSlide.style.left;
     // //move to the next slide
     // track.style.transform = 'translateX(-' + amountToMove + ')';

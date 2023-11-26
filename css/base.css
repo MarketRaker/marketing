@@ -590,22 +590,6 @@ body{
 }
 
 
-
-.when-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 10px;
-
-  text-align: center;
-  overflow: hidden;
-}
-
 #days,
 #hours,
 #minutes,
