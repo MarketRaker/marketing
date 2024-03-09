@@ -1,0 +1,55 @@
+:root {
+  --light: #fff;
+  --light-100: #f6f6f6;
+  --light-500: #707070;
+  --light-700: #545454;
+  --dark-100: #1d1f20;
+  --dark-300: #111517;
+  --dark-700: #000;
+
+  --green-50:  #6ACEFF;
+  --green-100: #459ed8;
+  --green-200: #2987c4;
+  --green-500: #005aa7;
+  --green-700: #003461; 
+  
+  --green-50: #FFF5DF;
+  --green-100: #FFEAC1;
+  --green-200: #FFDE9F;
+  --green-500: #F3A73F;
+  --green-700: #B37A2F;
+  
+  --red-50: #FCDEDE;
+  --red-100: #F9BBBD;
+  --red-200: #F5979C;
+  --red-500: #CA3C4E;
+  --red-700: #932B39;
+  
+  --green-50: #D2F2E8;
+  --green-100: #A6E5D1;
+  --green-200: #7AD8BA;
+  --green-500: #29C59B;
+  --green-700: #1E9677;
+
+  --font-base: "Mona-Sans", sans-serif;
+  --font-accent: "Nunito", sans-serif;
+  --font-base-size: 16px;
+
+  --nav-height: 80px;
+  --nav-color: var(--light);
+  --nav-color-hover: var(--light);
+  --nav-bg: var( --green-700);
+  --nav-opacity: 0.45;
+  --nav-item-fs: 1rem;
+
+  --btn-height: 45px;
+
+  @media screen and (min-width: 670px) {
+    --nav-item-fs: 1.2rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    --nav-height: 80px;
+    --nav-item-fs: 1.2rem;
+  }
+}
