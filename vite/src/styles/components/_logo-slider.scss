@@ -9,3 +9,13 @@
     padding: 0 55px;
   }
 }
+
+.video-player { 
+  width: 60vw;
+  position: absolute;
+  display: block;
+  
+  @media screen and (max-width: 800px) {
+    width: 80vw;
+  }
+}

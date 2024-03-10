@@ -44,7 +44,7 @@
 
   &--light {
     background-color: var(--light);
-    color: var(--green-200);
+    color: var(--green-100);
 
     .panel-content {
       background: hsla(0 0% 0% / 0.05);
@@ -57,7 +57,29 @@
   }
 
   &--blue {
+    background-color: var(--blue-100);
+    color: var(--light);
+  }
+
+  &--black {
+    background-color: black;
+    color: var(--light);
+  }
+
+  &--yellow {
+    background-color: var(--yellow-100);
+    color: var(--light);
+  }
+
+  
+  &--green {
     background-color: var(--green-100);
+    color: var(--light);
+  }
+
+  
+  &--red {
+    background-color: var(--red-100);
     color: var(--light);
   }
 

@@ -52,7 +52,25 @@ export class App {
     });
   }
 
-  private initSlick() {
+  private async initSlick() {
+    await fetch('https://api.raker.market/trading_pairs/recommended')
+      .then(response => response.json())
+      .then(data => {
+        // Find the element where you want to inject the content
+        const targetElement = document.getElementById('logoElement');
+        // const targetElement2 = document.getElementById('logoElement2');
+
+        data.records.forEach((item : any) => {
+          const contentContainer = document.createElement('div');
+          contentContainer.innerHTML = `<img src="${item.icon}" alt="BitCoin" />`;
+          // Inject the content into the target element
+          if (targetElement) targetElement.appendChild(contentContainer);
+          //if (targetElement2) targetElement2.appendChild(contentContainer);
+          
+        });
+        
+      })
+      .catch(error => console.error('Error:', error));
     ($(".logo-slider") as any).slick({
       slidesToShow: 5,
       slidesToScroll: 1,

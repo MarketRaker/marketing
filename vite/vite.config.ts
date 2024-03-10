@@ -11,8 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),
-        socialResponsibility: resolve(root, 'social-responsibility', 'index.html'),
-        emailDisclaimers: resolve(root, 'email-disclaimers', 'index.html'),
+        privacyPolicy: resolve(root, 'privacy-policy', 'index.html'),
         termsOfService: resolve(root, 'terms-of-service', 'index.html')
       }
     }

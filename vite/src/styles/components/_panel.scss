@@ -127,46 +127,50 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     height: 200px;
-
+    
     @media screen and (min-width: 840px) {
       grid-column: 2 / 3;
       grid-row: 1 / 3;
       height: auto;
     }
 
-    &--corporate-web-software-development {
-      background: url("/cwd.webp");
+    &--idea {
+      background: url("/idea.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
     
-    &--geospatial-software-engineering {
-      background: url("/geospatial.webp");
+    &--airdrop {
+      background: url("/airdrop.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-    &--data-sciences-predictive-modeling-services {
-      background: url("/ai.webp");
+    &--rebrand {
+      background: url("/logo.png");
+      background-size: cover;
+      background-position: center;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 840px) {
+        background-size: 40%;
+      }
+    }
+    &--beta {
+      background: url("/beta.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-    &--telematics-logistics-software-engineering {
-      background: url("/telematics.webp");
+    &--marketing {
+      background: url("/marketing.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-    &--digital-marketing-services {
-      background: url("/digital.webp");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    &--enterprice-resource-scheduling-reporting {
-      background: url("/alpha.webp");
+    &--final {
+      background: url("/final.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

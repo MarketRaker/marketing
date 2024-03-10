@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /css/
-Disallow: /js/
-Disallow: /Media/
-Sitemap: https://raker.market/sitemap.xml

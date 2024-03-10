@@ -25,7 +25,7 @@
   flex: 0 0 var(--card-size);
   min-width: var(--card-size);
   max-width: var(--card-size);
-
+  margin-bottom: 30px;
   // padding: 1.875rem;
 
   aspect-ratio: 1;
@@ -122,7 +122,7 @@
 
   .since-text{
     position: absolute;
-    bottom: -25px;
+    bottom: -45px;
     color: rgba(0, 0, 0, 0.5);
     
 

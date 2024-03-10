@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>MarketRaker AI - No more noise - Trading using machine learning </title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +23,7 @@
 <body>
   <div class="preloader" id="preloader"
     style="background-color: rgb(0, 0, 0); position: fixed; inset: 0px; z-index: 99; display: grid; place-items: center;">
-    <img src="/logo.png" style="width: 350px;  position: relative" alt="Matogen Group Logo" />
+    <img src="/logo.png" style="width: 350px;  position: relative" alt="MarketRaker" />
   </div>
 
   <style>
@@ -44,19 +47,18 @@
       setTimeout(() => {
         videoPlayer.play();
       }, 2000);
+
+      
     });
+
+
   </script>
 
   <nav class="navigation">
     <div class="mobile-only">
       <div class="logo">
-        <a href="https://raker.market/" target="blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="157.26" height="89.512" viewBox="0 0 157.26 89.512">
-            <path
-              d="M148.278,99.125,48.514,111.269c-8.414,1.077-19.147,8.6-23.832,16.722L2.206,175.539c-4.7,8.134-1.642,13.9,6.763,12.839L108.6,175.946c5.14-.647,11.138-3.739,16.1-7.873h-24.31l-2.618-5.114,12.558-25.828-2.27-4.425H96.469l-6.618,4.453L76.471,164.69l-5.1,3.429h-11.8l-2.627-5.13,12.617-25.832L57,162.962l12.558-25.813-2.27-4.441H32.691l3.052-6.2a10.215,10.215,0,0,1,8.2-5.506h89.128c3.073,0,4.338,2.483,2.85,5.545l-17.69,36.214h11.757a28.264,28.264,0,0,0,2.453-3.526l22.61-47.259C159.752,103.83,156.693,98.033,148.278,99.125ZM50.234,138.608l-12.839,26.17-5.071,3.41H20.6l-2.676-5.226,11.9-24.36Z"
-              transform="translate(0 -98.993)" fill="#56b0e9" />
-          </svg>
-        </a>
+        
+      <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
 
       </div>
       <button class="hamburger js-mobile-menu-toggle" type="button">
@@ -69,14 +71,13 @@
     </div>
 
     <div class="desktop-logo">
-      <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png"
-          alt="MarketRaker AI" /></a>
+      <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
     </div>
     <ul>
       <li><a class="js-nav-item" href="/index.html#home">Home</a></li>
       <li><a class="js-nav-item" href="/#what-is-marketraker">What is MarketRaker-AI?</a></li>
       <li><a class="js-nav-item" href="/#features">Features & Milestones</a></li>
-      <li><a class="js-nav-item" href="/#about">About Us</a></li>
+      <li><a class="js-nav-item" href="/#pricing">Pricing</a></li>
       <li><a class="js-nav-item" href="https://app.raker.market">Login</a></li>
       <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite">Register</a></li>
     </ul>
@@ -85,10 +86,10 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <div class="logo">
-        <video id="video-player" style="margin-top: -190px;margin-bottom: -291px;">
-          <source src="/movie.mp4" type="video/mp4">
-          <source src="/movie.webm" type="video/webm">
-          <source src="/movie.ogg" type="video/ogg">
+        <video id="video-player" class="video-player" >
+          <source src="/movie_black.mp4" type="video/mp4">
+          <source src="/movie_black.webm" type="video/webm">
+          <source src="/movie_black.ogg" type="video/ogg">
           Your browser does not support the video tag.
         </video>
         <div class="slogan">No more noise</div>
@@ -103,22 +104,8 @@
       </div>
     </div>
     <div class="hero-logo-slider">
-      <div class="logo-slider">
-        <div>
-          <img src="/nwu.webp" alt="BitCoin" />
-        </div>
-        <div>
-          <img src="/nwu.webp" alt="Tesla" />
-        </div>
-        <div>
-          <img src="/nwu.webp" alt="Nvidia" />
-        </div>
-        <div>
-          <img src="/nwu.webp" alt="Solana" />
-        </div>
-        <div>
-          <img src="/nwu.webp" alt="Litecoin" />
-        </div>
+      <div class="logo-slider" id="logoElement">
+        
       </div>
   </section>
   <!-- #endregion -->
@@ -129,10 +116,11 @@
       <h2>What is MarketRaker?</h2>
       <p class=" body-paragraph-how">MarketRaker-AI is a cutting-edge trading tool that leverages the
         power of machine learning to provide traders and investors with reliable,
-        up-to-date market analysis and informed investment insights. <br/><br/> Our platform
+        up-to-date market analysis and informed investment insights. <br /><br /> Our platform
         utilizes sophisticated algorithms to continuously review and model a wide range
         of indicators every hour, generating AI-driven trading signals that can help users
-        minimize risk and maximize profits.<br/><br/> By harnessing the capabilities of artificial intelligence and machine
+        minimize risk and maximize profits.<br /><br /> By harnessing the capabilities of artificial intelligence and
+        machine
         learning, MarketRaker offers a unique and dynamic solution to the challenges of modern trading,
         empowering users with a data-driven approach to navigate ever-changing market conditions.
       </p>
@@ -213,7 +201,7 @@
 
 
   <!-- #region WhatSetsUsApart -->
-  <section class="section section--green-200">
+  <section class="section section--yellow">
     <div class="container container--reasons">
       <h2 class="section-title">How does MarketRaker AI solve these problems?</h2>
       <div class="reasons">
@@ -274,27 +262,27 @@
     <h2 class="section-title">Our milestones</h2>
 
     <div class="cards">
-      <a href="#corporate-web-software-development" class="card card-done" data-initials="PD">
+      <a href="#product-development" class="card card-done" data-initials="PD">
         <h3 class="label">Product Development - Alpha AI Model Launch</h3>
         <span class="since-text">March - November 2023</span>
       </a>
-      <a href="#data-sciences-predictive-modeling-services" class="card  card-done" data-initials="AD">
+      <a href="#air-drop" class="card  card-done" data-initials="AD">
         <h3 class="label">500 Registered Users Airdrop</h3>
         <span class="since-text">December 2023</span>
       </a>
-      <a href="#telematics-logistics-software-engineering" class="card  card-done" data-initials="LR">
+      <a href="#update-logo-rebrand" class="card  card-done" data-initials="LR">
         <h3 class="label">Updated Logo and Rebrand</h3>
         <span class="since-text">January - March 2024</span>
       </a>
-      <a href="#digital-marketing-services" class="card  card-done" data-initials="BL">
+      <a href="#beta-ai-model" class="card  card-done" data-initials="BL">
         <h3 class="label">Beta AI Model and Feature Launch</h3>
         <span class="since-text">January - May 2024</span>
       </a>
-      <a href="#enterprice-resource-scheduling-reporting" class="card" data-initials="MC">
+      <a href="#marketing" class="card" data-initials="MC">
         <h3 class="label">Integrations, Marketing, Collaborations</h3>
         <span class="since-text">June 2024 onwards</span>
       </a>
-      <a href="#geospatial-software-engineering" class="card" data-initials="AL">
+      <a href="#final" class="card" data-initials="AL">
         <h3 class="label">Finalised Model Launch</h3>
         <span class="since-text">May - November 2024</span>
       </a>
@@ -304,11 +292,11 @@
       <div class="value">
         <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
         <div class="label">24 Hour and 7day Price AI Predictions</div>
-      </div>    
+      </div>
       <div class="value">
         <div class="icon"><img src="/integrity.svg" alt="24 Hour and 7day Price AI Predictions" /></div>
         <div class="label">AI Leverage Predictions</div>
-      </div>  
+      </div>
       <div class="value">
         <div class="icon"><img src="/creativity.svg" alt="Bot Integrations" /></div>
         <div class="label">On-demand discord AI Bot for Your Servers</div>
@@ -335,30 +323,23 @@
       <div class="handle"></div>
     </div>
     <!-- #region CWD -->
-    <section id="corporate-web-software-development" class="section section--dark">
+    <section id="product-development" class="section section--dark">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Corporate Web &amp; Software Development</h2>
-            <p>
-              Each business is unique. That is why we focus on optimising operations so you can focus on what really
-              matters.
-            </p>
-            <a target="_blank" href="https://cwd.matogen.com" class="read-more">Read more</a>
+            <h2>Product Development - Alpha AI Model Launch</h2>
+            <p>In December 2022, we embarked on a journey fueled by an ambitious
+              dream – to revolutionize the trading world by developing an AI tool that would automate market analysis
+              and alleviate the arduous tasks traders face daily. Thus, MarketRaker-AI was born, and a dedicated
+              fund was established to propel its development forward, commencing in March 2023. After months of
+              tireless effort, we proudly unveiled our first Alpha model on November 26th, marking a significant
+              milestone in our quest to empower traders with cutting-edge AI technology.</p>
+            <a target="_blank"
+              href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v"
+              class="read-more">Read the White Paper v1.1</a>
           </div>
-          <div class="panel-media panel-media--corporate-web-software-development"></div>
+          <div class="panel-media panel-media--idea"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/aws.webp" alt="AWS" Title="AWS" /></li>
-              <li><img src="/angular.webp" alt="Angular" Title="Angular" /></li>
-              <li><img src="/python.webp" alt="Pyphon" Title="Python" /></li>
-              <li><img src="/c.webp" alt="C#" Title="C#" /></li>
-              <li><img src="/node.webp" alt="NodeJs" Title="NodeJs" /></li>
-              <li><img src="/php.webp" alt="PHP" Title="PHP" /></li>
-              <li><img src="/docker.webp" alt="Docker" Title="Docker" /></li>
-              <li><img src="/sql.webp" alt="SQL" Title="SQL" /></li>
-
-            </ul>
           </div>
         </div>
       </div>
@@ -366,55 +347,53 @@
     <!-- #endregion -->
 
     <!-- #region Geospatial -->
-    <section id="geospatial-software-engineering" class="section section--blue">
+    <section id="air-drop" class="section section--red">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Geospatial Software Engineering</h2>
-            <p>
-              Dedicatedly serving the geospatial industry, our specialized division within the Matogen family of
-              companies takes action to deliver exceptional services.
+            <h2>500 Registered Users Airdrop Desember 2023</h2>
+            <p> In an exciting turn of events, our RAKER Token listing on Minswap garnered overwhelming interest,
+              surpassing our expectations as 500 users swiftly registered on our Discord and claimed the airdrop.
+              This remarkable milestone was achieved in record time, and we were thrilled to distribute 1000 RAKER
+              tokens
+              to each of our inaugural 500 users, celebrating their early adoption and unwavering support
+              for our project.
             </p>
-            <a target="_blank" href="https://tr.matogen.com" class="read-more">Read more</a>
+            <a target="_blank"
+              href="https://marketraker.medium.com/marketrakers-exciting-journey-continues-airdrops-and-beyond-009b056cc0ee"
+              class="read-more">Read more</a>
           </div>
-          <div class="panel-media panel-media--geospatial-software-engineering"></div>
+          <div class="panel-media panel-media--airdrop"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/azure.webp" alt="Microsoft Azure" Title="Microsoft Azure" /></li>
-              <li><img src="/dotnet.webp" alt=".Net Core" Title=".Net Core" /></li>
-              <li><img src="/sql.webp" alt="SQL" Title="SQL" /></li>
-              <li><img src="/c.webp" alt="C#" Title="C#" /></li>
-              <li><img src="/docker.webp" alt="Docker" Title="Docker" /></li>
-              <li><img src="/angular.webp" alt="Angular" Title="Angular" /></li>
-              <li><img src="/unity3d.webp" alt="Unity 3d" Title="Unity 3D" /></li>
-            </ul>
+
           </div>
         </div>
     </section>
     <!-- #endregion -->
 
     <!-- #region AI -->
-    <section id="data-sciences-predictive-modeling-services" class="section section--light">
+    <section id="update-logo-rebrand" class="section section--dark">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Data- and Decision Science Consulting Services</h2>
-            <p>
-              We support your strategy by combining your business knowledge with the most relevant skills, experience,
-              techniques and technology.
-            </p>
-            <a target="_blank" href="https://ai.matogen.com" class="read-more">Read more</a>
+            <h2>Updated Logo and Rebrand</h2>
+            <p> Driven by the overwhelming demand from
+              our passionate community, we embarked on an exciting journey to find a new logo
+              that would resonate with our shared vision. Through a collaborative process, we actively engaged with our
+              community members, carefully considering their valuable input and ideas. After careful deliberation
+              , a new logo was chosen, encapsulating the spirit and essence of MarketRaker. With
+              this fresh visual identity, we proudly embarked on a comprehensive rebranding initiative, ensuring that
+              every aspect of our platform reflects our unwavering commitment to innovation and excellence. </p>
+            <a target="_blank"
+              href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5"
+              class="read-more">Read Competition</a>
+            <a target="_blank"
+              href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5"
+              class="read-more">Read Final</a>
           </div>
-          <div class="panel-media panel-media--data-sciences-predictive-modeling-services"></div>
+          <div class="panel-media panel-media--rebrand"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/python-black.webp" alt="Python" Title="Python" /></li>
-              <li><img src="/altair2.webp" alt="AltairRapidMiner" Title="AltairRapidMiner" /></li>
-              <li><img src="/sas2.webp" alt="SAS" Title="SAS" /></li>
-              <li><img src="/databricks.webp" alt="Databricks" Title="Databricks" /></li>
-              <li><img src="/preaxia.webp" alt="Praexia" Title="Praexia" /></li>
-              <li><img src="/sql.webp" alt="SQL" Title="SQL" /></li>
-            </ul>
+
           </div>
         </div>
       </div>
@@ -422,27 +401,29 @@
     <!-- #endregion -->
 
     <!-- #region Telematics -->
-    <section id="telematics-logistics-software-engineering" class="section section--blue">
+    <section id="beta-ai-model" class="section section--green">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Telematics Logistics Software Engineering</h2>
+            <h2>Beta AI Prediction Model and Feature Launch (Soon)</h2>
             <p>
-              Revolutionizing telematics and IoT. Optimizing fleet management, enhancing safety, and propelling
-              businesses forward. Embrace the digital revolution with us.
+              Our team is tirelessly engaged in developing the highly anticipated Beta AI
+              Prediction Model, slated for launch in May 2024. This groundbreaking advancement
+              aims to elevate our current success rate, leveraging cutting-edge indicators and
+              algorithms to deliver even more accurate and reliable market predictions.
+              Moreover, we are excited to introduce a new feature that will empower
+              users to seamlessly interface with our robust APIs, enabling the integration
+              of our AI-driven insights into their trading bots and strategies. Stay tuned
+              as we continue to push the boundaries of innovation, revolutionizing the
+              trading landscape with advanced AI capabilities.
             </p>
-            <a target="_blank" href="https://tel.matogen.com" class="read-more">Read more</a>
+            <a target="_blank"
+              href="https://marketraker.medium.com/emphasizing-stop-losses-in-the-upcoming-bull-market-insights-from-marketraker-ai-c1cd1e10079e"
+              class="read-more">Read on New Stoploss model</a>
           </div>
-          <div class="panel-media panel-media--telematics-logistics-software-engineering"></div>
+          <div class="panel-media panel-media--beta"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/aws.webp" alt="AWS" Title="AWS" /></li>
-              <li><img src="/angular.webp" alt="Angular" Title="Angular" /></li>
-              <li><img src="/python.webp" alt="Pyphon" Title="Python" /></li>
-              <li><img src="/docker.webp" alt="Docker" Title="Docker" /></li>
-              <li><img src="/node.webp" alt="NodeJs" Title="NodeJs" /></li>
-              <li><img src="/sql.webp" alt="SQL" Title="SQL" /></li>
-            </ul>
+
           </div>
         </div>
       </div>
@@ -450,31 +431,26 @@
     <!-- #endregion -->
 
     <!-- #region Digital -->
-    <section id="digital-marketing-services" class="section section--dark">
+    <section id="marketing" class="section section--dark">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Digital Marketing Service</h2>
-            <p>
-              We create content and digital presence by combining our expertise in Digital Strategy with your unique
-              story.
+            <h2>Integrations, Marketing, and Collaborations (Soon)</h2>
+            <p> With the power of our cutting-edge AI tools at our disposal,
+              we are poised to embark on an ambitious marketing campaign and forge
+              strategic collaborations that will showcase the remarkable capabilities of MarketRaker AI.
+              Our goal is to create widespread awareness and establish a strong presence within the
+              trading community. By reaching out to influential trading groups and fostering partnerships,
+              we aim to demonstrate the transformative potential of our AI-driven solutions. Through these
+              collaborations, we will not only raise awareness but also unlock new opportunities for integration,
+              allowing traders to seamlessly incorporate our advanced AI tools into their existing workflows
+              and strategies.
             </p>
-            <a target="_blank" href="https://digital.matogen.com" class="read-more">Read more</a>
+            <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
           </div>
-          <div class="panel-media panel-media--digital-marketing-services"></div>
+          <div class="panel-media panel-media--marketing"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/react.webp" alt="React" title="React" /></li>
-              <li><img src="/php.webp" alt="Php" title="Php" /></li>
-              <li><img src="/laravel.webp" alt="Laravel" title="Laravel" /></li>
-              <li><img src="/drupal.webp" alt="Drupal" title="Drupal" /></li>
-              <li><img src="/wordpress.webp" alt="Wordpress" title="Wordpress" /></li>
-              <li><img src="/sql.svg" alt="SQL" title="SQL" /></li>
-              <li><img src="/javascript.webp" alt="Javascript" title="Javascript" /></li>
-              <li><img src="/bootstrap.webp" alt="Bootstrap" title="Bootstrap" /></li>
-              <li><img src="/tailwind.webp" alt="Tailwind" title="Tailwind" /></li>
 
-            </ul>
           </div>
         </div>
       </div>
@@ -482,23 +458,23 @@
     <!-- #endregion -->
 
     <!-- #region Alpha -->
-    <section id="enterprice-resource-scheduling-reporting" class="section section--light">
+    <section id="final" class="section section--yellow">
       <div class="container container--offset">
         <div class="panel">
           <div class="panel-content">
-            <h2>Enterprise Resource Planning, Reporting, Scheduling</h2>
-            <p>
-              Our services provide custom software systems that facilitate efficient planning, tracking, forecasting,
-              and management of complex business operations, especially in the engineering/manufacturing industry.
+            <h2>Finalized Model Launch (Soon)</h2>
+            <p> Marking a significant milestone in our journey, we are thrilled to work towards the imminent launch of
+              our finalized AI Model. This cutting-edge solution will harness the power of sentiment analysis,
+              seamlessly integrating it into our advanced trading indicators. By combining this invaluable insight with
+              our sophisticated algorithms, we will unlock unprecedented capabilities in price prediction. Traders
+              can expect 24-hour and 7-day price forecasts, empowering them to make informed decisions and
+              stay ahead of the curve. This finalized model represents the culmination of our relentless pursuit of
+              innovation, delivering a comprehensive AI-driven solution that redefines the boundaries of market analysis and trading strategies. 
             </p>
-            <a target="_blank" href="https://zebra.matogen.com" class="read-more">Read more</a>
+            <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
           </div>
-          <div class="panel-media panel-media--enterprice-resource-scheduling-reporting"></div>
+          <div class="panel-media panel-media--final"></div>
           <div class="panel-footer">
-            <ul class="technologies">
-              <li><img src="/jira.webp" alt="Jira Software" Title="Jira Software" /></li>
-              <li><img src="/atlas.webp" alt="Atlassian Pratners" Title="Atlassian Partners" /></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -507,32 +483,30 @@
   </div>
 
   <!-- #region OurServices -->
-  <section class="section section--light">
+  <section class="section section--light" id="pricing">
     <div class="container container--philosophies">
-      <h2 class="section-title">Our Core Philosophies</h2>
+      <h2 class="section-title">Pricing and RAKER Token Holding</h2>
 
       <div class="philosophies">
         <div class="philosophy philosophy--mission">
           <div class="philosophy-icon">
             <img src="/mission.svg" />
           </div>
-          <div class="philosophy-title">Mission</div>
+          <div class="philosophy-title">1 Month = 10 RAKER Tokens</div>
           <div class="philosophy-description">
-            <strong style=" font-weight:300;">Enhancing Lives, Creating Value:</strong> We boost business profitability
-            through automated systems, exceeding
-            expertise, and fostering lasting relationships in sustainable environments.
+            Holding 10 RAKER Tokens in your Cardano wallet grants you access to our platform for one month. This introductory offering allows you to experience the power of our AI-driven trading tools and immerse yourself in our innovative ecosystem.<br/>
+            <br/><a href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
           </div>
         </div>
 
         <div class="philosophy philosophy--vision">
           <div class="philosophy-icon">
-            <img src="/vision.svg" />
+            <img target="_blank" src="/vision.svg" />
           </div>
-          <div class="philosophy-title">Vision</div>
+          <div class="philosophy-title">Lifetime access = 1000 RAKER Tokens </div>
           <div class="philosophy-description">
-            <strong style=" font-weight:300;">Elevating Businesses:</strong> We empower collaboration with
-            forward-thinking companies, providing cutting-edge
-            software development, branding, and marketing for a superior web presence.
+            Holding 1,000 RAKER Tokens grants you lifetime access to our platform, ensuring you never miss out on the latest advancements and cutting-edge features we introduce. However, the benefits don't stop there. As a valued holder of 1,000 RAKER Tokens, you'll also enjoy exclusive perks and privileges within our vibrant Discord community.<br/>
+            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
           </div>
         </div>
 
@@ -540,44 +514,13 @@
           <div class="philosophy-icon">
             <img src="/purpose.svg" />
           </div>
-          <div class="philosophy-title">Purpose</div>
+          <div class="philosophy-title">Stakeholders = 10 000 RAKER Tokens</div>
           <div class="philosophy-description">
-            <strong style=" font-weight:300;">Driving Exponential Growth:</strong> We transform businesses with a
-            captivating web presence, revolutionary
-            technology, and advanced support to attract target markets and achieve exponential growth.
+            Holding 10,000 RAKER Tokens unlocks a range of exclusive benefits and privileges for our valued community members. With this significant token holding, you gain lifetime access to our platform, ensuring uninterrupted access to our cutting-edge AI-driven tools and insights. Additionally, you will receive insider information and have the opportunity to shape the future direction of our project through direct involvement in decision-making processes.<br/>
+            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- #endregion -->
-
-
-  <!-- #region Contact -->
-  <section id="contact" class="section section--grey contact">
-    <div class="container">
-      <h2 class="section-title">Let's talk about your project</h2>
-    </div>
-    <div class="cards">
-      <a target="_blank" href="https://cwd.matogen.com" class="card" data-initials="SD">
-        <h3 class="label">Corporate Web & Software Development</h3>
-      </a>
-      <a target="_blank" href="https://tr.matogen.com" class="card" data-initials="GS">
-        <h3 class="label">Geospatial Software Engineering</h3>
-      </a>
-      <a target="_blank" href="https://ai.matogen.com" class="card" data-initials="AI">
-        <h3 class="label">Data- and Decision Science Consulting Services</h3>
-      </a>
-      <a target="_blank" href="https://tel.matogen.com" class="card" data-initials="MT">
-        <h3 class="label">Telematics Logistics Software Engineering</h3>
-      </a>
-      <a target="_blank" href="https://digital.matogen.com" class="card" data-initials="DS">
-        <h3 class="label">Digital Marketing Service</h2>
-      </a>
-      <a target="_blank" href="https://zebra.matogen.com" class="card" data-initials="ZA">
-        <h3 class="label">Enterprise Resource Scheduling, Reporting</h3>
-      </a>
-
     </div>
   </section>
   <!-- #endregion -->
@@ -589,7 +532,7 @@
 
       <div class="members">
         <!-- Cobus -->
-        <div class="member">
+        <div class="member member-yellow">
           <div class="member-profile-image">
             <img src="/cobus-coetsee.webp" alt="Cobus Coetsee" />
           </div>
@@ -599,7 +542,7 @@
             <div class="read-more js-bio-more">Read more</div>
             <div class="bio">
               Cobus's <span data-years-since="2003"></span> years in the technology sector, Cobus exemplifies the
-              essence of a hands-on leader. He 
+              essence of a hands-on leader. He
               masterfully oversees and applies technical methodologies, ensuring that every project is based on a
               solid, technically sound foundation.
             </div>
@@ -620,9 +563,9 @@
 
 
         </div>
-        
 
-        
+
+
         <!-- Software Development -->
         <div class="member">
           <div class="member-profile-image">
@@ -631,17 +574,17 @@
             <div class="name">Matogen Software Division</div>
             <div class="title">Software Development</div>
             <div class="qualification">
-              B.Eng Electronic Engineering with Computer Science
+              Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
             </div>
             <div class="read-more js-bio-more">Read more</div>
             <div class="bio">
-              
+
             </div>
           </div>
           <div class="expanded-bio">
             <div class="name">Software Development</div>
             <div class="bio">
-              
+
             </div>
             <div class="read-more js-bio-more">Show less</div>
           </div>
@@ -649,28 +592,29 @@
         </div>
 
         <div class="qualification-mobile">
-          M.Eng Electronic Engineering with Computer Science
+          Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
         </div>
-          
+
         <!-- Machine learning -->
-        <div class="member">
+        <div class="member member-yellow">
           <div class="member-profile-image">
           </div>
           <div class="member-profile-info">
             <div class="name">Matogen AI Division</div>
             <div class="title">Machine Learning</div>
             <div class="qualification">
-              M.Eng Electronic Engineering with Computer Science
+              Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
+              
             </div>
             <div class="read-more js-bio-more">Read more</div>
             <div class="bio">
-              
+
             </div>
           </div>
           <div class="expanded-bio">
             <div class="name">Machine Learning</div>
             <div class="bio">
-              
+
             </div>
             <div class="read-more js-bio-more">Show less</div>
           </div>
@@ -678,28 +622,28 @@
         </div>
 
         <div class="qualification-mobile">
-          M.Eng Electronic Engineering with Computer Science
+          Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
         </div>
 
         <!-- Chat GPT / Co-pilot -->
-        <div class="member">
+        <div class="member  ">
           <div class="member-profile-image">
           </div>
           <div class="member-profile-info">
             <div class="name">AI Tools</div>
             <div class="title">ChatGPT & Github Co-Pilot</div>
             <div class="qualification">
-              
+
             </div>
             <div class="read-more js-bio-more">Read more</div>
             <div class="bio">
-              
+
             </div>
           </div>
           <div class="expanded-bio">
             <div class="name">ChatGPT & Github Co-Pilot</div>
             <div class="bio">
-              
+
             </div>
             <div class="read-more js-bio-more">Show less</div>
           </div>
@@ -710,9 +654,9 @@
         </div>
 
 
-        
+
         <!-- Wim -->
-        <div class="member">
+        <div class="member member-yellow">
           <div class="member-profile-image">
             <img src="/wim-conradie.webp" alt="Wim Conradie" />
           </div>
@@ -797,27 +741,27 @@
   <!-- #endregion -->
 
   <!-- #region Footer -->
-  <section class="section section--blue footer-links">
+  <section class="section section--black footer-links">
     <div class="container">
       <div class="grid">
         <div class="divisions">
           <h4>External Links</h4>
           <ul>
             <li>
-              <a target="_blank" href="https://cwd.matogen.com">Discord</a>
+              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8">Discord</a>
             </li>
             <li>
-              <a target="_blank" href="https://tr.matogen.com">Blog</a>
+              <a target="_blank" href="https://marketraker.medium.com">Blog</a>
             </li>
             <li>
-              <a target="_blank" href="https://ai.matogen.com">X</a>
+              <a target="_blank" href="https://twitter.com/rakermarket">X</a>
             </li>
             <li>
-              <a target="_blank" href="https://tel.matogen.com">White Paper</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v">White Paper</a>
             </li>
-            <li><a target="_blank" href="https://digital.matogen.com">Buy RAKER Tokens</a></li>
+            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">Buy RAKER Tokens</a></li>
             <li>
-              <a target="_blank" href="https://zebra.matogen.com">Tap tools</a>
+              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA">Tap tools</a>
             </li>
           </ul>
         </div>
@@ -830,84 +774,30 @@
         <div class="about">
           <h4>Partners</h4>
           <ul>
-            <li><a href="https://matogen.com">Matogen</a></li>
-            <li><a href="https://cardanofoundation.org/">Cardano Foundation</a></li>
+            <li><a  target="blank" href="https://matogen.com">Matogen</a></li>
+            <li><a  target="blank" href="https://cardanofoundation.org/">Cardano Foundation</a></li>
           </ul>
         </div>
       </div>
       <div class="logo">
         <div>
-          <a href="https://matogen.com/" target="blank"><img src="/logo-small.png"
-              alt="MarketRaker-AI Logo" /></a>
+          <a href="https://raker.market/" target="blank"><img src="/logo-small.png" alt="MarketRaker-AI Logo" /></a>
         </div>
   </section>
   <!-- #endregion -->
 
   <!-- #region Clients -->
   <section class="section section--light footer-clients">
-    <div class="logo-slider">
-      <div>
-        <a href="https://www.nwu.ac.za/" target="blank"><img src="/nwu.webp" alt="North West University" /></a>
-      </div>
-      <div>
-        <a href="http://mst.agroinformatics.org/" target="blank"><img src="/umn.webp"
-            alt="University of Minnisota" /></a>
-      </div>
-      <div>
-        <a href="https://www.trimble.com/en" target="blank"><img src="/trimble.webp" alt="Trimble" /></a>
-      </div>
-      <div>
-        <a href="https://www.absa.co.za/personal/" target="blank"><img src="/absa.webp" alt="Absa" /></a>
-      </div>
-      <div>
-        <a href="https://www.easyequities.co.za/ " target="blank"><img src="/easy-equities.webp"
-            alt="EasyEquities" /></a>
-      </div>
-      <div>
-        <a href="https://www.blunova.co.za/" target="blank"><img src="/blunova.webp" alt="BluNova" /></a>
-      </div>
-      <div>
-        <a href="https://www.syngenta.co.za/" target="blank"><img src="/syngenta.webp" alt="Syngenta" /></a>
-      </div>
-      <div>
-        <a href="http://www.sun.ac.za/english/" target="blank"><img src="/stellenbosh.webp" alt="Stellenbosh" /></a>
-      </div>
-      <div>
-        <a href="https://www.experian.co.za/" target="blank"><img src="/experian.webp" alt="Experian" /></a>
-      </div>
-      <div>
-        <a href="https://www.angloamerican.com/" target="blank"><img src="/anglo.webp" alt="Anglo" /></a>
-      </div>
-      <div>
-        <a href="https://www.cellc.co.za/cellc/home" target="blank"><img src="/cell-c.webp" alt="Cell-c" /></a>
-      </div>
-      <div>
-        <a href="https://www.keytelematics.com/" target="blank"><img src="/key.webp" alt="Key Telematics" /></a>
-      </div>
-      <div>
-        <a href="https://www.purplegroup.co.za/" target="blank"><img src="/purplegroup.webp" alt="PurpleGroup" /></a>
-      </div>
-      <div>
-        <img src="/jonker.webp" alt="Jonker Sailplanes" />
-      </div>
-      <div>
-        <a href="https://www.mtechindustrial.com/" target="blank"><img src="/mtech.webp" alt="M-Tech Industrial" /></a>
-      </div>
-      <div>
-        <a href="https://www.villacrop.co.za/" target="blank"><img src="/villa.webp" alt="Villa Crop" /></a>
-      </div>
-      <div>
-        <a href="https://www.radiusfuelsolutions.com/en-my/" target="blank"><img src="/radius.webp" alt="Radius" /></a>
-      </div>
+    <div class="logo-slider" id="logoElement2">
     </div>
   </section>
   <!-- #endregion -->
 
   <!-- #region Copyright -->
-  <footer class="section section--blue footer-copyright">
+  <footer class="section section--red footer-copyright">
     <div class="container">
       <p>Copyright MarketRaker-AI 2023-<span data-current-year></span> | All Rights Reserved | <a
-          href="/terms-of-service/">Company Terms of Service</a></p>
+          href="/terms-of-service/">Company Terms of Service</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
     </div>
   </footer>
   <!-- #endregion -->
@@ -920,7 +810,7 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDX1Z2KCFE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-XDX1Z2KCFE');
   </script>

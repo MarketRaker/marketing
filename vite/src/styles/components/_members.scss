@@ -20,7 +20,6 @@
   }
 
   .member {
-    --member-bg: var(--green-100);
     --member-color: var(--light);
 
     position: relative;
@@ -29,7 +28,6 @@
     justify-content: flex-start;
     align-items: stretch;
 
-    background: var(--member-bg);
     color: var(--member-color);
 
     overflow: hidden;
@@ -37,6 +35,19 @@
 
     @media screen and (min-width: 680px) {
       border-radius: 0px;
+    }
+
+    &-green { 
+      background: var(--green-100);
+    }
+    &-yellow { 
+      background: var(--yellow-100);
+    }
+    &-red { 
+      background: var(--red-100);
+    }
+    &-dark { 
+      background: black;
     }
 
     &-profile-image {
