@@ -172,29 +172,26 @@
             }}
           }
 
+          &--market-volatility {
+            background-image: url("/market-volatility.png");
+          }
+          &--information-overload {
+            background-image: url("/information-overload.png");
+          }
+          &--time-consuming {
+            background-image: url("/time-consuming.png");
+          }
+          &--lack-of-expertise {
+            background-image: url("/lack-of-expertise.png");
+          }
+          &--risk-management {
+            background-image: url("/risk-management.png");
+          }
+          &--the-need {
+            background-image: url("/the-need.png");
+          }
           &--finance {
-            background-image: url("/finance.webp");
-          }
-          &--education {
-            background-image: url("/education.webp");
-          }
-          &--mining {
-            background-image: url("/mining.webp");
-          }
-          &--manufacturing {
-            background-image: url("/manufacturing.webp");
-          }
-          &--agriculture {
-            background-image: url("/agriculture.webp");
-          }
-          &--transport {
-            background-image: url("/transport-telementry.webp");
-          }
-          &--tourism {
-            background-image: url("/tourism.webp");
-          }
-          &--telecoms {
-            background-image: url("/telecoms.webp");
+            background-image: url("/finance.png");
           }
         }
       }
