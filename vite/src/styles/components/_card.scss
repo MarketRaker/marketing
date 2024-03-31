@@ -97,6 +97,7 @@
     transform: translateZ(0px);
 
     transition: transform 0.2s ease-in-out;
+    line-break: anywhere;
 
     @media screen and (min-width: 480px) {
       font-size: min(2rem, 4vw);

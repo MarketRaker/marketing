@@ -5,7 +5,7 @@ import { loadTranslations, translate } from "../script/i18n";
 import { CurrentDates } from "../script/current-dates";
 import { MobileBurgerMenu } from "../script/mobile-burger-menu";
 
-export class TermsOfService {
+export class PrivacyPolicy {
   constructor() {
     this.preloader();
     this.init();
@@ -31,7 +31,7 @@ export class TermsOfService {
   }
 
   private loadTranslations() {
-    loadTranslations('terms-of-service').then(() => {
+    loadTranslations('privacy-policy').then(() => {
       document.querySelectorAll('[data-i18n]').forEach(
         (element) => {
           if (element.getAttribute('data-i18n'))
@@ -42,4 +42,4 @@ export class TermsOfService {
   }
 }
 
-new TermsOfService();
+new PrivacyPolicy();
