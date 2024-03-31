@@ -1,0 +1,57 @@
+{
+  "de": {
+    "navigation": {
+      "home": "Startseite",
+      "what_is_marketraker": "Was ist MarketRaker-AI?",
+      "features_milestones": "Funktionen & Meilensteine",
+      "pricing": "Preise",
+      "login": "Anmelden",
+      "register": "Registrieren"
+    },
+    "privacy_policy": {
+      "header": "Datenschutzrichtlinie von Market Raker"
+    },
+    "terms": {
+      "body": "Bei Raker.Market respektieren und schützen wir die Privatsphäre unserer Benutzer. Diese Datenschutzrichtlinie erläutert, wie wir Ihre persönlichen Informationen erfassen, verwenden und schützen, wenn Sie unsere Website und Dienste nutzen.",
+      "information_we_collect": "Informationen, die wir erfassen",
+      "information_we_collect_description": "Wenn Sie unsere Website nutzen, können wir bestimmte Informationen über Sie erfassen, einschließlich:",
+      "personal_information": "Persönliche Informationen wie Ihren Namen, Ihre E-Mail-Adresse und andere Kontaktdaten, die Sie angeben, wenn Sie sich für unsere Dienste anmelden oder uns für Unterstützung kontaktieren;",
+      "technical_information": "Technische Informationen wie Ihre IP-Adresse, Browsertyp und Betriebssystem, die automatisch von unserem Webserver und Analysetools erfasst werden;",
+      "usage_information": "Nutzungsinformationen wie die von Ihnen besuchten Seiten, Datum und Uhrzeit Ihrer Besuche und die Dauer, die Sie auf unserer Website verbringen, die von unseren Analysetools erfasst werden.",
+      "how_we_use_your_information": "Wie wir Ihre Informationen verwenden",
+      "how_we_use_your_information_description": "Wir können Ihre persönlichen und technischen Informationen verwenden, um:",
+      "provide_and_improve": "Ihnen unsere Dienste bereitzustellen und zu verbessern;",
+      "respond_to_inquiries": "Auf Ihre Anfragen, Kommentare und Supportanfragen zu antworten;",
+      "analyze_and_monitor": "Nutzungstrends und -muster auf unserer Website zu analysieren und zu überwachen;",
+      "comply_with_applicable_laws": "Einhaltung geltender Gesetze, Vorschriften und rechtlicher Verfahren.",
+      "no_third_party": "Wir verkaufen, vermieten oder verpachten Ihre persönlichen Informationen nicht an Dritte.",
+      "cookies_and_other_tracking": "Cookies und andere Tracking-Technologien",
+      "cookies_and_other_tracking_description": "Wir verwenden Cookies und andere Tracking-Technologien, um bestimmte Informationen über Ihre Nutzung unserer Website zu erfassen und zu speichern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie dienen dazu, Ihre Einstellungen zu speichern und bestimmte Funktionen unserer Website zu aktivieren. Sie können Cookies und andere Tracking-Technologien über die Einstellungen Ihres Browsers kontrollieren. Das Deaktivieren von Cookies kann jedoch die Nutzung bestimmter Funktionen unserer Website beeinträchtigen.",
+      "data_security": "Datensicherheit",
+      "data_security_description": "Wir ergreifen angemessene Maßnahmen zum Schutz der Sicherheit Ihrer persönlichen Informationen, einschließlich der Verwendung von Verschlüsselungstechnologien und Zugriffskontrollen, um unbefugten Zugriff, Nutzung oder Offenlegung Ihrer Informationen zu verhindern. Es kann jedoch keine 100%ige Sicherheit für Datenübertragungen über das Internet oder das Speichersystem garantiert werden. Daher können wir die absolute Sicherheit Ihrer persönlichen Informationen nicht garantieren.",
+      "changes_to_privacy_policy": "Änderungen dieser Datenschutzrichtlinie",
+      "changes_to_privacy_policy_description": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Über wesentliche Änderungen an dieser Richtlinie werden wir Sie durch Veröffentlichung eines Hinweises auf unserer Website oder durch Zusendung einer E-Mail informieren.",
+      "contact_us": "Kontaktieren Sie uns",
+      "contact_us_description": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzrichtlinie oder unseren Datenpraktiken haben, kontaktieren Sie uns bitte unter support@raker.market"
+    },
+    "footer": {
+      "contact_us": "Kontaktiere uns",
+      "external_links": "Externe Links",
+      "discord": "Discord",
+      "blog": "Blog",
+      "twitter": "Twitter",
+      "white_paper": "Weißbuch",
+      "buy_tokens": "RAKER-Token kaufen",
+      "tap_tools": "Tap-Tools",
+      "resources": "Ressourcen",
+      "documentation": "Dokumentation",
+      "partners": "Partner",
+      "partner_matogen": "Matogen",
+      "partner_cardano_foundation": "Cardano-Stiftung",
+      "copyright_prefix": "Copyright MarketRaker-AI",
+      "copyright_suffix": "Alle Rechte vorbehalten |",
+      "company_terms_of_service": "Unternehmensbedingungen",
+      "privacy_policy": "Datenschutzbestimmungen"
+    }
+  }
+}
