@@ -1,0 +1,57 @@
+{
+  "en": {
+    "navigation": {
+      "home": "Home",
+      "what_is_marketraker": "What is MarketRaker-AI?",
+      "features_milestones": "Features & Milestones",
+      "pricing": "Pricing",
+      "login": "Login",
+      "register": "Register"
+    },
+    "privacy_policy": {
+      "header": "Market Raker's Privacy Policy"
+    },
+    "terms": {
+      "body": "At Raker.Market, we respect and protect the privacy of our users. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.",
+      "information_we_collect": "Information We Collect",
+      "information_we_collect_description": "When you use our website, we may collect certain information about you, including:",
+      "personal_information": "Personal information such as your name, email address, and other contact details that you provide when you sign up for our services or contact us for support;",
+      "technical_information": "Technical information such as your IP address, browser type, and operating system, which is automatically collected by our web server and analytics tools;",
+      "usage_information": "Usage information such as the pages you visit, the time and date of your visits, and the amount of time you spend on our website, which is collected by our analytics tools.",
+      "how_we_use_your_information": "How We Use Your Information",
+      "how_we_use_your_information_description": "We may use your personal and technical information to:",
+      "provide_and_improve": "Provide and improve our services to you;",
+      "respond_to_inquiries": "Respond to your inquiries, comments, and support requests;",
+      "analyze_and_monitor": "Analyze and monitor usage trends and patterns on our website;",
+      "comply_with_applicable_laws": "Comply with applicable laws, regulations, and legal processes.",
+      "no_third_party": "We do not sell, rent, or lease your personal information to third parties.",
+      "cookies_and_other_tracking": "Cookies and Other Tracking Technologies",
+      "cookies_and_other_tracking_description": "We use cookies and other tracking technologies to collect and store certain information about your use of our website. Cookies are small text files that are stored on your device when you visit a website. They are used to remember your preferences and enable certain features of our website. You can control cookies and other tracking technologies through your browser settings. However, disabling cookies may affect your ability to use certain features of our website.",
+      "data_security": "Data Security",
+      "data_security_description": "We take reasonable measures to protect the security of your personal information, including using encryption technologies and access controls to prevent unauthorized access, use, or disclosure of your information. However, no data transmission over the internet or storage system can be guaranteed to be 100% secure. Therefore, we cannot guarantee the absolute security of your personal information.",
+      "changes_to_privacy_policy": "Changes to this Privacy Policy",
+      "changes_to_privacy_policy_description": "We may update this Privacy Policy from time to time. We will notify you of any material changes to this policy by posting a notice on our website or by sending you an email.",
+      "contact_us": "Contact Us",
+      "contact_us_description": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at support@raker.market"
+    },
+    "footer": {
+      "contact_us": "Contact Us",
+      "external_links": "External Links",
+      "discord": "Discord",
+      "blog": "Blog",
+      "twitter": "X",
+      "white_paper": "White Paper",
+      "buy_tokens": "Buy RAKER Tokens",
+      "tap_tools": "Tap tools",
+      "resources": "Resources",
+      "documentation": "Documentation",
+      "partners": "Partners",
+      "partner_matogen": "Matogen",
+      "partner_cardano_foundation": "Cardano Foundation",
+      "copyright_prefix": "Copyright MarketRaker-AI 2023-",
+      "copyright_suffix": "All Rights Reserved |",
+      "company_terms_of_service": "Company Terms of Service",
+      "privacy_policy": "Privacy Policy"
+    }
+  }
+}
