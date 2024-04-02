@@ -1,0 +1,57 @@
+{
+  "fr": {
+    "navigation": {
+      "home": "Accueil",
+      "what_is_marketraker": "Qu'est-ce que MarketRaker-AI ?",
+      "features_milestones": "Fonctionnalités et jalons",
+      "pricing": "Tarification",
+      "login": "Connexion",
+      "register": "S'inscrire"
+    },
+    "privacy_policy": {
+      "header": "Politique de confidentialité de Market Raker"
+    },
+    "terms": {
+      "body": "Chez Raker.Market, nous respectons et protégeons la vie privée de nos utilisateurs. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre site Web et nos services.",
+      "information_we_collect": "Informations que nous collectons",
+      "information_we_collect_description": "Lorsque vous utilisez notre site Web, nous pouvons collecter certaines informations vous concernant, notamment :",
+      "personal_information": "Informations personnelles telles que votre nom, votre adresse e-mail et d'autres coordonnées que vous fournissez lorsque vous vous inscrivez à nos services ou nous contactez pour obtenir de l'aide ;",
+      "technical_information": "Informations techniques telles que votre adresse IP, le type de navigateur et le système d'exploitation, qui sont automatiquement collectées par notre serveur Web et nos outils d'analyse ;",
+      "usage_information": "Informations d'utilisation telles que les pages que vous visitez, l'heure et la date de vos visites, et le temps que vous passez sur notre site Web, qui sont collectées par nos outils d'analyse.",
+      "how_we_use_your_information": "Comment nous utilisons vos informations",
+      "how_we_use_your_information_description": "Nous pouvons utiliser vos informations personnelles et techniques pour :",
+      "provide_and_improve": "Fournir et améliorer nos services à votre intention ;",
+      "respond_to_inquiries": "Répondre à vos demandes, commentaires et demandes de support ;",
+      "analyze_and_monitor": "Analyser et surveiller les tendances et les modèles d'utilisation sur notre site Web ;",
+      "comply_with_applicable_laws": "Se conformer aux lois, règlements et procédures légales applicables.",
+      "no_third_party": "Nous ne vendons, ne louons ni ne cédez vos informations personnelles à des tiers.",
+      "cookies_and_other_tracking": "Cookies et autres technologies de suivi",
+      "cookies_and_other_tracking_description": "Nous utilisons des cookies et d'autres technologies de suivi pour collecter et stocker certaines informations sur votre utilisation de notre site Web. Les cookies sont de petits fichiers texte qui sont stockés sur votre appareil lorsque vous visitez un site Web. Ils sont utilisés pour mémoriser vos préférences et activer certaines fonctionnalités de notre site Web. Vous pouvez contrôler les cookies et d'autres technologies de suivi via les paramètres de votre navigateur. Cependant, la désactivation des cookies peut affecter votre capacité à utiliser certaines fonctionnalités de notre site Web.",
+      "data_security": "Sécurité des données",
+      "data_security_description": "Nous prenons des mesures raisonnables pour protéger la sécurité de vos informations personnelles, notamment en utilisant des technologies de cryptage et des contrôles d'accès pour prévenir tout accès, utilisation ou divulgation non autorisés de vos informations. Cependant, aucune transmission de données sur Internet ou système de stockage ne peut être garantie à 100 % sécurisée. Par conséquent, nous ne pouvons garantir la sécurité absolue de vos informations personnelles.",
+      "changes_to_privacy_policy": "Changements à cette politique de confidentialité",
+      "changes_to_privacy_policy_description": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement important à cette politique en publiant un avis sur notre site Web ou en vous envoyant un e-mail.",
+      "contact_us": "Contactez-nous",
+      "contact_us_description": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou nos pratiques en matière de données, veuillez nous contacter à l'adresse"
+    },
+    "footer": {
+      "contact_us": "Contactez-nous",
+      "external_links": "Liens externes",
+      "discord": "Discord",
+      "blog": "Blog",
+      "twitter": "Twitter",
+      "white_paper": "Livre blanc",
+      "buy_tokens": "Acheter des jetons RAKER",
+      "tap_tools": "Outils TAP",
+      "resources": "Ressources",
+      "documentation": "Documentation",
+      "partners": "Partenaires",
+      "partner_matogen": "Matogen",
+      "partner_cardano_foundation": "Fondation Cardano",
+      "copyright_prefix": "Copyright MarketRaker-AI 2023-",
+      "copyright_suffix": "Tous droits réservés |",
+      "company_terms_of_service": "Conditions de service de l'entreprise",
+      "privacy_policy": "Politique de confidentialité"
+    }
+  }
+}
