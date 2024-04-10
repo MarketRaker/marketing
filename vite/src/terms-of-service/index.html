@@ -61,6 +61,14 @@
       <li><a class="js-nav-item" href="/index.html#pricing" data-i18n="navigation.pricing">Pricing</a></li>
       <li><a class="js-nav-item" href="https://app.raker.market" data-i18n="navigation.login">Login</a></li>
       <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite" data-i18n="navigation.register">Register</a></li>
+      <li>
+        <select name="language-select" id="language-select">
+          <option value="en" data-i18n="en">English</option>
+          <option value="ar" data-i18n="ar">Arabic</option>
+          <option value="fr" data-i18n="fr">French</option>
+          <option value="de" data-i18n="de">German</option>
+        </select>
+      </li>
     </ul>
   </nav>
   <!-- #endregion navigation -->
@@ -239,6 +247,7 @@
   <!-- #endregion -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
   <script type="module" src="./terms-of-service.ts"></script>
+  <script type="module" src="../script/i18n.ts"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TR523WL6WE"></script>
   <script>

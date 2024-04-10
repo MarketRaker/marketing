@@ -1,7 +1,5 @@
 import "../style.scss";
 
-import { loadTranslations, translate } from "../script/i18n";
-
 import { CurrentDates } from "../script/current-dates";
 import { MobileBurgerMenu } from "../script/mobile-burger-menu";
 
@@ -12,7 +10,6 @@ export class PrivacyPolicy {
   }
 
   private init() {
-    this.loadTranslations();
     const dates = new CurrentDates();
     dates.current();
     new MobileBurgerMenu().initMobileMenu();
@@ -28,17 +25,6 @@ export class PrivacyPolicy {
         loadingScreen.style.display = "none";
       }, 1500);
     }, 700);
-  }
-
-  private loadTranslations() {
-    loadTranslations('privacy-policy').then(() => {
-      document.querySelectorAll('[data-i18n]').forEach(
-        (element) => {
-          if (element.getAttribute('data-i18n'))
-            element.innerHTML = translate(element.getAttribute('data-i18n'), element.innerHTML);
-        }
-      )
-    })
   }
 }
 

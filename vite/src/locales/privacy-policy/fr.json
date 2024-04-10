@@ -52,6 +52,10 @@
       "copyright_suffix": "Tous droits réservés |",
       "company_terms_of_service": "Conditions de service de l'entreprise",
       "privacy_policy": "Politique de confidentialité"
-    }
+    },
+    "fr": "Francais",
+    "en": "Anglais",
+    "de": "Allemand",
+    "ar": "Arabe"
   }
 }

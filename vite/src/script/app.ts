@@ -1,5 +1,3 @@
-import { loadTranslations, translate } from "./i18n";
-
 import { CurrentDates } from "./current-dates";
 import { HoverEffect } from "./hover";
 import { MobileBurgerMenu } from "./mobile-burger-menu";
@@ -14,16 +12,6 @@ export class App {
     this.initIndustryExpander();
     this.initBioViewer();
     this.updateDates();
-    loadTranslations('home').then(
-      () => {
-        document.querySelectorAll('[data-i18n]').forEach(
-          (element) => {
-            if (element.getAttribute('data-i18n'))
-              element.innerHTML = translate(element.getAttribute('data-i18n'), element.innerHTML);
-          }
-        )
-      }
-    )
 
     new MobileBurgerMenu().initMobileMenu();
     new HoverEffect(".card");
