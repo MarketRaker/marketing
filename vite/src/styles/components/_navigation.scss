@@ -154,7 +154,7 @@
     }
 
     li {
-      a {
+      a,select {
         display: block;
         padding: 1rem 1.5rem;
         color: var(--nav-color);
@@ -176,8 +176,18 @@
         }
       }
     }
+
+    select{
+      border:none;
+      outline:none;
+    }
   }
 
+  #language-select{
+    color:white;
+    background-color: #000000;
+    font-size:inherit;
+  }
   &.is-open {
     .hamburger {
       .line {
@@ -224,7 +234,7 @@
         background: rgba(0, 0, 0, 0.8);
 
         li {
-          a {
+          a, select {
             font-size: 1.5rem;
             padding: 1.5rem 3rem;
             
