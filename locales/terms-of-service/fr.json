@@ -1,0 +1,62 @@
+{
+  "fr": {
+    "navigation": {
+      "home": "Accueil",
+      "what_is_marketraker": "Qu'est-ce que MarketRaker-AI ?",
+      "features_milestones": "Fonctionnalités et jalons",
+      "pricing": "Tarification",
+      "login": "Connexion",
+      "register": "S'inscrire"
+    },
+    "terms_of_service": {
+      "hero_section": "Conditions d'utilisation de Market Raker",
+      "page_title": "Conditions d'utilisation de Market Raker",
+      "content_section": "Utilisation de nos Services",
+      "welcome_message": "Bienvenue sur MarketRaker, un outil fournissant des indicateurs de trading et des analyses pour divers marchés. En utilisant notre site Web et nos services, vous acceptez d'être lié par ces conditions d'utilisation. Veuillez les lire attentivement avant d'utiliser notre site Web ou nos services.",
+      "disclaimer_heading": "Avis de non-responsabilité",
+      "disclaimer_message": "MarketRaker n'est pas un conseiller financier et ne fournit pas de conseils en investissement. Nos services sont destinés à fournir des informations et des indicateurs de trading à des fins éducatives et informatives uniquement. Il est essentiel de comprendre que l'utilisation de nos services et indicateurs ne garantit aucun résultat d'investissement particulier et que tout trading comporte des risques.",
+      "using_services_heading": "Utilisation de nos Services",
+      "using_services_message": "En utilisant notre site Web et nos services, vous acceptez de ne pas les utiliser à des fins illégales, non autorisées ou inappropriées. Vous acceptez d'utiliser nos services uniquement pour votre usage personnel et non commercial et de ne pas partager vos informations de compte ou vos informations de connexion avec des tiers. Vous acceptez de ne pas tenter de rétroingénierie, de décompiler ou de désassembler l'un de nos logiciels ou services. Vous acceptez également de ne pas utiliser de systèmes automatisés ou de robots pour accéder ou utiliser nos services, sauf s'ils sont destinés à des robots de trading.",
+      "indemnification_heading": "Indemnisation",
+      "indemnification_message": "Vous acceptez d'indemniser MarketRaker, ses affiliés, ses dirigeants, ses administrateurs, ses employés, ses agents, ses concédants de licence et ses fournisseurs de toute réclamation, responsabilité, dommage ou frais (y compris les honoraires d'avocat) découlant de votre utilisation de notre site Web ou de nos services, de votre violation de ces conditions d'utilisation ou de votre violation des droits d'un autre.",
+      "limitation_of_liability_heading": "Limitation de Responsabilité",
+      "limitation_of_liability_message": "Dans toute la mesure permise par la loi, MarketRaker, ses affiliés, ses dirigeants, ses administrateurs, ses employés, ses agents, ses concédants de licence et ses fournisseurs ne seront pas responsables des dommages directs, indirects, punitifs, accessoires, spéciaux ou consécutifs découlant de l'utilisation de notre site Web ou de nos services, que ce soit sur la base d'un contrat, d'un délit, d'une responsabilité stricte ou de toute autre théorie de responsabilité, même si MarketRaker a été informée de la possibilité de tels dommages.",
+      "token_grant_heading": "Allocation de jetons RAKER pour les premiers adoptants",
+      "token_grant_message": "L'allocation de jetons RAKER offre initialement 10 jetons RAKER, avec la possibilité de recevoir jusqu'à 1000 jetons, comme incitatif spécial pour les premiers supporters de MarketRaker. Nous avons mis cela en place pour reconnaître et récompenser nos premiers membres de la communauté. Cependant, nous exhortons les membres à utiliser cette allocation de manière responsable et dans l'esprit dans lequel elle est destinée. Pour maintenir l'intégrité de cette allocation et garantir qu'elle atteint des utilisateurs légitimes, nous demandons à tous les participants de se connecter à l'application MarketRaker et de compléter la vérification avant que les jetons ne soient distribués.",
+      "valid_use_cases_heading": "Exemples de Cas d'Utilisation Valides",
+      "valid_use_case_1": "Transférer l'allocation vers le portefeuille d'un ami affichant d'autres transactions actives.",
+      "valid_use_case_2": "Acheter des jetons directement auprès de MinSwap.",
+      "invalid_use_cases_heading": "Exemples de Cas d'Utilisation Invalides",
+      "invalid_use_case_1": "Les portefeuilles avec une seule transaction de 10 jetons destinés à l'airdrop seront considérés comme suspects et seront retirés des enregistrements valides.",
+      "invalid_use_case_2": "Les comptes Discord créés le même jour que l'inscription des jetons, avec une seule transaction sur leur compte, seront retirés des enregistrements valides.",
+      "token_grant_disclaimer": "Veuillez noter : MarketRaker se réserve le droit de retenir ou de récupérer les jetons des comptes enfreignant ces termes.",
+      "changes_heading": "Changements aux Conditions d'Utilisation",
+      "changes_message": "Nous nous réservons le droit de modifier ou de mettre à jour ces conditions d'utilisation sans préavis. Votre utilisation continue de notre site Web ou de nos services après de tels changements constitue votre acceptation des nouvelles conditions d'utilisation. Loi Applicable et Compétence Juridique Ces conditions d'utilisation seront régies et interprétées conformément aux lois de la juridiction dans laquelle MarketRaker est basée. Toute action légale ou procédure découlant de ou liée à ces conditions d'utilisation sera portée exclusivement devant les tribunaux de cette juridiction.",
+      "contact_heading": "Contactez-nous",
+      "contact_message": "Si vous avez des questions ou des préoccupations concernant ces conditions d'utilisation, veuillez nous contacter à l'adresse"
+    },
+    "footer": {
+      "contact_us": "Contactez-nous",
+      "external_links": "Liens externes",
+      "discord": "Discord",
+      "blog": "Blog",
+      "twitter": "Twitter",
+      "white_paper": "Livre blanc",
+      "buy_tokens": "Acheter des jetons RAKER",
+      "tap_tools": "Outils TAP",
+      "resources": "Ressources",
+      "documentation": "Documentation",
+      "partners": "Partenaires",
+      "partner_matogen": "Matogen",
+      "partner_cardano_foundation": "Fondation Cardano",
+      "copyright_prefix": "Copyright MarketRaker-AI 2023-",
+      "copyright_suffix": "Tous droits réservés |",
+      "company_terms_of_service": "Conditions de service de l'entreprise",
+      "privacy_policy": "Politique de confidentialité"
+    },
+    "fr": "Français",
+    "en": "Anglais",
+    "de": "Allemand",
+    "ar": "Arabe"
+  }
+}

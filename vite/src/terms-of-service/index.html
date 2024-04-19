@@ -12,11 +12,30 @@
 </head>
 
 <body>
+  <div class="preloader" id="preloader"
+  style="background-color: rgb(0, 0, 0); position: fixed; inset: 0px; z-index: 99; display: grid; place-items: center;">
+  <img src="/logo.png" style="width: 350px;  position: relative" alt="MarketRaker" />
+  </div>
+
+  <style>
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
   <!-- #region navigation -->
-  <nav class="navigation">
+  <nav class="navigation ">
     <div class="mobile-only">
       <div class="logo">
-        
+
+
         <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
 
       </div>
@@ -26,71 +45,78 @@
         <div class="line"></div>
       </button>
       <div class="fill"></div>
-      <a class="contact-us" href="/#contact">Contact Us</a>
+      <a class="contact-us" href="/#contact" data-i18n="footer.contact_us">Contact Us</a>
     </div>
 
     <div class="desktop-logo">
 
       <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
+
     </div>
 
     <ul>
-      <li><a class="js-nav-item" href="/index.html#home">Home</a></li>
-      <li><a class="js-nav-item" href="/index.html#what-is-marketraker">What is MarketRaker-AI?</a></li>
-      <li><a class="js-nav-item" href="/index.html#features">Features & Milestones</a></li>
-      <li><a class="js-nav-item" href="/index.html#pricing">Pricing</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market">Login</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite">Register</a></li>
+      <li><a class="js-nav-item" href="/index.html#home" data-i18n="navigation.home">Home</a></li>
+      <li><a class="js-nav-item" href="/index.html#what-is-marketraker" data-i18n="navigation.what_is_marketraker">What is MarketRaker-AI?</a></li>
+      <li><a class="js-nav-item" href="/index.html#features" data-i18n="navigation.features_milestones">Features & Milestones</a></li>
+      <li><a class="js-nav-item" href="/index.html#pricing" data-i18n="navigation.pricing">Pricing</a></li>
+      <li><a class="js-nav-item" href="https://app.raker.market" data-i18n="navigation.login">Login</a></li>
+      <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite" data-i18n="navigation.register">Register</a></li>
+      <li>
+        <select name="language-select" id="language-select">
+          <option value="en" data-i18n="en">English</option>
+          <option value="ar" data-i18n="ar">Arabic</option>
+          <option value="fr" data-i18n="fr">French</option>
+          <option value="de" data-i18n="de">German</option>
+        </select>
+      </li>
     </ul>
   </nav>
   <!-- #endregion navigation -->
 
   <section class="division-hero division-hero--terms-of-service">
     <div class="container">
-      <h1>Market Raker Terms of Use</h1>
+      <h1 data-i18n="terms_of_service.page_title">Market Raker Terms of Use</h1>
     </div>
   </section>
-
+  
   <section class="section section--content content-intro">
     <div class="container">
       <div class="terms-body">
-
-        <p class="document-textA"> Welcome to MarketRaker, a tool that provides trading indicators and insights for
+  
+        <p class="document-textA" data-i18n="terms_of_service.welcome_message"> Welcome to MarketRaker, a tool that provides trading indicators and insights for
             various
             markets. By using our website and services, you agree to be bound by these terms of use. Please read them
             carefully before using our
             website or services.
         </p>
-
-        <h2 class="content-heading">Disclaimer</h2>
-
-        <p class="document-text"> MarketRaker is not a financial advisor and does not provide investment advice. Our
+  
+        <h2 class="content-heading" data-i18n="terms_of_service.disclaimer_heading">Disclaimer</h2>
+  
+        <p class="document-text" data-i18n="terms_of_service.disclaimer_message"> MarketRaker is not a financial advisor and does not provide investment advice. Our
             services are intended to provide
             information and trading indicators for educational and informational purposes only. It is essential to
             understand
             that using our services and indicators does not guarantee any particular investment results and that all
             trading
             involves risk.
-
         </p>
-
-        <h2 class="content-heading">Using our Services</h2>
-
-        <p class="document-text"> By using our website and services, you agree that you will not use them for illegal,
+  
+        <h2 class="content-heading" data-i18n="terms_of_service.using_services_heading">Using our Services</h2>
+  
+        <p class="document-text" data-i18n="terms_of_service.using_services_message"> By using our website and services, you agree that you will not use them for illegal,
             unauthorized, or improper
             purposes. You agree that you will use our services solely for your personal, non-commercial use and will not
             share
             your account or login credentials with any third parties.
-
+  
             You agree that you will not attempt to reverse engineer, decompile, or disassemble any of our software or
             services.
             You also agree that you will not use automated systems or bots to access or use our services unless intended for trading bots.
-
         </p>
-
-        <h2 class="content-heading"> Indemnification</h2>
-
-        <p class="document-text"> You agree to indemnify, defend, and hold harmless MarketRaker, its affiliates,
+  
+        <h2 class="content-heading" data-i18n="terms_of_service.indemnification_heading">Indemnification</h2>
+  
+        <p class="document-text" data-i18n="terms_of_service.indemnification_message"> You agree to indemnify, defend, and hold harmless MarketRaker, its affiliates,
             officers,
             directors, employees,
             agents, licensors, and suppliers from any claims, liabilities, damages, or expenses (including attorneys'
@@ -100,10 +126,10 @@
             any
             rights of another.
         </p>
-
-        <h2 class="content-heading"> Limitation of Liability</h2>
-
-        <p class="document-text"> To the fullest extent permitted by law, MarketRaker, its affiliates, officers,
+  
+        <h2 class="content-heading" data-i18n="terms_of_service.limitation_of_liability_heading">Limitation of Liability</h2>
+  
+        <p class="document-text" data-i18n="terms_of_service.limitation_of_liability_message"> To the fullest extent permitted by law, MarketRaker, its affiliates, officers,
             directors,
             employees, agents,
             licensors, and suppliers shall not be liable for any direct, indirect, punitive, incidental, special, or
@@ -115,71 +141,52 @@
             the
             possibility of such damages.
         </p>
-
-        <h2 class="content-heading"> RAKER Token Grant for Early Adopters </h2>
-
-        <p class="document-text"> 
+  
+        <h2 class="content-heading" data-i18n="terms_of_service.token_grant_heading">RAKER Token Grant for Early Adopters</h2>
+  
+        <p class="document-text" data-i18n="terms_of_service.token_grant_message"> 
             The RAKER Token Grant offers an initial 10 RAKER tokens, with the potential to receive up to 1000 tokens, as a special incentive for early supporters of MarketRaker. We've set this in place to acknowledge and reward our early community members. However, we urge members to use this grant responsibly and in the spirit it's intended.
             
             <br><br>
             To maintain the integrity of this grant and ensure it reaches genuine users, we require all participants to log into the MarketRaker app and complete verification before tokens are disbursed.
         </p>
             <br><br>
-            <p class="document-text"> 
-            <b>Examples of Valid Use Cases:</b>  
-        </p>
+            <p class="document-text"><b data-i18n="terms_of_service.valid_use_cases_heading">Examples of Valid Use Cases:</b></p>
             <ul class="document-text">
-                <li class="document-text">Transferring the grant to a friend's wallet that displays other active transactions.</li>
-                <li class="document-text">Purchasing tokens directly from MinSwap.</li>
-            </ul>
-            
-            <p class="document-text"> 
-            <b>Examples of Invalid Use Cases:</b>
-            </p>
+                <li class="document-text" data-i18n="terms_of_service.valid_use_case_1">Transferring the grant to a friend's wallet that displays other active transactions.</li>
+                <li class="document-text" data-i18n="terms_of_service.valid_use_case_2">Purchasing tokens directly from MinSwap.</li>
+            </ul> 
+            <p class="document-text"><b data-i18n="terms_of_service.invalid_use_cases_heading">Examples of Invalid Use Cases:</b></p>
             <ul>
-                <li class="document-text">Wallets with only a single transaction of 10 tokens intended for the airdrop will be considered suspicious and will be removed from valid registrations.</li>
-                <li class="document-text">Discord accounts are created on the same day of the token registration, with a single transaction on their account and will be removed from valid registrations.</li>
+                <li class="document-text" data-i18n="terms_of_service.invalid_use_case_1">Wallets with only a single transaction of 10 tokens intended for the airdrop will be considered suspicious and will be removed from valid registrations.</li>
+                <li class="document-text" data-i18n="terms_of_service.invalid_use_case_2">Discord accounts are created on the same day of the token registration, with a single transaction on their account and will be removed from valid registrations.</li>
             </ul>
-        <p class="document-text"> 
-            
+        <p class="document-text" data-i18n="terms_of_service.token_grant_disclaimer"> 
             <br>Please note: MarketRaker holds the authority to withhold or retrieve tokens from accounts that breach these terms.
         </p>
-
-        <h2 class="content-heading"> Changes to Terms of Use
+        <h2 class="content-heading" data-i18n="terms_of_service.changes_heading">Changes to Terms of Use
         </h2>
-
-        <p class="document-text"> We reserve the right to modify or update these terms of use without prior notice. Your
+        <p class="document-text" data-i18n="terms_of_service.changes_message"> We reserve the right to modify or update these terms of use without prior notice. Your
             continued use of our website
             or services after any such changes constitutes your acceptance of the new terms of use.
-
             Governing Law and Jurisdiction
-
             These terms of use shall be governed by and construed following the laws of the jurisdiction in which
             MarketRaker is
             based. Any legal action or proceeding arising out of or relating to these terms of use shall be brought
             exclusively
             in the courts of that jurisdiction.
         </p>
-
-        <h2 class="content-heading">Contact Us
+        <h2 class="content-heading" data-i18n="terms_of_service.contact_heading">Contact Us
         </h2>
-
-        <p class="document-text"> If you have any questions or concerns about these terms of use, please get in touch
-            with
-            us at
-
+        <p class="document-text"><span data-i18n="terms_of_service.contact_message">If you have any questions or concerns about these terms of use, please get in touch
+          with
+          us at</span> 
             <a href="support@raker.market">support@raker.market</a>
         </p>
-
-
-
-
-
-
-
     </div>
     </div>
   </section>
+  
 
 
   <!-- #region Footer -->
@@ -187,37 +194,37 @@
     <div class="container">
       <div class="grid">
         <div class="divisions">
-          <h4>External Links</h4>
+          <h4 data-i18n="footer.external_links">External Links</h4>
           <ul>
             <li>
-              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8">Discord</a>
+              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8" data-i18n="footer.discord">Discord</a>
             </li>
             <li>
-              <a target="_blank" href="https://marketraker.medium.com">Blog</a>
+              <a target="_blank" href="https://marketraker.medium.com" data-i18n="footer.blog">Blog</a>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/rakermarket">X</a>
+              <a target="_blank" href="https://twitter.com/rakermarket" data-i18n="footer.twitter">X</a>
             </li>
             <li>
-              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v">White Paper</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v" data-i18n="footer.white_paper">White Paper</a>
             </li>
-            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">Buy RAKER Tokens</a></li>
+            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="footer.buy_tokens">Buy RAKER Tokens</a></li>
             <li>
-              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA">Tap tools</a>
+              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA" data-i18n="footer.tap_tools">Tap tools</a>
             </li>
           </ul>
         </div>
         <div class="resources">
-          <h4>Resources</h4>
+          <h4 data-i18n="footer.resources">Resources</h4>
           <ul>
-            <li><a href="https://app.raker.market#docs" target="_blank">Documentation</a></li>
+            <li><a href="https://app.raker.market#docs" target="_blank" data-i18n="footer.documentation">Documentation</a></li>
           </ul>
         </div>
         <div class="about">
-          <h4>Partners</h4>
+          <h4 data-i18n="footer.partners">Partners</h4>
           <ul>
-            <li><a  target="blank" href="https://matogen.com">Matogen</a></li>
-            <li><a  target="blank" href="https://cardanofoundation.org/">Cardano Foundation</a></li>
+            <li><a target="blank" href="https://matogen.com" data-i18n="footer.partner_matogen">Matogen</a></li>
+            <li><a target="blank" href="https://cardanofoundation.org/" data-i18n="footer.partner_cardano_foundation">Cardano Foundation</a></li>
           </ul>
         </div>
       </div>
@@ -230,13 +237,17 @@
   <!-- #region Copyright -->
   <footer class="section section--red footer-copyright">
     <div class="container">
-      <p>Copyright MarketRaker-AI 2023-<span data-current-year></span> | All Rights Reserved | <a
-          href="/terms-of-service/">Company Terms of Service</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
+      <p>
+        <span data-i18n="footer.copyright_prefix">Copyright MarketRaker-AI 2023-</span><span data-current-year></span> | <span data-i18n="footer.copyright_suffix">All Rights Reserved |</span>
+        <a href="/terms-of-service/" data-i18n="footer.company_terms_of_service">Company Terms of Service</a> |
+        <a href="/privacy-policy/" data-i18n="footer.privacy_policy">Privacy Policy</a>
+      </p>
     </div>
   </footer>
   <!-- #endregion -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
   <script type="module" src="./terms-of-service.ts"></script>
+  <script type="module" src="../script/i18n.ts"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TR523WL6WE"></script>
   <script>
