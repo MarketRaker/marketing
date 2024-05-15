@@ -18,9 +18,9 @@
   <meta name="keywords"
     content="market raker, ai trading, ai market indicators, investment tools, machine learning trading">
   <meta name="author" content="MarketRaker AI from Matogen.com">
-  <script type="module" crossorigin src="/assets/main-9c45b88a.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/mobile-burger-menu-fbba744c.js">
-  <link rel="stylesheet" href="/assets/mobile-burger-menu-37fa7c25.css">
+  <script type="module" crossorigin src="/assets/main-b75dee18.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/i18n-1b910e32.js">
+  <link rel="stylesheet" href="/assets/i18n-cac168d7.css">
 </head>
 
 <body>
@@ -57,187 +57,279 @@
 
   </script>
 
-  <nav class="navigation">
-    <div class="mobile-only">
-      <div class="logo">
-        
-      <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
-
-      </div>
-      <button class="hamburger js-mobile-menu-toggle" type="button">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </button>
-      <div class="fill"></div>
-      <a class="contact-us" href="https://app.raker.market">Login</a>
-    </div>
-
-    <div class="desktop-logo">
+<nav class="navigation">
+  <div class="mobile-only">
+    <div class="logo">
       <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
     </div>
-    <ul>
-      <li><a class="js-nav-item" href="/index.html#home">Home</a></li>
-      <li><a class="js-nav-item" href="/#what-is-marketraker">What is MarketRaker-AI?</a></li>
-      <li><a class="js-nav-item" href="/#features">Features & Milestones</a></li>
-      <li><a class="js-nav-item" href="/#pricing">Pricing</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market">Login</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite">Register</a></li>
-    </ul>
-  </nav>
-  <!-- #region Hero -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="logo">
-        <video id="video-player" class="video-player" >
-          <source src="/movie_black.mp4" type="video/mp4">
-          <source src="/movie_black.webm" type="video/webm">
-          <source src="/movie_black.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
-        <div class="slogan">No more noise</div>
-      </div>
+    <button class="hamburger js-mobile-menu-toggle" type="button">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+    <div class="fill"></div>
+    <a class="contact-us" href="https://app.raker.market" data-i18n="login_link">Login</a>
+  </div>
 
+  <div class="desktop-logo">
+    <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
+  </div>
+  <ul>
+    <li><a class="js-nav-item" href="/index.html#home" data-custom="custom" data-i18n="home_link">Home</a></li>
+    <li><a class="js-nav-item" href="/#what-is-marketraker" data-i18n="what_is_marketraker">What is MarketRaker-AI?</a></li>
+    <li><a class="js-nav-item" href="/#features" data-i18n="features_milestones">Features &amp; Milestones</a></li>
+    <li><a class="js-nav-item" href="/#pricing" data-i18n="pricing">Pricing</a></li>
+    <li><a class="js-nav-item" href="https://app.raker.market" data-i18n="login">Login</a></li>
+    <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite" data-i18n="register">Register</a></li>
+    <li>
+      <select name="language-select" id="language-select">
+        <option value="en" data-i18n="en">English</option>
+        <option value="ar" data-i18n="ar">Arabic</option>
+        <option value="fr" data-i18n="fr">French</option>
+        <option value="de" data-i18n="de">German</option>
+      </select>
+    </li>
+  </ul>
+</nav>
+<!-- #region Hero -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="logo">
+      <video id="video-player" class="video-player" >
+        <source src="/movie_black.mp4" type="video/mp4">
+        <source src="/movie_black.webm" type="video/webm">
+        <source src="/movie_black.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <div class="slogan" data-i18n="no_more_noise">No more noise</div>
+    </div>
+
+    <div class="content">
+      <h1 data-i18n="chart_analysis">No more manual chart analysis. We use AI methodologies to give real-time AI Indicators for traders and trading bots.</h1>
+      <a href="https://app.raker.market" class="btn btn-outline btn-outline-light" data-i18n="open_app">Open the app</a>
+    </div>
+  </div>
+  <div class="hero-logo-slider">
+    <div class="logo-slider" id="logoElement"></div>
+  </div>
+</section>
+<!-- #endregion -->
+
+<!-- #region Mission -->
+<section id="what-is-marketraker" class="section mission">
+  <div class="container">
+    <h2 data-i18n="what_is_marketraker">What is MarketRaker?</h2>
+    <p class="body-paragraph-how">
+      <span data-i18n="tool_description">MarketRaker-AI is a cutting-edge trading tool that leverages the power of machine learning to provide traders and investors with reliable, up-to-date market analysis and informed investment insights.</span>
+      <br /><br />
+      <span data-i18n="algorithm_description">Our platform utilizes sophisticated algorithms to continuously review and model a wide range of indicators every hour, generating AI-driven trading signals that can help users minimize risk and maximize profits.</span>
+      <br /><br />
+      <span data-i18n="solution_description">By harnessing the capabilities of artificial intelligence and machine learning, MarketRaker offers a unique and dynamic solution to the challenges of modern trading, empowering users with a data-driven approach to navigate ever-changing market conditions.</span>
+    </p>
+  </div>
+</section>
+<!-- #endregion -->
+<!-- #region Industries of expertise -->
+<section id="industries" class="section section--light industries">
+  <h2 class="section-title" data-i18n="trading_challenges_addressed_by_ai_and_ml">Trading Challenges Addressed by AI and ML</h2>
+  <div class="motion-scroller">
+    <div class="viewport">
       <div class="content">
-        <h1>
-          No more manual chart analysis. We use AI methodologies to give real-time AI Indicators for traders and trading
-          bots.
-        </h1>
-        <a href="https://app.raker.market" class="btn btn-outline btn-outline-light">Open the app</a>
+        <!-- Market Volatility -->
+        <div class="item item--market-volatility">
+          <div class="title" data-i18n="market_volatility">Market Volatility</div>
+          <div class="description" data-i18n="market_volatility_description">Cryptocurrency and traditional stock markets are notoriously volatile, with sudden price swings that can be difficult to predict or respond to in real-time.</div>
+        </div>
+        <!-- Information Overload -->
+        <div class="item item--information-overload">
+          <div class="title" data-i18n="information_overload">Information Overload</div>
+          <div class="description" data-i18n="information_overload_description">The sheer volume of news, data, and analysis available on the markets can be overwhelming, making it difficult for traders to sift through and identify key trends and signals.</div>
+        </div>
+        <!-- Time-consuming Analysis -->
+        <div class="item item--time-consuming">
+          <div class="title" data-i18n="time_consuming_analysis">Time-consuming Analysis</div>
+          <div class="description" data-i18n="time_consuming_analysis_description">Conducting thorough market analysis and research can be a time-consuming and resource-intensive process, particularly for individual traders or small teams.</div>
+        </div>
+        <!-- Lack of Expertise -->
+        <div class="item item--lack-of-expertise">
+          <div class="title" data-i18n="lack_of_expertise">Lack of Expertise</div>
+          <div class="description" data-i18n="lack_of_expertise_description">Successfully navigating the markets requires a deep understanding of financial markets, technical analysis, and trading strategies, which can be a barrier for novice or less experienced traders.</div>
+        </div>
+        <!-- Risk Management -->
+        <div class="item item--risk-management">
+          <div class="title" data-i18n="risk_management">Risk Management</div>
+          <div class="description" data-i18n="risk_management_description">Managing risk is critical for successful trading, but it can be difficult to accurately assess and manage risk in rapidly changing markets.</div>
+        </div>
+        <!-- The Need for MarketRaker AI -->
+        <div class="item item--the-need">
+          <div class="title" data-i18n="the_need_for_marketraker_ai">The Need for MarketRaker AI</div>
+          <div class="description" data-i18n="the_need_for_marketraker_ai_description">MarketRaker aims to address these challenges by providing reliable and actionable AI trading indicators that enable traders to make informed, data-driven decisions and minimize their risk.</div>
+        </div>
+        <!-- Why -->
+        <div class="item item--finance">
+          <div class="title" data-i18n="why_is_marketraker_ai_needed">Why is MarketRaker AI Needed?</div>
+          <div class="description" data-i18n="why_is_marketraker_ai_needed_description">Despite the growth and potential of the cryptocurrency and traditional stock markets, traders face several challenges that make it difficult to consistently make profitable trades.</div>
+        </div>
       </div>
     </div>
-    <div class="hero-logo-slider">
-      <div class="logo-slider" id="logoElement">
-        
+  </div>
+</section>
+<!-- #endregion -->
+
+
+
+<section class="section section--yellow">
+  <div class="container container--reasons">
+    <h2 class="section-title" data-i18n="marketraker_ai_solution_title">How does MarketRaker AI solve these problems?</h2>
+    <div class="reasons">
+      <div class="reason">
+        <div class="reason-title" data-i18n="maximize_trading_efficiency_title">Maximize Trading Efficiency</div>
+        <div class="reason-description" data-i18n="maximize_trading_efficiency_description">
+          MarketRaker's AI-driven trading indicators are designed to provide reliable and up-to-date information on
+          market trends and conditions, enabling users to make more informed and accurate trades.
+        </div>
       </div>
+      <div class="reason">
+        <div class="reason-title" data-i18n="simplify_trading_decisions_title">Simplify Trading Decisions</div>
+        <div class="reason-description" data-i18n="simplify_trading_decisions_description">
+          By leveraging MarketRaker's AI trading indicators, users can better assess market conditions, minimize risk,
+          and identify profitable trading opportunities more effectively.
+        </div>
+      </div>
+      <div class="reason">
+        <div class="reason-title" data-i18n="personalized_risk_management_title">Personalized Risk Management</div>
+        <div class="reason-description" data-i18n="personalized_risk_management_description">
+          MarketRaker's AI trading indicators consider individual risk tolerance and provide actionable insights,
+          helping traders gain a competitive edge while aligning with their risk profiles.
+        </div>
+      </div>
+      <div class="reason">
+        <div class="reason-title" data-i18n="time_saving_analysis_title">Time-Saving Analysis</div>
+        <div class="reason-description" data-i18n="time_saving_analysis_description">
+          By automating market analysis and providing actionable insights, MarketRaker's AI trading indicators save
+          time, reduce manual research efforts, and free up resources for traders to focus on other critical areas.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- #endregion -->
+
+<!-- #region features -->
+<section id="features" class="section section--light">
+  <h3 data-i18n="core_features_title">Core Features (Available)</h3>
+  <div class="values">
+    <div class="value">
+      <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
+      <div class="label" data-i18n="rolling_12_hour_predictions">Rolling 12 Hour Price Predictions</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/honesty.svg" alt="Long Term Stop Losses" /></div>
+      <div class="label" data-i18n="long_term_stop_losses">Long Term Holding AI Stop Losses</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/transparency.svg" alt="Discord On Demand AI Indicators" /></div>
+      <div class="label" data-i18n="discord_on_demand_ai_indicators">Discord On Demand AI Indicators</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/efficiency.svg" alt="Discord On Demand AI Stoploss" /></div>
+      <div class="label" data-i18n="discord_on_demand_ai_stoploss">Discord On Demand AI Stoploss</div>
+    </div>
+  </div>
+  <h2 class="section-title" data-i18n="our_milestones_title">Our milestones</h2>
+  <div class="cards">
+    <a href="#product-development" class="card card-done" data-initials="PD">
+      <h3 class="label" data-i18n="product_development_label">Product Development - Alpha AI Model Launch</h3>
+      <span class="since-text" data-i18n="product_development_date">March - November 2023</span>
+    </a>
+    <a href="#air-drop" class="card  card-done" data-initials="AD">
+      <h3 class="label" data-i18n="airdrop_label">500 Registered Users Airdrop</h3>
+      <span class="since-text" data-i18n="airdrop_date">December 2023</span>
+    </a>
+    <a href="#update-logo-rebrand" class="card  card-done" data-initials="LR">
+      <h3 class="label" data-i18n="update_logo_rebrand_label">Updated Logo and Rebrand</h3>
+      <span class="since-text" data-i18n="update_logo_rebrand_date">January - March 2024</span>
+    </a>
+    <a href="#beta-ai-model" class="card  card-done" data-initials="BL">
+      <h3 class="label" data-i18n="beta_ai_model_label">Beta AI Model and Feature Launch</h3>
+      <span class="since-text" data-i18n="beta_ai_model_date">January - May 2024</span>
+    </a>
+    <a href="#marketing" class="card" data-initials="MC">
+      <h3 class="label" data-i18n="marketing_label">Integrations, Marketing, Collaborations</h3>
+      <span class="since-text" data-i18n="marketing_date">June 2024 onwards</span>
+    </a>
+    <a href="#final" class="card" data-initials="AL">
+      <h3 class="label" data-i18n="finalised_model_label">Finalised Model Launch</h3>
+      <span class="since-text" data-i18n="finalised_model_date">May - November 2024</span>
+    </a>
+  </div>
+  <h3 data-i18n="features_in_the_making_title">Features in the making</h3>
+  <div class="values">
+    <div class="value">
+      <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
+      <div class="label" data-i18n="24_hour_7day_price_predictions_label">24 Hour and 7day Price AI Predictions</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/integrity.svg" alt="24 Hour and 7day Price AI Predictions" /></div>
+      <div class="label" data-i18n="ai_leverage_predictions_label">AI Leverage Predictions</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/creativity.svg" alt="Bot Integrations" /></div>
+      <div class="label" data-i18n="discord_bot_integrations_label">On-demand discord AI Bot for Your Servers</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/creativity.svg" alt="Bot Integrations" /></div>
+      <div class="label" data-i18n="bot_integrations_label">Bot Integrations</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/creativity.svg" alt="Trading Bots" /></div>
+      <div class="label" data-i18n="ai_trading_bots_label">AI Trading Bots</div>
+    </div>
+    <div class="value">
+      <div class="icon"><img src="/respect.svg" alt="Trading Bots" /></div>
+      <div class="label" data-i18n="ai_stock_crypto_research_label">AI Stock/Crypto Research</div>
+    </div>
+  </div>
+</section>
+
+<!-- #endregion -->
+
+<div class="division-sections" id="division-sections">
+  <div class="section-progress">
+    <div class="handle"></div>
+  </div>
+  <!-- #region CWD -->
+  <section id="product-development" class="section section--dark" >
+    <div class="container container--offset">
+      <div class="panel">
+        <div class="panel-content">
+          <h2 data-i18n="product_development_title">Product Development - Alpha AI Model Launch</h2>
+          <p data-i18n="product_development_description">In December 2022, we embarked on a journey fueled by an ambitious dream – to revolutionize the trading world by developing an AI tool that would automate market analysis and alleviate the arduous tasks traders face daily. Thus, MarketRaker-AI was born, and a dedicated fund was established to propel its development forward, commencing in March 2023. After months of tireless effort, we proudly unveiled our first Alpha model on November 26th, marking a significant milestone in our quest to empower traders with cutting-edge AI technology.</p>
+          <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v" class="read-more" data-i18n="read_white_paper_v1_1">Read the White Paper v1.1</a>
+        </div>
+        <div class="panel-media panel-media--idea"></div>
+        <div class="panel-footer">
+        </div>
+      </div>
+    </div>
   </section>
   <!-- #endregion -->
 
-  <!-- #region Mission -->
-  <section id="what-is-marketraker" class="section mission">
-    <div class="container">
-      <h2>What is MarketRaker?</h2>
-      <p class=" body-paragraph-how">MarketRaker-AI is a cutting-edge trading tool that leverages the
-        power of machine learning to provide traders and investors with reliable,
-        up-to-date market analysis and informed investment insights. <br /><br /> Our platform
-        utilizes sophisticated algorithms to continuously review and model a wide range
-        of indicators every hour, generating AI-driven trading signals that can help users
-        minimize risk and maximize profits.<br /><br /> By harnessing the capabilities of artificial intelligence and
-        machine
-        learning, MarketRaker offers a unique and dynamic solution to the challenges of modern trading,
-        empowering users with a data-driven approach to navigate ever-changing market conditions.
-      </p>
-    </div>
-  </section>
-  <!-- #endregion -->
+  <!-- #region Geospatial -->
+  <section id="air-drop" class="section section--red">
+    <div class="container container--offset">
+      <div class="panel">
+        <div class="panel-content">
+          <h2 data-i18n="airdrop_title">500 Registered Users Airdrop Desember 2023</h2>
+          <p data-i18n="airdrop_description">In an exciting turn of events, our RAKER Token listing on Minswap garnered overwhelming interest, surpassing our expectations as 500 users swiftly registered on our Discord and claimed the airdrop. This remarkable milestone was achieved in record time, and we were thrilled to distribute 1000 RAKER tokens to each of our inaugural 500 users, celebrating their early adoption and unwavering support for our project.</p>
+          <a target="_blank" href="https://marketraker.medium.com/marketrakers-exciting-journey-continues-airdrops-and-beyond-009b056cc0ee" class="read-more" data-i18n="read_more">Read more</a>
+        </div>
+        <div class="panel-media panel-media--airdrop"></div>
+        <div class="panel-footer">
 
-
-  <!-- #region Industies of expertise -->
-  <section id="industries" class="section section--light industries">
-    <h2 class="section-title">Trading Challenges Addressed by AI and Machine Learning</h2>
-    <div class="motion-scroller">
-      <div class="viewport">
-        <div class="content">
-          <!-- Market Volatility -->
-          <div class="item item--market-volatility">
-            <div class="title"><span>Market Volatility</span></div>
-            <div class="description">
-              Cryptocurrency and traditional stock markets are notoriously volatile, with sudden price swings that can
-              be difficult to predict or respond to in real-time.
-            </div>
-          </div>
-          <!-- Information Overload -->
-          <div class="item item--information-overload">
-            <div class="title"><span>Information Overload</span></div>
-            <div class="description">
-              The sheer volume of news, data, and analysis available on the markets can be overwhelming, making it
-              difficult for traders to sift through and identify key trends and signals.
-            </div>
-          </div>
-          <!-- Time-consuming Analysis -->
-          <div class="item item--time-consuming">
-            <div class="title"><span>Time-consuming Analysis</span></div>
-            <div class="description">
-              Conducting thorough market analysis and research can be a time-consuming and resource-intensive process,
-              particularly for individual traders or small teams.
-            </div>
-          </div>
-          <!-- Lack of Expertise -->
-          <div class="item item--lack-of-expertise">
-            <div class="title"><span>Lack of Expertise</span></div>
-            <div class="description">
-              Successfully navigating the markets requires a deep understanding of financial markets, technical
-              analysis, and trading strategies, which can be a barrier for novice or less experienced traders.
-            </div>
-          </div>
-          <!-- Risk Management -->
-          <div class="item item--risk-management">
-            <div class="title"><span>Risk Management</span></div>
-            <div class="description">
-              Managing risk is critical for successful trading, but it can be difficult to accurately assess and manage
-              risk in rapidly changing markets.
-            </div>
-          </div>
-          <!-- The Need for MarketRaker AI -->
-          <div class="item item--the-need">
-            <div class="title"><span>The Need for MarketRaker AI</span></div>
-            <div class="description">
-              MarketRaker aims to address these challenges by providing reliable and actionable AI trading indicators
-              that enable traders to make informed, data-driven decisions and minimize their risk.
-            </div>
-          </div>
-          <!-- Why -->
-          <div class="item item--finance">
-            <div class="title"><span>Why is MarketRaker AI Needed?</span></div>
-            <div class="description">
-              Despite the growth and potential of the cryptocurrency and traditional stock markets, traders face several
-              challenges that make it difficult to consistently make profitable trades.
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- #endregion -->
-
-
-
-
-  <!-- #region WhatSetsUsApart -->
-  <section class="section section--yellow">
-    <div class="container container--reasons">
-      <h2 class="section-title">How does MarketRaker AI solve these problems?</h2>
-      <div class="reasons">
-        <div class="reason">
-          <div class="reason-title">Maximize Trading Efficiency</div>
-          <div class="reason-description">
-            MarketRaker's AI-driven trading indicators are designed to provide reliable and up-to-date information on
-            market trends and conditions, enabling users to make more informed and accurate trades.
-          </div>
-        </div>
-        <div class="reason">
-          <div class="reason-title">Simplify Trading Decisions</div>
-          <div class="reason-description">
-            By leveraging MarketRaker's AI trading indicators, users can better assess market conditions, minimize risk,
-            and identify profitable trading opportunities more effectively.
-          </div>
-        </div>
-        <div class="reason">
-          <div class="reason-title">Personalized Risk Management</div>
-          <div class="reason-description">
-            MarketRaker's AI trading indicators consider individual risk tolerance and provide actionable insights,
-            helping traders gain a competitive edge while aligning with their risk profiles.
-          </div>
-        </div>
-        <div class="reason">
-          <div class="reason-title">Time-Saving Analysis</div>
-          <div class="reason-description">
-            By automating market analysis and providing actionable insights, MarketRaker's AI trading indicators save
-            time, reduce manual research efforts, and free up resources for traders to focus on other critical areas.
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   <!-- #endregion -->
 
@@ -376,151 +468,122 @@
 
     <!-- #region AI -->
     <section id="update-logo-rebrand" class="section section--dark">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>Updated Logo and Rebrand</h2>
-            <p> Driven by the overwhelming demand from
-              our passionate community, we embarked on an exciting journey to find a new logo
-              that would resonate with our shared vision. Through a collaborative process, we actively engaged with our
-              community members, carefully considering their valuable input and ideas. After careful deliberation
-              , a new logo was chosen, encapsulating the spirit and essence of MarketRaker. With
-              this fresh visual identity, we proudly embarked on a comprehensive rebranding initiative, ensuring that
-              every aspect of our platform reflects our unwavering commitment to innovation and excellence. </p>
-            <a target="_blank"
-              href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5"
-              class="read-more">Read Competition</a>
-            <a target="_blank"
-              href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5"
-              class="read-more">Read Final</a>
-          </div>
-          <div class="panel-media panel-media--rebrand"></div>
-          <div class="panel-footer">
-
-          </div>
+        <div class="container container--offset">
+            <div class="panel">
+                <div class="panel-content">
+                    <h2 data-i18n="updated_logo_and_rebrand">Updated Logo and Rebrand</h2>
+                    <p data-i18n="updated_logo_and_rebrand_description">Driven by the overwhelming demand from our passionate community, we embarked on an exciting journey to find a new logo that would resonate with our shared vision. Through a collaborative process, we actively engaged with our community members, carefully considering their valuable input and ideas. After careful deliberation, a new logo was chosen, encapsulating the spirit and essence of MarketRaker. With this fresh visual identity, we proudly embarked on a comprehensive rebranding initiative, ensuring that every aspect of our platform reflects our unwavering commitment to innovation and excellence.</p>
+                    <a target="_blank" href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5" class="read-more" data-i18n="read_competition">Read Competition</a>
+                    <a target="_blank" href="https://marketraker.medium.com/final-voting-commences-for-marketrakers-new-logo-a-creative-journey-comes-to-a-close-01bb6e17c9f5" class="read-more" data-i18n="read_final">Read Final</a>
+                </div>
+                <div class="panel-media panel-media--rebrand"></div>
+                <div class="panel-footer"></div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- #endregion -->
 
     <!-- #region Telematics -->
     <section id="beta-ai-model" class="section section--green">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>Beta AI Prediction Model and Feature Launch (Soon)</h2>
-            <p>
-              Our team is tirelessly engaged in developing the highly anticipated Beta AI
-              Prediction Model, slated for launch in May 2024. This groundbreaking advancement
-              aims to elevate our current success rate, leveraging cutting-edge indicators and
-              algorithms to deliver even more accurate and reliable market predictions.
-              Moreover, we are excited to introduce a new feature that will empower
-              users to seamlessly interface with our robust APIs, enabling the integration
-              of our AI-driven insights into their trading bots and strategies. Stay tuned
-              as we continue to push the boundaries of innovation, revolutionizing the
-              trading landscape with advanced AI capabilities.
-            </p>
-            <a target="_blank"
-              href="https://marketraker.medium.com/emphasizing-stop-losses-in-the-upcoming-bull-market-insights-from-marketraker-ai-c1cd1e10079e"
-              class="read-more">Read on New Stoploss model</a>
-          </div>
-          <div class="panel-media panel-media--beta"></div>
-          <div class="panel-footer">
+        <div class="container container--offset">
+            <div class="panel">
+                <div class="panel-content">
+                    <h2 data-i18n="beta_ai_prediction_model_and_feature_launch_soon">Beta AI Prediction Model and Feature Launch (Soon)</h2>
+                    <p data-i18n="beta_ai_prediction_model_and_feature_launch_soon_description">Our team is tirelessly engaged in developing the highly anticipated Beta AI Prediction Model, slated for launch in May 2024. This groundbreaking advancement aims to elevate our current success rate, leveraging cutting-edge indicators and algorithms to deliver even more accurate and reliable predictions. Alongside the Beta AI Prediction Model, we are also working on introducing new features and enhancements to further enrich the user experience and provide valuable insights to our community of traders. Stay tuned for more updates as we approach the launch date!</p>
+                    <a target="_blank" href="https://marketraker.medium.com/marketraker-beta-ai-model-and-new-features-coming-soon-117e3d6a23e2" class="read-more" data-i18n="read_more">Read more</a>
+                </div>
+                <div class="panel-media panel-media--beta"></div>
+                <div class="panel-footer"></div>
+                <div class="panel-footer">
 
-          </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- #endregion -->
+      
+          <!-- #region Digital -->
+          <section id="marketing" class="section section--dark">
+            <div class="container container--offset">
+              <div class="panel">
+                <div class="panel-content">
+                  <h2 data-i18n="marketing_title">Integrations, Marketing, and Collaborations (Soon)</h2>
+                  <p data-i18n="marketing_campaign_and_strategic_collaborations">
+                    With the power of our cutting-edge AI tools at our disposal, we are poised to embark on an ambitious marketing campaign and forge strategic collaborations that will showcase the remarkable capabilities of MarketRaker AI. Our goal is to create widespread awareness and establish a strong presence within the trading community. By reaching out to influential trading groups and fostering partnerships, we aim to demonstrate the transformative potential of our AI-driven solutions. Through these collaborations, we will not only raise awareness but also unlock new opportunities for integration, allowing traders to seamlessly incorporate our advanced AI tools into their existing workflows and strategies.
+                  </p>
+                  <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
+                </div>
+                <div class="panel-media panel-media--marketing"></div>
+                <div class="panel-footer">
+      
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- #endregion -->
+      
+          <!-- #region Alpha -->
+          <section id="final" class="section section--yellow">
+            <div class="container container--offset">
+              <div class="panel">
+                <div class="panel-content">
+                  <h2 data-i18n="finalized_model_title">Finalized Model Launch (Soon)</h2>
+                  <p data-i18n="finalized_model_description">
+                    Marking a significant milestone in our journey, we are thrilled to work towards the imminent launch of
+                    our finalized AI Model. This cutting-edge solution will harness the power of sentiment analysis,
+                    seamlessly integrating it into our advanced trading indicators. By combining this invaluable insight with
+                    our sophisticated algorithms, we will unlock unprecedented capabilities in price prediction. Traders
+                    can expect 24-hour and 7-day price forecasts, empowering them to make informed decisions and
+                    stay ahead of the curve. This finalized model represents the culmination of our relentless pursuit of
+                    innovation, delivering a comprehensive AI-driven solution that redefines the boundaries of market analysis and trading strategies. 
+                  </p>
+                  <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
+                </div>
+                <div class="panel-media panel-media--final"></div>
+                <div class="panel-footer">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- #endregion -->
-
-    <!-- #region Digital -->
-    <section id="marketing" class="section section--dark">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>Integrations, Marketing, and Collaborations (Soon)</h2>
-            <p> With the power of our cutting-edge AI tools at our disposal,
-              we are poised to embark on an ambitious marketing campaign and forge
-              strategic collaborations that will showcase the remarkable capabilities of MarketRaker AI.
-              Our goal is to create widespread awareness and establish a strong presence within the
-              trading community. By reaching out to influential trading groups and fostering partnerships,
-              we aim to demonstrate the transformative potential of our AI-driven solutions. Through these
-              collaborations, we will not only raise awareness but also unlock new opportunities for integration,
-              allowing traders to seamlessly incorporate our advanced AI tools into their existing workflows
-              and strategies.
-            </p>
-            <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
-          </div>
-          <div class="panel-media panel-media--marketing"></div>
-          <div class="panel-footer">
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- #endregion -->
-
-    <!-- #region Alpha -->
-    <section id="final" class="section section--yellow">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>Finalized Model Launch (Soon)</h2>
-            <p> Marking a significant milestone in our journey, we are thrilled to work towards the imminent launch of
-              our finalized AI Model. This cutting-edge solution will harness the power of sentiment analysis,
-              seamlessly integrating it into our advanced trading indicators. By combining this invaluable insight with
-              our sophisticated algorithms, we will unlock unprecedented capabilities in price prediction. Traders
-              can expect 24-hour and 7-day price forecasts, empowering them to make informed decisions and
-              stay ahead of the curve. This finalized model represents the culmination of our relentless pursuit of
-              innovation, delivering a comprehensive AI-driven solution that redefines the boundaries of market analysis and trading strategies. 
-            </p>
-            <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
-          </div>
-          <div class="panel-media panel-media--final"></div>
-          <div class="panel-footer">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- #endregion -->
-  </div>
+</div>
 
   <!-- #region OurServices -->
   <section class="section section--light" id="pricing">
     <div class="container container--philosophies">
-      <h2 class="section-title">Pricing and RAKER Token Holding</h2>
-
+      <h2 class="section-title" data-i18n="pricing_and_raker_token_holding">Pricing and RAKER Token Holding</h2>
+  
       <div class="philosophies">
         <div class="philosophy philosophy--mission">
           <div class="philosophy-icon">
             <img src="/mission.svg" />
           </div>
-          <div class="philosophy-title">1 Month = 10 RAKER Tokens</div>
-          <div class="philosophy-description">
+          <div class="philosophy-title" data-i18n="1_month_=_10_raker_tokens">1 Month = 10 RAKER Tokens</div>
+          <div class="philosophy-description" data-i18n="holding_10_raker_tokens_description">
             Holding 10 RAKER Tokens in your Cardano wallet grants you access to our platform for one month. This introductory offering allows you to experience the power of our AI-driven trading tools and immerse yourself in our innovative ecosystem.<br/>
-            <br/><a href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
+            <br/><a href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
           </div>
         </div>
-
+  
         <div class="philosophy philosophy--vision">
           <div class="philosophy-icon">
             <img target="_blank" src="/vision.svg" />
           </div>
-          <div class="philosophy-title">Lifetime access = 1000 RAKER Tokens </div>
-          <div class="philosophy-description">
+          <div class="philosophy-title" data-i18n="lifetime_access_=_1000_raker_tokens">Lifetime access = 1000 RAKER Tokens</div>
+          <div class="philosophy-description" data-i18n="holding_1000_raker_tokens_description">
             Holding 1,000 RAKER Tokens grants you lifetime access to our platform, ensuring you never miss out on the latest advancements and cutting-edge features we introduce. However, the benefits don't stop there. As a valued holder of 1,000 RAKER Tokens, you'll also enjoy exclusive perks and privileges within our vibrant Discord community.<br/>
-            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
+            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
           </div>
         </div>
-
+  
         <div class="philosophy philosophy--purpose">
           <div class="philosophy-icon">
             <img src="/purpose.svg" />
           </div>
-          <div class="philosophy-title">Stakeholders = 10 000 RAKER Tokens</div>
-          <div class="philosophy-description">
+          <div class="philosophy-title" data-i18n="stakeholders_=_10000_raker_tokens">Stakeholders = 10,000 RAKER Tokens</div>
+          <div class="philosophy-description" data-i18n="holding_10000_raker_tokens_description">
             Holding 10,000 RAKER Tokens unlocks a range of exclusive benefits and privileges for our valued community members. With this significant token holding, you gain lifetime access to our platform, ensuring uninterrupted access to our cutting-edge AI-driven tools and insights. Additionally, you will receive insider information and have the opportunity to shape the future direction of our project through direct involvement in decision-making processes.<br/>
-            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">BUY RAKER TOKENS</a> 
+            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
           </div>
         </div>
       </div>
@@ -531,8 +594,8 @@
   <!-- #region Leadership -->
   <section id="leadership" class="section section--light">
     <div class="container">
-      <h3 class="section-sub-title">Our Team</h3>
-
+      <h3 class="section-sub-title" data-i18n="our_team">Our Team</h3>
+  
       <div class="members">
         <!-- Cobus -->
         <div class="member member-yellow">
@@ -540,274 +603,277 @@
             <img src="/cobus-coetsee.webp" alt="Cobus Coetsee" />
           </div>
           <div class="member-profile-info">
-            <div class="name">Cobus Coetsee</div>
-            <div class="title">CEO and Founder</div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="name" data-i18n="cobus_coetsee">Cobus Coetsee</div>
+            <div class="title" data-i18n="cobus_coetsee_ceo_and_founder_title">CEO and Founder</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-              Cobus's <span data-years-since="2003"></span> years in the technology sector, Cobus exemplifies the
-              essence of a hands-on leader. He
-              masterfully oversees and applies technical methodologies, ensuring that every project is based on a
-              solid, technically sound foundation.
+              <span data-i18n="cobus_coetsee_bio_1">Cobus's</span> <span data-years-since="2003"></span> <span data-i18n="cobus_coetsee_bio_2">years in the technology sector, Cobus exemplifies the
+                essence of a hands-on leader. He
+                masterfully oversees and applies technical methodologies, ensuring that every project is based on a
+                solid, technically sound foundation.</span>
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">Cobus Coetsee</div>
-            <div class="bio">
-              Cobus's <span data-years-since="2003"></span> years in the technology sector, Cobus exemplifies the
-              essence of a hands-on leader. He
-              masterfully oversees and applies technical methodologies, ensuring that every project is based on a
-              solid, technically sound foundation.
+            <div class="name" data-i18n="cobus_coetsee">Cobus Coetsee</div>
+            <div class="bio" data-i18n="cobus_coetsee_ceo_and_founder_bio">
+              <span data-i18n="cobus_coetsee_bio_1">Cobus's</span> <span data-years-since="2003"></span> <span data-i18n="cobus_coetsee_bio_2">years in the technology sector, Cobus exemplifies the
+                essence of a hands-on leader. He
+                masterfully oversees and applies technical methodologies, ensuring that every project is based on a
+                solid, technically sound foundation.</span>
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
         </div>
-
+  
         <div class="qualification-mobile">
-
-
+  
+  
         </div>
-
-
-
+  
+  
+  
         <!-- Software Development -->
         <div class="member">
           <div class="member-profile-image">
           </div>
           <div class="member-profile-info">
-            <div class="name">Matogen Software Division</div>
-            <div class="title">Software Development</div>
-            <div class="qualification">
-              Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
+            <div class="name" data-i18n="matogen_software_division_title">Matogen Software Division</div>
+            <div class="title" data-i18n="matogen_software_division_title">Software Development</div>
+            <div class="qualification" data-i18n="matogen_software_division_qualification">
+              <span data-i18n="team_qualifications_includes">Team Qualifications Includes</span> - M.Eng Electronic Engineering with Computer Science
             </div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-
+  
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">Software Development</div>
+            <div class="name" data-i18n="matogen_software_division_title">Software Development</div>
             <div class="bio">
-
+  
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
-
+  
         </div>
-
-        <div class="qualification-mobile">
-          Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
+  
+        <div class="qualification-mobile" data-i18n="matogen_software_division_qualification">Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
         </div>
-
+  
         <!-- Machine learning -->
         <div class="member member-yellow">
           <div class="member-profile-image">
           </div>
           <div class="member-profile-info">
-            <div class="name">Matogen AI Division</div>
-            <div class="title">Machine Learning</div>
-            <div class="qualification">
+            <div class="name" data-i18n="matogen_ai_division_title">Matogen AI Division</div>
+            <div class="title" data-i18n="matogen_ai_division_title">Machine Learning</div>
+            <div class="qualification" data-i18n="matogen_ai_division_qualification">
               Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
-              
             </div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-
+  
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">Machine Learning</div>
+            <div class="name" data-i18n="matogen_ai_division_title">Machine Learning</div>
             <div class="bio">
-
+  
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
-
+  
         </div>
-
-        <div class="qualification-mobile">
+  
+        <div class="qualification-mobile" data-i18n="matogen_ai_division_qualification">
           Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
         </div>
-
+  
         <!-- Chat GPT / Co-pilot -->
         <div class="member  ">
           <div class="member-profile-image">
           </div>
           <div class="member-profile-info">
-            <div class="name">AI Tools</div>
-            <div class="title">ChatGPT & Github Co-Pilot</div>
+            <div class="name" data-i18n="ai_tools_title">AI Tools</div>
+            <div class="title" data-i18n="ai_tools_title">ChatGPT & Github Co-Pilot</div>
             <div class="qualification">
-
+  
             </div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-
+  
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">ChatGPT & Github Co-Pilot</div>
+            <div class="name" data-i18n="ai_tools_title">ChatGPT & Github Co-Pilot</div>
             <div class="bio">
-
+  
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
-
+  
         </div>
-
+  
         <div class="qualification-mobile">
         </div>
-
-
-
+  
+  
+  
         <!-- Wim -->
         <div class="member member-yellow">
           <div class="member-profile-image">
             <img src="/wim-conradie.webp" alt="Wim Conradie" />
           </div>
           <div class="member-profile-info">
-            <div class="name">Wim Conradie</div>
-            <div class="title">Financial Director</div>
-            <div class="qualification">
+            <div class="name" data-i18n="wim_comradie">Wim Conradie</div>
+            <div class="title" data-i18n="wim_conradie_financial_director_title">Financial Director</div>
+            <div class="qualification" data-i18n="wim_conradie_financial_director_qualification">
               MBA (Masters in Business Administration) (Cum Laude)<br>
               B.Eng Electronic Engineering with Computer Science
             </div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-              Wim's <span data-years-since="2005"></span> years of experience in business
-              analysis and streamlining software automation, combined with his educational
-              background in Engineering and Business Administration, have
-              shaped him into an astute and diligent business steward.
+              <span data-i18n="wim_conradie_bio_1">Wim's</span>
+              <span data-years-since="2005"></span> <span data-i18n="wim_conradie_bio_2">years of experience in business analysis and streamlining software automation, combined with his educational
+                background in Engineering and Business Administration, have
+                shaped him into an astute and diligent business steward.</span>
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">Wim Conradie</div>
+            <div class="name" data-i18n="wim_comradie">Wim Conradie</div>
             <div class="bio">
-              Wim's <span data-years-since="2005"></span> years of experience in business
-              analysis and stream lining software automation, combined with his educational
-              background in Engineering and Business Administration, have
-              shaped him into an astute and diligent business steward.
+              <span data-i18n="wim_conradie_bio_1">Wim's</span>
+              <span data-years-since="2005"></span> <span data-i18n="wim_conradie_bio_2">years of experience in business analysis and streamlining software automation, combined with his educational
+                background in Engineering and Business Administration, have
+                shaped him into an astute and diligent business steward.</span>
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
-
+  
         </div>
-
-        <div class="qualification-mobile">
+  
+        <div class="qualification-mobile" data-i18n="wim_conradie_financial_director_qualification">
           MBA (Masters in Business Administration) (Cum Laude)<br>
           B.Eng Electronic Engineering with Computer Science
-
         </div>
-
-
+  
+  
         <!-- Jacobus -->
         <div class="member">
           <div class="member-profile-image">
             <img src="/jacobus-eksteen.webp" alt="Jacobus Eksteen" />
           </div>
           <div class="member-profile-info">
-            <div class="name">Jacobus Eksteen</div>
-            <div class="title">Data- and Decision Science</div>
-            <div class="qualification">
+            <div class="name" data-i18n="jacobus_eksteen">Jacobus Eksteen</div>
+            <div class="title" data-i18n="jacobus_eksteen_data_and_decision_science_title">Data- and Decision Science</div>
+            <div class="qualification" data-i18n="jacobus_eksteen_data_and_decision_science_qualification">
               MBA (Masters in Business Administration)<br>
               B.Comm Financial Risk Management
             </div>
-            <div class="read-more js-bio-more">Read more</div>
+            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
             <div class="bio">
-              Jacobus's <span data-years-since="2007"></span> years of diverse experience in data science. He excels in
-              delivering solutions across various industries, notably financial services and agriculture. A
-              data-driven approach makes him a transformative leader in the realm of business and technology.
+              <span data-i18n="jacobus_eksteen_bio_1">Jacobus's</span>
+               <span data-years-since="2007"></span> <span data-i18n="jacobus_eksteen_bio_2">years of diverse experience in data science. He excels in
+                delivering solutions across various industries, notably financial services and agriculture. A
+                data-driven approach makes him a transformative leader in the realm of business and technology.</span>
             </div>
           </div>
           <div class="expanded-bio">
-            <div class="name">Jacobus Eksteen</div>
+            <div class="name" data-i18n="jacobus_eksteen">Jacobus Eksteen</div>
             <div class="bio">
-              Jacobus's <span data-years-since="2007"></span> years of diverse experience in data science. He excels in
-              delivering solutions across various industries, notably financial services and agriculture. A model-driven
-              approach makes him a leader in the realm of actionable analytics.
+              <span data-i18n="jacobus_eksteen_bio_1">Jacobus's</span>
+               <span data-years-since="2007"></span> <span data-i18n="jacobus_eksteen_bio_2">years of diverse experience in data science. He excels in
+                delivering solutions across various industries, notably financial services and agriculture. A
+                data-driven approach makes him a transformative leader in the realm of business and technology.</span>
             </div>
-            <div class="read-more js-bio-more">Show less</div>
+            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
           </div>
         </div>
-
-        <div class="qualification-mobile">
+  
+        <div class="qualification-mobile" data-i18n="jacobus_eksteen_data_and_decision_science_qualification">
           MBA (Masters in Business Administration)<br>
           B.Comm Financial Risk Management
-
+  
         </div>
-
-
+  
+  
       </div>
-      <div class="image-overlay-text">
+      <div class="image-overlay-text" data-i18n="images_modified_with_ai">
         <h5>Images modified with AI</h5>
       </div>
     </div>
   </section>
+  
   <!-- #endregion -->
-
-  <!-- #region Footer -->
-  <section class="section section--black footer-links">
-    <div class="container">
-      <div class="grid">
-        <div class="divisions">
-          <h4>External Links</h4>
-          <ul>
-            <li>
-              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8">Discord</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://marketraker.medium.com">Blog</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/rakermarket">X</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v">White Paper</a>
-            </li>
-            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">Buy RAKER Tokens</a></li>
-            <li>
-              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA">Tap tools</a>
-            </li>
-          </ul>
-        </div>
-        <div class="resources">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="https://app.raker.market#docs" target="_blank">Documentation</a></li>
-          </ul>
-        </div>
-        <div class="about">
-          <h4>Partners</h4>
-          <ul>
-            <li><a  target="blank" href="https://matogen.com">Matogen</a></li>
-            <li><a  target="blank" href="https://cardanofoundation.org/">Cardano Foundation</a></li>
-          </ul>
-        </div>
+<!-- #region Footer -->
+<section class="section section--black footer-links">
+  <div class="container">
+    <div class="grid">
+      <div class="divisions">
+        <h4 data-i18n="external_links">External Links</h4>
+        <ul>
+          <li>
+            <a target="_blank" href="https://discord.gg/rAFfBDgqQ8" data-i18n="discord">Discord</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://marketraker.medium.com" data-i18n="blog">Blog</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/rakermarket" data-i18n="x">X</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v" data-i18n="white_paper">White Paper</a>
+          </li>
+          <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">Buy RAKER Tokens</a></li>
+          <li>
+            <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA" data-i18n="tap_tools">Tap tools</a>
+          </li>
+        </ul>
       </div>
-      <div class="logo">
-        <div>
-          <a href="https://raker.market/" target="blank"><img src="/logo-small.png" alt="MarketRaker-AI Logo" /></a>
-        </div>
-  </section>
-  <!-- #endregion -->
-
-  <!-- #region Clients -->
-  <section class="section section--light footer-clients">
-    <div class="logo-slider" id="logoElement2">
+      <div class="resources">
+        <h4 data-i18n="resources">Resources</h4>
+        <ul>
+          <li><a href="https://app.raker.market#docs" target="_blank" data-i18n="documentation">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="about">
+        <h4 data-i18n="partners">Partners</h4>
+        <ul>
+          <li><a target="blank" href="https://matogen.com" data-i18n="matogen">Matogen</a></li>
+          <li><a target="blank" href="https://cardanofoundation.org/" data-i18n="cardano_foundation">Cardano Foundation</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
-  <!-- #endregion -->
-
-  <!-- #region Copyright -->
-  <footer class="section section--red footer-copyright">
-    <div class="container">
-      <p>Copyright MarketRaker-AI 2023-<span data-current-year></span> | All Rights Reserved | <a
-          href="/terms-of-service/">Company Terms of Service</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
+    <div class="logo">
+      <div>
+        <a href="https://raker.market/" target="blank"><img src="/logo-small.png" alt="MarketRaker-AI Logo" /></a>
+      </div>
     </div>
-  </footer>
-  <!-- #endregion -->
+</section>
+<!-- #endregion -->
+
+<!-- #region Clients -->
+<section class="section section--light footer-clients">
+  <div class="logo-slider" id="logoElement2">
+  </div>
+</section>
+<!-- #endregion -->
+
+
+<footer class="section section--red footer-copyright">
+  <div class="container">
+    <p>
+      <span data-i18n="copyright_prefix">Copyright MarketRaker-AI 2023-</span><span data-current-year></span> | <span data-i18n="copyright_suffix">All Rights Reserved |</span>
+      <a href="/terms-of-service/" data-i18n="company_terms_of_service">Company Terms of Service</a> |
+      <a href="/privacy-policy/" data-i18n="privacy_policy">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
   <script src="
 https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
 "></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDX1Z2KCFE"></script>
@@ -816,6 +882,26 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-XDX1Z2KCFE');
+  </script>
+
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api.botsonic.ai",
+      token: "3cf9a1d7-b1e1-49b8-abc3-6fcdb9821bc8",
+    });
   </script>
 
 </body>

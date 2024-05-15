@@ -9,18 +9,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
   <title>MarketRaker - Company Terms of Service</title>
-  <script type="module" crossorigin src="/assets/privacyPolicy-5984119b.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/mobile-burger-menu-fbba744c.js">
-  <link rel="stylesheet" href="/assets/mobile-burger-menu-37fa7c25.css">
+  <script type="module" crossorigin src="/assets/privacyPolicy-69f8aa34.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/i18n-1b910e32.js">
+  <link rel="stylesheet" href="/assets/i18n-cac168d7.css">
 </head>
 
 <body>
+
+  <div class="preloader" id="preloader"
+  style="background-color: rgb(0, 0, 0); position: fixed; inset: 0px; z-index: 99; display: grid; place-items: center;">
+  <img src="/logo.png" style="width: 350px;  position: relative" alt="MarketRaker" />
+</div>
+
+<style>
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+  }
+</style>
   <!-- #region navigation -->
   <nav class="navigation ">
     <div class="mobile-only">
       <div class="logo">
-        
-        
+
+
         <a href="https://raker.market/" target="blank"><img style="width:80px" src="/logo.png" alt="MarketRaker AI" /></a>
 
       </div>
@@ -30,7 +49,7 @@
         <div class="line"></div>
       </button>
       <div class="fill"></div>
-      <a class="contact-us" href="/#contact">Contact Us</a>
+      <a class="contact-us" href="/#contact" data-i18n="footer.contact_us">Contact Us</a>
     </div>
 
     <div class="desktop-logo">
@@ -40,61 +59,69 @@
     </div>
 
     <ul>
-      <li><a class="js-nav-item" href="/index.html#home">Home</a></li>
-      <li><a class="js-nav-item" href="/index.html#what-is-marketraker">What is MarketRaker-AI?</a></li>
-      <li><a class="js-nav-item" href="/index.html#features">Features & Milestones</a></li>
-      <li><a class="js-nav-item" href="/index.html#pricing">Pricing</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market">Login</a></li>
-      <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite">Register</a></li>
+      <li><a class="js-nav-item" href="/index.html#home" data-i18n="navigation.home">Home</a></li>
+      <li><a class="js-nav-item" href="/index.html#what-is-marketraker" data-i18n="navigation.what_is_marketraker">What is MarketRaker-AI?</a></li>
+      <li><a class="js-nav-item" href="/index.html#features" data-i18n="navigation.features_milestones">Features & Milestones</a></li>
+      <li><a class="js-nav-item" href="/index.html#pricing" data-i18n="navigation.pricing">Pricing</a></li>
+      <li><a class="js-nav-item" href="https://app.raker.market" data-i18n="navigation.login">Login</a></li>
+      <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite" data-i18n="navigation.register">Register</a></li>
+      <li>
+        <select name="language-select" id="language-select">
+          <option value="en" data-i18n="en">English</option>
+          <option value="ar" data-i18n="ar">Arabic</option>
+          <option value="fr" data-i18n="fr">French</option>
+          <option value="de" data-i18n="de">German</option>
+        </select>
+      </li>
     </ul>
   </nav>
   <!-- #endregion navigation -->
 
   <section class="division-hero division-hero--terms-of-service">
     <div class="container">
-      <h1>Market Raker Terms of Use</h1>
+      <h1 data-i18n="privacy_policy.header">Market Raker's Privacy Policy</h1>
     </div>
   </section>
 
   <section class="section section--content content-intro">
     <div class="container">
       <div class="terms-body">
-        <p class="document-textA"> At Raker.Market, we respect and protect the privacy of our users. This Privacy Policy
+        <p class="document-textA" data-i18n="terms.body"> At Raker.Market, we respect and protect the privacy of our users. This Privacy Policy
             explains how we collect, use, and protect your personal information when you use our website and services.
         </p>
-        <h2 class="content-heading">Information We Collect
+        <h2 class="content-heading" data-i18n="terms.information_we_collect">Information We Collect
         </h2>
-        <p class="document-textA"> When you use our website, we may collect certain information about you, including:
+        <p class="document-textA" data-i18n="terms.information_we_collect_description"> When you use our website, we may collect certain information about you, including:
         </p>
         <ul class="document-list">
-            <li class="document-list"> Personal information such as your name, email address, and other contact details
+            <li class="document-list" data-i18n="terms.personal_information"> Personal information such as your name, email address, and other contact details
                 that
                 you provide when you sign up for our services or contact us for support;
             </li>
-            <li class="document-list"> Technical information such as your IP address, browser type, and operating
+            <li class="document-list" data-i18n="terms.technical_information"> Technical information such as your IP address, browser type, and operating
                 system, which is automatically collected by our web server and analytics tools;
             </li>
-            <li class="document-list"> Usage information such as the pages you visit, the time and date of your visits,
+            <li class="document-list" data-i18n="terms.usage_information"> Usage information such as the pages you visit, the time and date of your visits,
                 and the amount of time you spend on our website, which is collected by our analytics tools.
             </li>
         </ul>
-        <h2 class="content-heading">How We Use Your Information
+        <h2 class="content-heading" data-i18n="terms.how_we_use_your_information">How We Use Your Information
         </h2>
-        <p class="document-textA"> We may use your personal and technical information to:
+        <p class="document-textA" data-i18n="terms.how_we_use_your_information_description"> We may use your personal and technical information to:
         </p>
         <ul class="document-list">
-            <li class="document-list"> Provide and improve our services to you;
+            <li class="document-list" data-i18n="terms.provide_and_improve"> Provide and improve our services to you;
             </li>
-            <li class="document-list"> Respond to your inquiries, comments, and support requests;</li>
-            <li class="document-list"> Analyze and monitor usage trends and patterns on our website;
+            <li class="document-list" data-i18n="terms.respond_to_inquiries"> Respond to your inquiries, comments, and support requests;</li>
+            <li class="document-list" data-i18n="terms.analyze_and_monitor"> Analyze and monitor usage trends and patterns on our website;
             </li>
-            <li class="document-list"> Comply with applicable laws, regulations, and legal processes.
+            <li class="document-list" data-i18n="terms.comply_with_applicable_laws"> Comply with applicable laws, regulations, and legal processes.
             </li>
         </ul>
-        <h2 class="content-note">We do not sell, rent, or lease your personal information to third parties.</h2>
-        <h2 class="content-heading">Cookies and Other Tracking Technologies </h2>
+        <h2 class="content-note" data-i18n="terms.no_third_party">We do not sell, rent, or lease your personal information to third parties.</h2>
+        <h2 class="content-heading" data-i18n="terms.cookies_and_other_tracking">Cookies and Other Tracking Technologies </h2>
 
-        <p class="document-text"> We use cookies and other tracking technologies to collect and store certain
+        <p class="document-text" data-i18n="terms.cookies_and_other_tracking_description"> We use cookies and other tracking technologies to collect and store certain
             information about your use of our website. Cookies are small text files that are stored on your device when
             you visit a website. They are used to remember your preferences and enable certain features of our website.
 
@@ -102,22 +129,22 @@
             cookies may affect your ability to use certain features of our website.
 
         </p>
-        <h2 class="content-heading">Data Security </h2>
-        <p class="document-text"> We take reasonable measures to protect the security of your personal information,
+        <h2 class="content-heading" data-i18n="terms.data_security">Data Security </h2>
+        <p class="document-text" data-i18n="terms.data_security_description"> We take reasonable measures to protect the security of your personal information,
             including using encryption technologies and access controls to prevent unauthorized access, use, or
             disclosure of your information.
 
             However, no data transmission over the internet or storage system can be guaranteed to be 100% secure.
             Therefore, we cannot guarantee the absolute security of your personal information.
         </p>
-        <h2 class="content-heading">Changes to this Privacy Policy</h2>
-        <p class="document-text">  We may update this Privacy Policy from time to time. We will notify you of any
+        <h2 class="content-heading" data-i18n="terms.changes_to_privacy_policy">Changes to this Privacy Policy</h2>
+        <p class="document-text" data-i18n="terms.changes_to_privacy_policy_description">  We may update this Privacy Policy from time to time. We will notify you of any
             material changes to this policy by posting a notice on our website or by sending you an email.
         </p>
-        <h2 class="content-heading">Contact Us</h2>
-        <p class="document-text"> If you have any questions or concerns about this Privacy Policy or our data practices,
-            please contact us at 
-            <a href="support@raker.market">support@raker.market</a>
+        <h2 class="content-heading" data-i18n="terms.contact_us">Contact Us</h2>
+        <p class="document-text" ><span data-i18n="terms.contact_us_description">If you have any questions or concerns about this Privacy Policy or our data practices,
+          please contact us at</span>  
+            <a href="support@raker.market" >support@raker.market</a>
         .
         </p>
     </div>
@@ -128,37 +155,37 @@
     <div class="container">
       <div class="grid">
         <div class="divisions">
-          <h4>External Links</h4>
+          <h4 data-i18n="footer.external_links">External Links</h4>
           <ul>
             <li>
-              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8">Discord</a>
+              <a target="_blank" href="https://discord.gg/rAFfBDgqQ8" data-i18n="footer.discord">Discord</a>
             </li>
             <li>
-              <a target="_blank" href="https://marketraker.medium.com">Blog</a>
+              <a target="_blank" href="https://marketraker.medium.com" data-i18n="footer.blog">Blog</a>
             </li>
             <li>
-              <a target="_blank" href="https://twitter.com/rakermarket">X</a>
+              <a target="_blank" href="https://twitter.com/rakermarket" data-i18n="footer.twitter">X</a>
             </li>
             <li>
-              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v">White Paper</a>
+              <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v" data-i18n="footer.white_paper">White Paper</a>
             </li>
-            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552">Buy RAKER Tokens</a></li>
+            <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="footer.buy_tokens">Buy RAKER Tokens</a></li>
             <li>
-              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA">Tap tools</a>
+              <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA" data-i18n="footer.tap_tools">Tap tools</a>
             </li>
           </ul>
         </div>
         <div class="resources">
-          <h4>Resources</h4>
+          <h4 data-i18n="footer.resources">Resources</h4>
           <ul>
-            <li><a href="https://app.raker.market#docs" target="_blank">Documentation</a></li>
+            <li><a href="https://app.raker.market#docs" target="_blank" data-i18n="footer.documentation">Documentation</a></li>
           </ul>
         </div>
         <div class="about">
-          <h4>Partners</h4>
+          <h4 data-i18n="footer.partners">Partners</h4>
           <ul>
-            <li><a  target="blank" href="https://matogen.com">Matogen</a></li>
-            <li><a  target="blank" href="https://cardanofoundation.org/">Cardano Foundation</a></li>
+            <li><a target="blank" href="https://matogen.com" data-i18n="footer.partner_matogen">Matogen</a></li>
+            <li><a target="blank" href="https://cardanofoundation.org/" data-i18n="footer.partner_cardano_foundation">Cardano Foundation</a></li>
           </ul>
         </div>
       </div>
@@ -179,13 +206,17 @@
   <!-- #region Copyright -->
   <footer class="section section--red footer-copyright">
     <div class="container">
-      <p>Copyright MarketRaker-AI 2023-<span data-current-year></span> | All Rights Reserved | <a
-          href="/terms-of-service/">Company Terms of Service</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
+      <p>
+        <span data-i18n="footer.copyright_prefix">Copyright MarketRaker-AI 2023-</span><span data-current-year></span> | <span data-i18n="footer.copyright_suffix">All Rights Reserved |</span>
+        <a href="/terms-of-service/" data-i18n="footer.company_terms_of_service">Company Terms of Service</a> |
+        <a href="/privacy-policy/" data-i18n="footer.privacy_policy">Privacy Policy</a>
+      </p>
     </div>
   </footer>
-  <!-- #endregion -->
+
   <!-- #endregion -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+  
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TR523WL6WE"></script>
