@@ -18,9 +18,9 @@
   <meta name="keywords"
     content="market raker, ai trading, ai market indicators, investment tools, machine learning trading">
   <meta name="author" content="MarketRaker AI from Matogen.com">
-  <script type="module" crossorigin src="/assets/main-b75dee18.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/i18n-1b910e32.js">
-  <link rel="stylesheet" href="/assets/i18n-cac168d7.css">
+  <script type="module" crossorigin src="/assets/main-2ef4f56b.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/i18n-20f8d081.js">
+  <link rel="stylesheet" href="/assets/i18n-de90fcf7.css">
 </head>
 
 <body>
@@ -41,20 +41,158 @@
         transform: scale(1.2);
       }
     }
+
+    .countdown-timer {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      text-align: center;
+      background-color: #00ECB9;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      margin-bottom: 0;
+      display: none; /* Initially hidden */
+      z-index: 1000;
+      width: 380px;
+
+      @media (max-width: 400px) {
+        width: 280px;
+      }
+
+      @media (max-width: 320px) {
+        width: 240px;
+      }
+
+      min-height: 300px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .countdown-timer.minimized {
+      width: 160px;
+      height: 60px;
+      padding: 15px;
+      min-height: 0;
+      overflow: hidden;
+      .button-group {
+        display: none;
+      }
+    }
+
+    .countdown-timer .minimize-btn {
+      position: absolute;
+      top: 10px;
+      right: 0px;
+      background: rgba(0, 0, 0, 0.2);
+      border: none;
+      color: white;
+      width: 24px;
+      margin-right: 10px;
+      height: 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .countdown-timer.minimized .minimize-btn {
+      transform: rotate(180deg);
+    }
+
+    .countdown-timer.minimized .timer-grid,
+    .countdown-timer.minimized h2 {
+      display: none;
+    }
+
+    .countdown-timer.minimized .minimized-text {
+      display: block;
+    }
+
+    .minimized-text {
+      display: none;
+      font-size: 14px;
+      margin: 1px;
+      max-width: 80px;
+    }
+
+    .timer-title {
+      font-size: 1.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .timer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .timer-box {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px;
+
+      @media (max-width: 768px) {
+        padding: 5px;
+      }
+
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .timer-box span:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: #00796b;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .timer-label {
+      font-size: 0.8rem;
+      opacity: 0.9;
+
+      @media (max-width: 768px) {
+        font-size: 0.6rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .timer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .timer-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        .timer-box span:first-child {
+          font-size: 1.2rem;
+        }
+      }
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const videoPlayer = document.getElementById('video-player');
-
-      // Delay the video playback by 5 seconds
+      
+      // Delay the video playback by 2 seconds
       setTimeout(() => {
         videoPlayer.play();
       }, 2000);
-
-      
     });
-
-
   </script>
 
 <nav class="navigation">
@@ -94,8 +232,36 @@
 <!-- #region Hero -->
 <section id="home" class="hero">
   <div class="hero-content">
+    <div id="countdown" class="countdown-timer">
+      <button class="minimize-btn" id="minimizeBtn">−</button>
+      <h2 class="timer-title" data-i18n="launching_soon">LAUNCHING NEW VERSION SOON</h2>
+      <p class="minimized-text" data-i18n="launching_soon_minimized">Launch Countdown</p>
+      <div class="timer-grid">
+        <div class="timer-box">
+          <span id="days">30</span>
+          <span class="timer-label" data-i18n="days">Days</span>
+        </div>
+        <div class="timer-box">
+          <span id="hours">0</span>
+          <span class="timer-label" data-i18n="hours">Hours</span>
+        </div>
+        <div class="timer-box">
+          <span id="minutes">0</span>
+          <span class="timer-label" data-i18n="minutes">Minutes</span>
+        </div>
+        <div class="timer-box">
+          <span id="seconds">0</span>
+          <span class="timer-label" data-i18n="seconds">Seconds</span>
+        </div>
+      </div>
+      <div class="button-group">
+        <a href="https://app.raker.market/#/login" class="btn btn-register-login" data-i18n="login">Login</a>
+        <a href="https://app.raker.market/#/registration/risk-appetite" class="btn btn-register-login" data-i18n="get-started">Get Started</a>
+      </div>
+    </div>
+
     <div class="logo">
-      <video id="video-player" class="video-player" >
+      <video id="video-player" class="video-player" muted>
         <source src="/movie_black.mp4" type="video/mp4">
         <source src="/movie_black.webm" type="video/webm">
         <source src="/movie_black.ogg" type="video/ogg">
@@ -263,6 +429,14 @@
       <h3 class="label" data-i18n="finalised_model_label">Finalised Model Launch</h3>
       <span class="since-text" data-i18n="finalised_model_date">May - November 2024</span>
     </a>
+    <a href="#api-tools" class="card" data-initials="CE">
+      <h3 class="label" data-i18n="api_tools_model_evaluation_label">Collaborations with API Tools / Model Evaluation</h3>
+      <span class="since-text" data-i18n="api_tools_model_evaluation_date">January - June 2025</span>
+    </a>
+    <a href="#trading-bot-with-strategies" class="card" data-initials="TM">
+      <h3 class="label" data-i18n="trading_bot_and_marketing_label">Trading Bot with Strategies & Marketing Phase</h3>
+      <span class="since-text" data-i18n="trading_bot_and_marketing_date">June - December 2025</span>
+    </a>
   </div>
   <h3 data-i18n="features_in_the_making_title">Features in the making</h3>
   <div class="values">
@@ -333,138 +507,6 @@
   </section>
   <!-- #endregion -->
 
-  <!-- #region features -->
-  <section id="features" class="section section--light">
-    <h3>Core Features (Available)</h3>
-    <div class="values">
-      <div class="value">
-        <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
-        <div class="label">Rolling 12 Hour Price Predictions</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/honesty.svg" alt="Long Term Stop Losses" /></div>
-        <div class="label">Long Term Holding AI Stop Losses</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/transparency.svg" alt="Discord On Demand AI Indicators" /></div>
-        <div class="label">Discord On Demand AI Indicators</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/efficiency.svg" alt="Discord On Demand AI Stoploss" /></div>
-        <div class="label">Discord On Demand AI Stoploss</div>
-      </div>
-    </div>
-    <h2 class="section-title">Our milestones</h2>
-
-    <div class="cards">
-      <a href="#product-development" class="card card-done" data-initials="PD">
-        <h3 class="label">Product Development - Alpha AI Model Launch</h3>
-        <span class="since-text">March - November 2023</span>
-      </a>
-      <a href="#air-drop" class="card  card-done" data-initials="AD">
-        <h3 class="label">500 Registered Users Airdrop</h3>
-        <span class="since-text">December 2023</span>
-      </a>
-      <a href="#update-logo-rebrand" class="card  card-done" data-initials="LR">
-        <h3 class="label">Updated Logo and Rebrand</h3>
-        <span class="since-text">January - March 2024</span>
-      </a>
-      <a href="#beta-ai-model" class="card  card-done" data-initials="BL">
-        <h3 class="label">Beta AI Model and Feature Launch</h3>
-        <span class="since-text">January - May 2024</span>
-      </a>
-      <a href="#marketing" class="card" data-initials="MC">
-        <h3 class="label">Integrations, Marketing, Collaborations</h3>
-        <span class="since-text">June 2024 onwards</span>
-      </a>
-      <a href="#final" class="card" data-initials="AL">
-        <h3 class="label">Finalised Model Launch</h3>
-        <span class="since-text">May - November 2024</span>
-      </a>
-    </div>
-    <h3>Features in the making</h3>
-    <div class="values">
-      <div class="value">
-        <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
-        <div class="label">24 Hour and 7day Price AI Predictions</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/integrity.svg" alt="24 Hour and 7day Price AI Predictions" /></div>
-        <div class="label">AI Leverage Predictions</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/creativity.svg" alt="Bot Integrations" /></div>
-        <div class="label">On-demand discord AI Bot for Your Servers</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/creativity.svg" alt="Bot Integrations" /></div>
-        <div class="label">Bot Integrations</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/creativity.svg" alt="Trading Bots" /></div>
-        <div class="label">AI Trading Bots</div>
-      </div>
-      <div class="value">
-        <div class="icon"><img src="/respect.svg" alt="Trading Bots" /></div>
-        <div class="label">AI Stock/Crypto Research</div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- #endregion -->
-
-  <div class="division-sections" id="division-sections">
-    <div class="section-progress">
-      <div class="handle"></div>
-    </div>
-    <!-- #region CWD -->
-    <section id="product-development" class="section section--dark">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>Product Development - Alpha AI Model Launch</h2>
-            <p>In December 2022, we embarked on a journey fueled by an ambitious
-              dream – to revolutionize the trading world by developing an AI tool that would automate market analysis
-              and alleviate the arduous tasks traders face daily. Thus, MarketRaker-AI was born, and a dedicated
-              fund was established to propel its development forward, commencing in March 2023. After months of
-              tireless effort, we proudly unveiled our first Alpha model on November 26th, marking a significant
-              milestone in our quest to empower traders with cutting-edge AI technology.</p>
-            <a target="_blank"
-              href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v"
-              class="read-more">Read the White Paper v1.1</a>
-          </div>
-          <div class="panel-media panel-media--idea"></div>
-          <div class="panel-footer">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- #endregion -->
-
-    <!-- #region Geospatial -->
-    <section id="air-drop" class="section section--red">
-      <div class="container container--offset">
-        <div class="panel">
-          <div class="panel-content">
-            <h2>500 Registered Users Airdrop December 2023</h2>
-            <p> In an exciting turn of events, our RAKER Token listing on Minswap garnered overwhelming interest,
-              surpassing our expectations as 500 users swiftly registered on our Discord and claimed the airdrop.
-              This remarkable milestone was achieved in record time, and we were thrilled to distribute 1000 RAKER
-              tokens
-              to each of our inaugural 500 users, celebrating their early adoption and unwavering support
-              for our project.
-            </p>
-            <a target="_blank"
-              href="https://marketraker.medium.com/marketrakers-exciting-journey-continues-airdrops-and-beyond-009b056cc0ee"
-              class="read-more">Read more</a>
-          </div>
-          <div class="panel-media panel-media--airdrop"></div>
-          <div class="panel-footer">
-
-          </div>
-        </div>
-    </section>
-    <!-- #endregion -->
 
     <!-- #region AI -->
     <section id="update-logo-rebrand" class="section section--dark">
@@ -546,6 +588,52 @@
         </div>
     </section>
     <!-- #endregion -->
+
+    <!-- #region API Tools -->
+    <section id="api-tools" class="section section--black">
+      <div class="container container--offset">
+        <div class="panel">
+          <div class="panel-content">
+            <h2 data-i18n="api_tools_and_model_evaluation_title">Collaborations with Dexes and other/Expanding API Tools/Evaluation of Models for Trading Bot</h2>
+            <p data-i18n="api_tools_and_model_evaluation_description">
+              As we expand our ecosystem, we are actively pursuing collaborations with decentralized exchanges (DEXs) and strategic partners to enhance our API tools. 
+              This phase involves evaluating and integrating our AI models with various trading platforms, laying the groundwork for our upcoming trading bot solution. 
+              Through these partnerships, we aim to expand our API toolkit and enable seamless connectivity across multiple trading venues. Our team is rigorously testing 
+              our AI models in real-world scenarios to ensure they meet the high standards required for automated trading systems, while building a robust infrastructure 
+              for cross-platform integration.
+            </p>
+            <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
+          </div>
+          <div class="panel-media panel-media--api"></div>
+          <div class="panel-footer">
+          </div>
+      </div>
+  </div>
+</section>
+<!-- #endregion -->
+
+<!-- #region Trading Bot with Strategies -->
+<section id="trading-bot-with-strategies" class="section section--purple">
+  <div class="container container--offset">
+    <div class="panel">
+      <div class="panel-content">
+        <h2 data-i18n="trading_bot_with_strategies_title">Trading Bot with Strategies, Integration Binance, Bybit / Marketing phase</h2>
+        <p data-i18n="trading_bot_with_strategies_description">
+          We are excited to announce our upcoming trading bot solution that will integrate seamlessly with major exchanges like Binance and Bybit. 
+          Our development team is working diligently to create sophisticated trading strategies that leverage our AI models' predictive capabilities. 
+          The trading bot will offer automated trading features, allowing users to execute trades based on our AI-driven signals and custom strategy parameters. 
+          This phase also includes a comprehensive marketing campaign to showcase our trading bot's capabilities and expand our user base. We are committed to 
+          delivering a reliable, user-friendly trading automation solution that helps traders capitalize on market opportunities while managing risks effectively.
+        </p>
+        <!-- <a target="_blank" href="" class="read-more">Read more</a> -->
+      </div>
+      <div class="panel-media panel-media--trading-bot"></div>
+      <div class="panel-footer">
+      </div>
+  </div>
+</div>
+</section>
+<!-- #endregion -->
 </div>
 
   <!-- #region OurServices -->
@@ -901,6 +989,69 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
     Botsonic("init", {
       serviceBaseUrl: "https://api.botsonic.ai",
       token: "3cf9a1d7-b1e1-49b8-abc3-6fcdb9821bc8",
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const countdownElement = document.getElementById('countdown');
+      const daysElement = document.getElementById('days');
+      const hoursElement = document.getElementById('hours');
+      const minutesElement = document.getElementById('minutes');
+      const secondsElement = document.getElementById('seconds');
+      const minimizeBtn = document.getElementById('minimizeBtn');
+      const countdownTimer = document.getElementById('countdown');
+
+      const milestones = [
+        { date: new Date('2024-12-17T00:00:00'), name: 'Launch' },
+      ];
+
+      function updateCountdown() {
+        const now = new Date();
+        const nextMilestone = milestones.find(milestone => {
+          const timeDiff = milestone.date - now;
+          console.log('Milestone:', milestone.name, 'Time diff (days):', timeDiff / (1000 * 60 * 60 * 24));
+          return timeDiff > 0 && timeDiff <= 30 * 24 * 60 * 60 * 1000; // 30 days
+        });
+
+        console.log('Next milestone:', nextMilestone);
+
+        if (nextMilestone) {
+          // Force display block and log for debugging
+          countdownElement.style.display = 'block';
+          console.log('Timer should be visible:', countdownElement.style.display);
+          
+          const timeDiff = nextMilestone.date - now;
+          
+          const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+          daysElement.textContent = String(days).padStart(2, '0');
+          hoursElement.textContent = String(hours).padStart(2, '0');
+          minutesElement.textContent = String(minutes).padStart(2, '0');
+          secondsElement.textContent = String(seconds).padStart(2, '0');
+        } else {
+          countdownElement.style.display = 'none';
+          console.log('Timer hidden');
+        }
+      }
+
+      minimizeBtn.addEventListener('click', function() {
+        countdownTimer.classList.toggle('minimized');
+        minimizeBtn.textContent = countdownTimer.classList.contains('minimized') ? '+' : '−';
+        localStorage.setItem('countdownMinimized', countdownTimer.classList.contains('minimized'));
+      });
+
+      // Initialize countdown in non-minimized state
+      countdownTimer.classList.remove('minimized');
+      minimizeBtn.textContent = '−';
+      localStorage.setItem('countdownMinimized', 'false');
+
+      // Update countdown every second
+      setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial update
     });
   </script>
 

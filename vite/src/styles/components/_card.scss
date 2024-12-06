@@ -1,6 +1,11 @@
 .cards {
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -97,7 +102,7 @@
     transform: translateZ(0px);
 
     transition: transform 0.2s ease-in-out;
-    line-break: anywhere;
+    //line-break: anywhere;
 
     @media screen and (min-width: 480px) {
       font-size: min(2rem, 4vw);

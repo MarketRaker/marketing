@@ -1,0 +1,1 @@
+import{M as t,C as n}from"./i18n-20f8d081.js";class i{constructor(){this.preloader(),this.init()}init(){new n().current(),new t().initMobileMenu()}preloader(){const e=document.getElementById("preloader");e&&setTimeout(()=>{e.style.animation="bounce 2s infinite",setTimeout(()=>{e.style.display="none"},1500)},700)}}new i;
