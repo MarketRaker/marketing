@@ -2,13 +2,13 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path';
 
 const root = resolve(__dirname, 'src');
-const outDir = resolve(__dirname, 'dist');
+const outDir = resolve(__dirname, '..');
 export default defineConfig({
   root,
   build: {
     assetsInlineLimit: 9000,
     outDir,
-    emptyOutDir: true,
+    emptyOutDir: false,
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>MarketRaker AI - No more noise - Trading using machine learning </title>
+  <title>MarketRaker AI - Service Discontinued (June 2025)</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,10 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
-  <meta name="description" content="MarketRaker - Your Ultimate Trading Companion - No more noise ">
+  <meta name="description" content="MarketRaker AI has ceased operations as of June 2025 due to insufficient market interest and usage. Thank you for your support.">
   <meta name="keywords"
     content="market raker, ai trading, ai market indicators, investment tools, machine learning trading">
-  <meta name="author" content="MarketRaker AI from Matogen.com">
+  <meta name="author" content="MarketRaker AI">
   <script type="module" crossorigin src="/assets/main-2ef4f56b.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/i18n-20f8d081.js">
   <link rel="stylesheet" href="/assets/i18n-de90fcf7.css">
@@ -29,7 +29,53 @@
     <img src="/logo.png" style="width: 350px;  position: relative" alt="MarketRaker" />
   </div>
 
+  <!-- Shutdown Notice Banner -->
+  <div class="shutdown-banner">
+    <div class="shutdown-content">
+      <h2>⚠️ Service Discontinued</h2>
+      <p>MarketRaker AI has ceased operations as of <strong>June 2025</strong>. Due to insufficient market interest and usage, we have made the difficult decision to discontinue our services. We sincerely thank all our users for their support and interest in our platform.</p>
+      <p style="margin-top: 15px;"><strong>All project findings and articles are available on our Medium blog for historical purposes.</strong></p>
+    </div>
+  </div>
+
   <style>
+    .shutdown-banner {
+      background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 98;
+    }
+
+    .shutdown-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .shutdown-banner h2 {
+      margin: 0 0 15px 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .shutdown-banner p {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .shutdown-banner h2 {
+        font-size: 1.5rem;
+      }
+
+      .shutdown-banner p {
+        font-size: 1rem;
+      }
+    }
+
     @keyframes bounce {
 
       0%,
@@ -52,7 +98,7 @@
       border-radius: 10px;
       color: white;
       margin-bottom: 0;
-      display: none; /* Initially hidden */
+      display: none !important; /* Permanently hidden */
       z-index: 1000;
       width: 380px;
 
@@ -206,7 +252,7 @@
       <div class="line"></div>
     </button>
     <div class="fill"></div>
-    <a class="contact-us" href="https://app.raker.market" data-i18n="login_link">Login</a>
+    <span class="contact-us" style="opacity: 0.5; cursor: not-allowed;" data-i18n="login_link">Service Ended</span>
   </div>
 
   <div class="desktop-logo">
@@ -214,11 +260,10 @@
   </div>
   <ul>
     <li><a class="js-nav-item" href="/index.html#home" data-custom="custom" data-i18n="home_link">Home</a></li>
-    <li><a class="js-nav-item" href="/#what-is-marketraker" data-i18n="what_is_marketraker">What is MarketRaker-AI?</a></li>
-    <li><a class="js-nav-item" href="/#features" data-i18n="features_milestones">Features &amp; Milestones</a></li>
-    <li><a class="js-nav-item" href="/#pricing" data-i18n="pricing">Pricing</a></li>
-    <li><a class="js-nav-item" href="https://app.raker.market" data-i18n="login">Login</a></li>
-    <li><a class="js-nav-item" href="https://app.raker.market/#/registration/risk-appetite" data-i18n="register">Register</a></li>
+    <li><a class="js-nav-item" href="/#what-is-marketraker" data-i18n="what_is_marketraker">What was MarketRaker-AI?</a></li>
+    <li><a class="js-nav-item" href="/#features" data-i18n="features_milestones">Features</a></li>
+    <li><span class="js-nav-item" style="opacity: 0.5; cursor: not-allowed; padding: 0 1rem;" data-i18n="login">Login (Unavailable)</span></li>
+    <li><span class="js-nav-item" style="opacity: 0.5; cursor: not-allowed; padding: 0 1rem;" data-i18n="register">Register (Unavailable)</span></li>
     <li>
       <select name="language-select" id="language-select">
         <option value="en" data-i18n="en">English</option>
@@ -232,34 +277,6 @@
 <!-- #region Hero -->
 <section id="home" class="hero">
   <div class="hero-content">
-    <div id="countdown" class="countdown-timer">
-      <button class="minimize-btn" id="minimizeBtn">−</button>
-      <h2 class="timer-title" data-i18n="launching_soon">LAUNCHING NEW VERSION SOON</h2>
-      <p class="minimized-text" data-i18n="launching_soon_minimized">Launch Countdown</p>
-      <div class="timer-grid">
-        <div class="timer-box">
-          <span id="days">30</span>
-          <span class="timer-label" data-i18n="days">Days</span>
-        </div>
-        <div class="timer-box">
-          <span id="hours">0</span>
-          <span class="timer-label" data-i18n="hours">Hours</span>
-        </div>
-        <div class="timer-box">
-          <span id="minutes">0</span>
-          <span class="timer-label" data-i18n="minutes">Minutes</span>
-        </div>
-        <div class="timer-box">
-          <span id="seconds">0</span>
-          <span class="timer-label" data-i18n="seconds">Seconds</span>
-        </div>
-      </div>
-      <div class="button-group">
-        <a href="https://app.raker.market/#/login" class="btn btn-register-login" data-i18n="login">Login</a>
-        <a href="https://app.raker.market/#/registration/risk-appetite" class="btn btn-register-login" data-i18n="get-started">Get Started</a>
-      </div>
-    </div>
-
     <div class="logo">
       <video id="video-player" class="video-player" muted>
         <source src="/movie_black.mp4" type="video/mp4">
@@ -271,12 +288,8 @@
     </div>
 
     <div class="content">
-      <h1 data-i18n="chart_analysis">No more manual chart analysis. We use AI methodologies to give real-time AI Indicators for traders and trading bots.</h1>
-      <a href="https://app.raker.market" class="btn btn-outline btn-outline-light" data-i18n="open_app">Open the app</a>
+      <h1 data-i18n="chart_analysis">MarketRaker AI used machine learning to provide real-time AI indicators for traders. Service discontinued June 2025.</h1>
     </div>
-  </div>
-  <div class="hero-logo-slider">
-    <div class="logo-slider" id="logoElement"></div>
   </div>
 </section>
 <!-- #endregion -->
@@ -284,13 +297,13 @@
 <!-- #region Mission -->
 <section id="what-is-marketraker" class="section mission">
   <div class="container">
-    <h2 data-i18n="what_is_marketraker">What is MarketRaker?</h2>
+    <h2 data-i18n="what_is_marketraker">What was MarketRaker?</h2>
     <p class="body-paragraph-how">
-      <span data-i18n="tool_description">MarketRaker-AI is a cutting-edge trading tool that leverages the power of machine learning to provide traders and investors with reliable, up-to-date market analysis and informed investment insights.</span>
+      <span data-i18n="tool_description">MarketRaker-AI was a trading tool that leveraged the power of machine learning to provide traders and investors with market analysis and investment insights.</span>
       <br /><br />
-      <span data-i18n="algorithm_description">Our platform utilizes sophisticated algorithms to continuously review and model a wide range of indicators every hour, generating AI-driven trading signals that can help users minimize risk and maximize profits.</span>
+      <span data-i18n="algorithm_description">Our platform utilized sophisticated algorithms to continuously review and model a wide range of indicators every hour, generating AI-driven trading signals.</span>
       <br /><br />
-      <span data-i18n="solution_description">By harnessing the capabilities of artificial intelligence and machine learning, MarketRaker offers a unique and dynamic solution to the challenges of modern trading, empowering users with a data-driven approach to navigate ever-changing market conditions.</span>
+      <span data-i18n="solution_description">The service ceased operations in June 2025 due to insufficient market interest and usage. We appreciate the support from all users who believed in our vision.</span>
     </p>
   </div>
 </section>
@@ -304,7 +317,7 @@
         <!-- Market Volatility -->
         <div class="item item--market-volatility">
           <div class="title" data-i18n="market_volatility">Market Volatility</div>
-          <div class="description" data-i18n="market_volatility_description">Cryptocurrency and traditional stock markets are notoriously volatile, with sudden price swings that can be difficult to predict or respond to in real-time.</div>
+          <div class="description" data-i18n="market_volatility_description">Financial markets are notoriously volatile, with sudden price swings that can be difficult to predict or respond to in real-time.</div>
         </div>
         <!-- Information Overload -->
         <div class="item item--information-overload">
@@ -334,7 +347,7 @@
         <!-- Why -->
         <div class="item item--finance">
           <div class="title" data-i18n="why_is_marketraker_ai_needed">Why is MarketRaker AI Needed?</div>
-          <div class="description" data-i18n="why_is_marketraker_ai_needed_description">Despite the growth and potential of the cryptocurrency and traditional stock markets, traders face several challenges that make it difficult to consistently make profitable trades.</div>
+          <div class="description" data-i18n="why_is_marketraker_ai_needed_description">Despite the growth and potential of financial markets, traders faced several challenges that made it difficult to consistently make profitable trades.</div>
         </div>
       </div>
     </div>
@@ -403,42 +416,27 @@
       <div class="label" data-i18n="discord_on_demand_ai_stoploss">Discord On Demand AI Stoploss</div>
     </div>
   </div>
-  <h2 class="section-title" data-i18n="our_milestones_title">Our milestones</h2>
+  <h2 class="section-title" data-i18n="our_milestones_title">Project Timeline and Closure</h2>
   <div class="cards">
     <a href="#product-development" class="card card-done" data-initials="PD">
       <h3 class="label" data-i18n="product_development_label">Product Development - Alpha AI Model Launch</h3>
       <span class="since-text" data-i18n="product_development_date">March - November 2023</span>
     </a>
-    <a href="#air-drop" class="card  card-done" data-initials="AD">
-      <h3 class="label" data-i18n="airdrop_label">500 Registered Users Airdrop</h3>
-      <span class="since-text" data-i18n="airdrop_date">December 2023</span>
-    </a>
-    <a href="#update-logo-rebrand" class="card  card-done" data-initials="LR">
+    <a href="#update-logo-rebrand" class="card card-done" data-initials="LR">
       <h3 class="label" data-i18n="update_logo_rebrand_label">Updated Logo and Rebrand</h3>
       <span class="since-text" data-i18n="update_logo_rebrand_date">January - March 2024</span>
     </a>
-    <a href="#beta-ai-model" class="card  card-done" data-initials="BL">
+    <a href="#beta-ai-model" class="card card-done" data-initials="BL">
       <h3 class="label" data-i18n="beta_ai_model_label">Beta AI Model and Feature Launch</h3>
       <span class="since-text" data-i18n="beta_ai_model_date">January - May 2024</span>
     </a>
-    <a href="#marketing" class="card" data-initials="MC">
-      <h3 class="label" data-i18n="marketing_label">Integrations, Marketing, Collaborations</h3>
-      <span class="since-text" data-i18n="marketing_date">June 2024 onwards</span>
-    </a>
-    <a href="#final" class="card" data-initials="AL">
-      <h3 class="label" data-i18n="finalised_model_label">Finalised Model Launch</h3>
-      <span class="since-text" data-i18n="finalised_model_date">May - November 2024</span>
-    </a>
-    <a href="#api-tools" class="card" data-initials="CE">
-      <h3 class="label" data-i18n="api_tools_model_evaluation_label">Collaborations with API Tools / Model Evaluation</h3>
-      <span class="since-text" data-i18n="api_tools_model_evaluation_date">January - June 2025</span>
-    </a>
-    <a href="#trading-bot-with-strategies" class="card" data-initials="TM">
-      <h3 class="label" data-i18n="trading_bot_and_marketing_label">Trading Bot with Strategies & Marketing Phase</h3>
-      <span class="since-text" data-i18n="trading_bot_and_marketing_date">June - December 2025</span>
-    </a>
+    <div class="card card-done" style="background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%); cursor: default; pointer-events: none;" data-initials="SC">
+      <h3 class="label" data-i18n="service_closure_label">Service Closure</h3>
+      <span class="since-text" data-i18n="service_closure_date">June 2025</span>
+      <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.9;">Operations ceased due to insufficient market interest. All project findings and articles available on Medium blog.</p>
+    </div>
   </div>
-  <h3 data-i18n="features_in_the_making_title">Features in the making</h3>
+  <h3 data-i18n="features_in_the_making_title">Features That Were in Development</h3>
   <div class="values">
     <div class="value">
       <div class="icon"><img src="/integrity.svg" alt="12 Hour and 7day Price Predictions" /></div>
@@ -462,7 +460,7 @@
     </div>
     <div class="value">
       <div class="icon"><img src="/respect.svg" alt="Trading Bots" /></div>
-      <div class="label" data-i18n="ai_stock_crypto_research_label">AI Stock/Crypto Research</div>
+      <div class="label" data-i18n="ai_stock_crypto_research_label">AI Market Research</div>
     </div>
   </div>
 </section>
@@ -491,23 +489,6 @@
   <!-- #endregion -->
 
   <!-- #region Geospatial -->
-  <section id="air-drop" class="section section--red">
-    <div class="container container--offset">
-      <div class="panel">
-        <div class="panel-content">
-          <h2 data-i18n="airdrop_title">500 Registered Users Airdrop December 2023</h2>
-          <p data-i18n="airdrop_description">In an exciting turn of events, our RAKER Token listing on Minswap garnered overwhelming interest, surpassing our expectations as 500 users swiftly registered on our Discord and claimed the airdrop. This remarkable milestone was achieved in record time, and we were thrilled to distribute 1000 RAKER tokens to each of our inaugural 500 users, celebrating their early adoption and unwavering support for our project.</p>
-          <a target="_blank" href="https://marketraker.medium.com/marketrakers-exciting-journey-continues-airdrops-and-beyond-009b056cc0ee" class="read-more" data-i18n="read_more">Read more</a>
-        </div>
-        <div class="panel-media panel-media--airdrop"></div>
-        <div class="panel-footer">
-
-        </div>
-      </div>
-  </section>
-  <!-- #endregion -->
-
-
     <!-- #region AI -->
     <section id="update-logo-rebrand" class="section section--dark">
         <div class="container container--offset">
@@ -639,39 +620,16 @@
   <!-- #region OurServices -->
   <section class="section section--light" id="pricing">
     <div class="container container--philosophies">
-      <h2 class="section-title" data-i18n="pricing_and_raker_token_holding">Pricing and RAKER Token Holding</h2>
-  
+      <h2 class="section-title" data-i18n="pricing_and_raker_token_holding">Pricing Information</h2>
+
       <div class="philosophies">
-        <div class="philosophy philosophy--mission">
+        <div class="philosophy" style="grid-column: 1 / -1; text-align: center; max-width: 800px; margin: 0 auto;">
           <div class="philosophy-icon">
             <img src="/mission.svg" />
           </div>
-          <div class="philosophy-title" data-i18n="1_month_=_10_raker_tokens">1 Month = 10 RAKER Tokens</div>
-          <div class="philosophy-description" data-i18n="holding_10_raker_tokens_description">
-            Holding 10 RAKER Tokens in your Cardano wallet grants you access to our platform for one month. This introductory offering allows you to experience the power of our AI-driven trading tools and immerse yourself in our innovative ecosystem.<br/>
-            <br/><a href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
-          </div>
-        </div>
-  
-        <div class="philosophy philosophy--vision">
-          <div class="philosophy-icon">
-            <img target="_blank" src="/vision.svg" />
-          </div>
-          <div class="philosophy-title" data-i18n="lifetime_access_=_1000_raker_tokens">Lifetime access = 1000 RAKER Tokens</div>
-          <div class="philosophy-description" data-i18n="holding_1000_raker_tokens_description">
-            Holding 1,000 RAKER Tokens grants you lifetime access to our platform, ensuring you never miss out on the latest advancements and cutting-edge features we introduce. However, the benefits don't stop there. As a valued holder of 1,000 RAKER Tokens, you'll also enjoy exclusive perks and privileges within our vibrant Discord community.<br/>
-            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
-          </div>
-        </div>
-  
-        <div class="philosophy philosophy--purpose">
-          <div class="philosophy-icon">
-            <img src="/purpose.svg" />
-          </div>
-          <div class="philosophy-title" data-i18n="stakeholders_=_10000_raker_tokens">Stakeholders = 10,000 RAKER Tokens</div>
-          <div class="philosophy-description" data-i18n="holding_10000_raker_tokens_description">
-            Holding 10,000 RAKER Tokens unlocks a range of exclusive benefits and privileges for our valued community members. With this significant token holding, you gain lifetime access to our platform, ensuring uninterrupted access to our cutting-edge AI-driven tools and insights. Additionally, you will receive insider information and have the opportunity to shape the future direction of our project through direct involvement in decision-making processes.<br/>
-            <br/><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">BUY RAKER TOKENS</a> 
+          <div class="philosophy-title" data-i18n="service_discontinued">Service No Longer Available</div>
+          <div class="philosophy-description" data-i18n="no_pricing_available">
+            MarketRaker AI and all associated token sales have been discontinued as of June 2025. Please do not attempt to purchase RAKER tokens or participate in any token-related activities. The platform is no longer operational and no support or services are available.
           </div>
         </div>
       </div>
@@ -679,219 +637,9 @@
   </section>
   <!-- #endregion -->
 
-  <!-- #region Leadership -->
-  <section id="leadership" class="section section--light">
-    <div class="container">
-      <h3 class="section-sub-title" data-i18n="our_team">Our Team</h3>
-  
-      <div class="members">
-        <!-- Cobus -->
-        <div class="member member-yellow">
-          <div class="member-profile-image">
-            <img src="/cobus-coetsee.webp" alt="Cobus Coetsee" />
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="cobus_coetsee">Cobus Coetsee</div>
-            <div class="title" data-i18n="cobus_coetsee_ceo_and_founder_title">CEO and Founder</div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-              <span data-i18n="cobus_coetsee_bio_1">Cobus's</span> <span data-years-since="2003"></span> <span data-i18n="cobus_coetsee_bio_2">years in the technology sector, Cobus exemplifies the
-                essence of a hands-on leader. He
-                masterfully oversees and applies technical methodologies, ensuring that every project is based on a
-                solid, technically sound foundation.</span>
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="cobus_coetsee">Cobus Coetsee</div>
-            <div class="bio" data-i18n="cobus_coetsee_ceo_and_founder_bio">
-              <span data-i18n="cobus_coetsee_bio_1">Cobus's</span> <span data-years-since="2003"></span> <span data-i18n="cobus_coetsee_bio_2">years in the technology sector, Cobus exemplifies the
-                essence of a hands-on leader. He
-                masterfully oversees and applies technical methodologies, ensuring that every project is based on a
-                solid, technically sound foundation.</span>
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-        </div>
-  
-        <div class="qualification-mobile">
-  
-  
-        </div>
-  
-  
-  
-        <!-- Software Development -->
-        <div class="member">
-          <div class="member-profile-image">
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="matogen_software_division_title">Matogen Software Division</div>
-            <div class="title" data-i18n="matogen_software_division_title">Software Development</div>
-            <div class="qualification" data-i18n="matogen_software_division_qualification">
-              <span data-i18n="team_qualifications_includes">Team Qualifications Includes</span> - M.Eng Electronic Engineering with Computer Science
-            </div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-  
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="matogen_software_division_title">Software Development</div>
-            <div class="bio">
-  
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-  
-        </div>
-  
-        <div class="qualification-mobile" data-i18n="matogen_software_division_qualification">Team Qualifications Includes - M.Eng Electronic Engineering with Computer Science
-        </div>
-  
-        <!-- Machine learning -->
-        <div class="member member-yellow">
-          <div class="member-profile-image">
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="matogen_ai_division_title">Matogen AI Division</div>
-            <div class="title" data-i18n="matogen_ai_division_title">Machine Learning</div>
-            <div class="qualification" data-i18n="matogen_ai_division_qualification">
-              Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
-            </div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-  
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="matogen_ai_division_title">Machine Learning</div>
-            <div class="bio">
-  
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-  
-        </div>
-  
-        <div class="qualification-mobile" data-i18n="matogen_ai_division_qualification">
-          Team Qualifications Includes - PhD, Theoretical and Mathematical Physics, M.Eng Electronic Engineering with Computer Science, B.Comm Financial Risk Management
-        </div>
-  
-        <!-- Chat GPT / Co-pilot -->
-        <div class="member  ">
-          <div class="member-profile-image">
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="ai_tools_title">AI Tools</div>
-            <div class="title" data-i18n="ai_tools_title">ChatGPT & Github Co-Pilot</div>
-            <div class="qualification">
-  
-            </div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-  
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="ai_tools_title">ChatGPT & Github Co-Pilot</div>
-            <div class="bio">
-  
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-  
-        </div>
-  
-        <div class="qualification-mobile">
-        </div>
-  
-  
-  
-        <!-- Wim -->
-        <div class="member member-yellow">
-          <div class="member-profile-image">
-            <img src="/wim-conradie.webp" alt="Wim Conradie" />
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="wim_comradie">Wim Conradie</div>
-            <div class="title" data-i18n="wim_conradie_financial_director_title">Financial Director</div>
-            <div class="qualification" data-i18n="wim_conradie_financial_director_qualification">
-              MBA (Masters in Business Administration) (Cum Laude)<br>
-              B.Eng Electronic Engineering with Computer Science
-            </div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-              <span data-i18n="wim_conradie_bio_1">Wim's</span>
-              <span data-years-since="2005"></span> <span data-i18n="wim_conradie_bio_2">years of experience in business analysis and streamlining software automation, combined with his educational
-                background in Engineering and Business Administration, have
-                shaped him into an astute and diligent business steward.</span>
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="wim_comradie">Wim Conradie</div>
-            <div class="bio">
-              <span data-i18n="wim_conradie_bio_1">Wim's</span>
-              <span data-years-since="2005"></span> <span data-i18n="wim_conradie_bio_2">years of experience in business analysis and streamlining software automation, combined with his educational
-                background in Engineering and Business Administration, have
-                shaped him into an astute and diligent business steward.</span>
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-  
-        </div>
-  
-        <div class="qualification-mobile" data-i18n="wim_conradie_financial_director_qualification">
-          MBA (Masters in Business Administration) (Cum Laude)<br>
-          B.Eng Electronic Engineering with Computer Science
-        </div>
-  
-  
-        <!-- Jacobus -->
-        <div class="member">
-          <div class="member-profile-image">
-            <img src="/jacobus-eksteen.webp" alt="Jacobus Eksteen" />
-          </div>
-          <div class="member-profile-info">
-            <div class="name" data-i18n="jacobus_eksteen">Jacobus Eksteen</div>
-            <div class="title" data-i18n="jacobus_eksteen_data_and_decision_science_title">Data- and Decision Science</div>
-            <div class="qualification" data-i18n="jacobus_eksteen_data_and_decision_science_qualification">
-              MBA (Masters in Business Administration)<br>
-              B.Comm Financial Risk Management
-            </div>
-            <div class="read-more js-bio-more" data-i18n="read_more">Read more</div>
-            <div class="bio">
-              <span data-i18n="jacobus_eksteen_bio_1">Jacobus's</span>
-               <span data-years-since="2007"></span> <span data-i18n="jacobus_eksteen_bio_2">years of diverse experience in data science. He excels in
-                delivering solutions across various industries, notably financial services and agriculture. A
-                data-driven approach makes him a transformative leader in the realm of business and technology.</span>
-            </div>
-          </div>
-          <div class="expanded-bio">
-            <div class="name" data-i18n="jacobus_eksteen">Jacobus Eksteen</div>
-            <div class="bio">
-              <span data-i18n="jacobus_eksteen_bio_1">Jacobus's</span>
-               <span data-years-since="2007"></span> <span data-i18n="jacobus_eksteen_bio_2">years of diverse experience in data science. He excels in
-                delivering solutions across various industries, notably financial services and agriculture. A
-                data-driven approach makes him a transformative leader in the realm of business and technology.</span>
-            </div>
-            <div class="read-more js-bio-more" data-i18n="show_less">Show less</div>
-          </div>
-        </div>
-  
-        <div class="qualification-mobile" data-i18n="jacobus_eksteen_data_and_decision_science_qualification">
-          MBA (Masters in Business Administration)<br>
-          B.Comm Financial Risk Management
-  
-        </div>
-  
-  
-      </div>
-      <div class="image-overlay-text" data-i18n="images_modified_with_ai">
-        <h5>Images modified with AI</h5>
-      </div>
-    </div>
-  </section>
-  
+  <!-- #region Leadership - Removed for service closure -->
+  <!-- Team section removed as service has been discontinued -->
+
   <!-- #endregion -->
 <!-- #region Footer -->
 <section class="section section--black footer-links">
@@ -901,34 +649,14 @@
         <h4 data-i18n="external_links">External Links</h4>
         <ul>
           <li>
-            <a target="_blank" href="https://discord.gg/rAFfBDgqQ8" data-i18n="discord">Discord</a>
+            <a target="_blank" href="https://marketraker.medium.com" data-i18n="blog">Medium Blog (Historical Articles)</a>
           </li>
-          <li>
-            <a target="_blank" href="https://marketraker.medium.com" data-i18n="blog">Blog</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/rakermarket" data-i18n="x">X</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://docs.google.com/document/d/1QaoH42virzcq4JFuct_woPT2VHdzXtGP8jiwB7RXDEs/edit#heading=h.exaepzxh2e7v" data-i18n="white_paper">White Paper</a>
-          </li>
-          <li><a target="_blank" href="https://app.minswap.org/swap?currencySymbolA=&tokenNameA=&currencySymbolB=ace2ea0fe142a3687acf86f55bcded860a920864163ee0d3dda8b602&tokenNameB=52414b4552" data-i18n="buy_raker_tokens">Buy RAKER Tokens</a></li>
-          <li>
-            <a target="_blank" href="https://www.taptools.io/charts/token?pairID=0be55d262b29f564998ff81efe21bdc0022621c12f15af08d0f2ddb1.c3036830521a51040113de37368fa4baa45778aee35aeb5246dfb120a30a110a&currency=ADA" data-i18n="tap_tools">Tap tools</a>
-          </li>
-        </ul>
-      </div>
-      <div class="resources">
-        <h4 data-i18n="resources">Resources</h4>
-        <ul>
-          <li><a href="https://app.raker.market#docs" target="_blank" data-i18n="documentation">Documentation</a></li>
         </ul>
       </div>
       <div class="about">
-        <h4 data-i18n="partners">Partners</h4>
+        <h4 data-i18n="archive">Archive</h4>
         <ul>
-          <li><a target="blank" href="https://matogen.com" data-i18n="matogen">Matogen</a></li>
-          <li><a target="blank" href="https://cardanofoundation.org/" data-i18n="cardano_foundation">Cardano Foundation</a></li>
+          <li><a target="_blank" href="https://marketraker.medium.com" data-i18n="medium_blog">Medium Blog</a></li>
         </ul>
       </div>
     </div>
@@ -940,12 +668,6 @@
 </section>
 <!-- #endregion -->
 
-<!-- #region Clients -->
-<section class="section section--light footer-clients">
-  <div class="logo-slider" id="logoElement2">
-  </div>
-</section>
-<!-- #endregion -->
 
 
 <footer class="section section--red footer-copyright">
@@ -1003,7 +725,7 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js
       const countdownTimer = document.getElementById('countdown');
 
       const milestones = [
-        { date: new Date('2024-12-17T20:00:00'), name: 'Launch' },
+        { date: new Date('2024-12-17T00:00:00'), name: 'Launch' },
       ];
 
       function updateCountdown() {
